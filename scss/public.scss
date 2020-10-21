@@ -1,0 +1,62 @@
+@import "Ginkgo";
+@import "color";
+@import "text";
+@import "link";
+@import "space";
+
+html {
+  font-size: 13px;
+}
+
+body {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  color: rgba(90, 90, 90, 1.00);
+
+  font-size: medium;
+  text-align: center;
+  font-family: 'Noto Sans TC', 'Roboto', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
+.main_boxs {
+  display: inline-block;
+  width: 100%;
+  max-width: 1105px;
+
+  // d
+  border: 1px solid rgba(255, 0, 0, .3);
+}
+
+.i_banner_boxs {
+  display: inline-block;
+  width: 100%;
+  height: 600px;
+  background-color: $color_main;
+}
+
+.all_boxs {
+  display: inline-block;
+  width: 100%;
+
+  &.a-bg-lg {
+    background-color: $color_lG;
+  }
+
+  &.a-bg-main {
+    background-color: $color_main;
+  }
+
+  &.a-bg-deep-p {
+    background-color: $color_deep_p;
+  }
+}
+
+
+
+
+

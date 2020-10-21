@@ -1,0 +1,24 @@
+@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1603303064') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1603303064') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1603303064') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1603303064') format('svg'); }
+*[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
+
+.icon-clear:before { content: "\e900"; }
+
+.icon-close:before { content: "\e900"; }
+
+.icon-menu:before { content: "\e902"; }
+
+.icon-delete:before { content: "\e901"; }
+
+.icon-facebook:before { content: "\ea90"; }
+
+.icon-instagram:before { content: "\ea92"; }
+
+.icon-youtube:before { content: "\ea9d"; }
+
+.icon-chevron-down:before { content: "\e90a"; }
+
+.icon-chevron-left:before { content: "\e90b"; }
+
+.icon-chevron-right:before { content: "\e90c"; }
+
+.icon-chevron-up:before { content: "\e90d"; }

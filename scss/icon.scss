@@ -1,0 +1,35 @@
+//
+// @author      OA Wu <comdan66@gmail.com>
+// @copyright   Copyright (c) 2015 - 2020, Ginkgo
+// @license     http://opensource.org/licenses/MIT  MIT License
+// @link        https://www.ioa.tw/
+//
+
+@import "compass/css3/font-face";
+
+@include font-face("icon", font-files(
+  "icomoon/fonts/icomoon.eot",
+  "icomoon/fonts/icomoon.woff",
+  "icomoon/fonts/icomoon.ttf",
+  "icomoon/fonts/icomoon.svg"));
+
+*[class^="icon-"]:before, *[class*=" icon-"]:before {
+  font-family: "icon";
+
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+}
+
+.icon-clear:before { content: "\e900"; }
+.icon-close:before { content: "\e900"; }
+.icon-menu:before { content: "\e902"; }
+.icon-delete:before { content: "\e901"; }
+.icon-facebook:before { content: "\ea90"; }
+.icon-instagram:before { content: "\ea92"; }
+.icon-youtube:before { content: "\ea9d"; }
+.icon-chevron-down:before { content: "\e90a"; }
+.icon-chevron-left:before { content: "\e90b"; }
+.icon-chevron-right:before { content: "\e90c"; }
+.icon-chevron-up:before { content: "\e90d"; }

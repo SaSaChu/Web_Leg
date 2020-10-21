@@ -1,0 +1,129 @@
+@import "Ginkgo";
+@import "color";
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+// 中文 100;400;700;900
+.t_w_1 {font-weight: 100;}
+.t_w_4 {font-weight: 400;}
+.t_w_7 {font-weight: 700;}
+.t_w_9 {font-weight: 900;}
+
+
+// 12pt
+.text12_w {
+  font-size: .8rem;
+  color: white;
+}
+
+
+// 14pt
+.text14_dG {
+  font-size: 1rem;
+  color: $color_dG;
+}
+
+.text14_second {
+  font-size: 1rem;
+  color: $color_second;
+}
+
+
+// 16pt
+.text16_l_p {
+  font-size: 1.2rem;
+  color: $color_light_p;
+}
+
+.text16_dG {
+  font-size: 1.2rem;
+  color: $color_dG;
+}
+
+.text16_w {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.text16_main {
+  font-size: 1.2rem;
+  color: $color_main;
+}
+
+.text16_second {
+  font-size: 1.2rem;
+  color: $color_second;
+}
+
+
+// 18pt
+.text18_dG {
+  font-size: 1.3rem;
+  color: $color_dG;
+}
+
+.text18_w {
+  font-size: 1.3rem;
+  color: white;
+}
+
+
+// 20pt
+.text20_dG {
+  font-size: 1.5rem;
+  color: $color_dG;
+}
+
+.text20_w {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.text20_main {
+  font-size: 1.5rem;
+  color: $color_main;
+}
+
+
+// 24pt
+.text24_main {
+  font-size: 1.8rem;
+  color: $color_main;
+}
+
+
+// 26pt
+.text26_main {
+  font-size: 2rem;
+  color: $color_main;
+}
+
+.text26_dG {
+  font-size: 2rem;
+  color: $color_dG;
+}
+
+.text26_w {
+  font-size: 2rem;
+  color: white;
+}
+
+
+// 30pt
+.text30_w {
+  font-size: 2.3rem;
+  color: white;
+}
+
+
+// 70pt
+.text70_main {
+  font-size: 5.3rem;
+  color: $color_main;
+}
+
+
+

@@ -1,0 +1,80 @@
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+p { padding: 0; margin: 0; }
+
+.t_w_1 { font-weight: 100; }
+
+.t_w_4 { font-weight: 400; }
+
+.t_w_7 { font-weight: 700; }
+
+.t_w_9 { font-weight: 900; }
+
+.text12_w { font-size: .8rem; color: white; }
+
+.text14_dG { font-size: 1rem; color: #545454; }
+
+.text14_second { font-size: 1rem; color: #954384; }
+
+.text16_l_p { font-size: 1.2rem; color: #866e99; }
+
+.text16_dG { font-size: 1.2rem; color: #545454; }
+
+.text16_w { font-size: 1.2rem; color: white; }
+
+.text16_main { font-size: 1.2rem; color: #5b3468; }
+
+.text16_second { font-size: 1.2rem; color: #954384; }
+
+.text18_dG { font-size: 1.3rem; color: #545454; }
+
+.text18_w { font-size: 1.3rem; color: white; }
+
+.text20_dG { font-size: 1.5rem; color: #545454; }
+
+.text20_w { font-size: 1.5rem; color: white; }
+
+.text20_main { font-size: 1.5rem; color: #5b3468; }
+
+.text24_main { font-size: 1.8rem; color: #5b3468; }
+
+.text26_main { font-size: 2rem; color: #5b3468; }
+
+.text26_dG { font-size: 2rem; color: #545454; }
+
+.text26_w { font-size: 2rem; color: white; }
+
+.text30_w { font-size: 2.3rem; color: white; }
+
+.text70_main { font-size: 5.3rem; color: #5b3468; }
+
+a { display: inline-block; cursor: pointer; text-decoration: none; }
+
+button { display: inline-block; cursor: pointer; outline: 0; border: 0; }
+
+.p-30-50 { padding: 2.3rem 0 3.8rem 0; }
+
+.p-D50 { padding-bottom: 3.8rem; }
+
+.p-T100 { padding-top: 7.6rem; }
+
+.p-T60 { padding-top: 4.5rem; }
+
+.p-TD20 { padding: 1.5rem 0; }
+
+.p-TD30 { padding: 2.3rem 0; }
+
+.p-TD60 { padding: 4.5rem 0; }
+
+html { font-size: 13px; }
+
+body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: medium; text-align: center; font-family: 'Noto Sans TC', 'Roboto', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+
+.main_boxs { display: inline-block; width: 100%; max-width: 1105px; border: 1px solid rgba(255, 0, 0, 0.3); }
+
+.i_banner_boxs { display: inline-block; width: 100%; height: 600px; background-color: #5b3468; }
+
+.all_boxs { display: inline-block; width: 100%; }
+.all_boxs.a-bg-lg { background-color: #d8d8d8; }
+.all_boxs.a-bg-main { background-color: #5b3468; }
+.all_boxs.a-bg-deep-p { background-color: #49204e; }
