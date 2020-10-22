@@ -1,0 +1,57 @@
+@import "Ginkgo";
+@import "color";
+
+.border_TD {
+  border-top: 1px solid $color_line;
+  border-bottom: 1px solid $color_line;
+}
+
+.border_D {
+  border-bottom: 1px solid $color_line;
+}
+
+.border_T {
+  border-top: 1px solid $color_line;
+}
+
+.border_T_w {
+  border-top: 1px solid white;
+}
+
+.i_img_about {
+  display: inline-block;
+  width: 100%;
+  max-width: 550px;
+}
+
+.i_mg_a_icon {
+  display: inline-block;
+  width: 100%;
+  max-width: 180px;
+}
+
+.i_img_new {
+  display: inline-block;
+  width: 100%;
+  max-width: 230px;
+  position: relative;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    background-color: $color_main;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+}
+
+.i_img_s {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+}
+

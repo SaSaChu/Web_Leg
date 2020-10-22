@@ -6,6 +6,7 @@ a {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
+  outline: 0;
 }
 
 button {
@@ -14,3 +15,138 @@ button {
   outline: 0;
   border: 0;
 }
+
+.header_logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 274px;
+}
+
+.link_main {
+ display: inline-block;
+ padding: .7rem 2rem;
+ background-color: $color_main;
+ @include transition(all .3s);
+ border: 2px solid $color_second;
+ 
+ &:hover, &:active {
+  background-color: $color_second;
+ }
+}
+
+.link_language {
+  display: inline-block;
+  color: $color_main;
+  font-size: 1.1rem;
+  margin: 3px 7px 0 7px;
+  @include transition(all .3s);
+ 
+  &:hover, &:active {
+    color: $color_second;
+  }
+
+  &:nth-child(2) {
+    &:after {
+      display: inline-block;
+      content: '';
+      width: 1px;
+      height: 20px;
+      background-color: $color_main;
+      margin: 2px 0 0 14px;
+    }
+  }
+}
+
+.link_icon {
+  display: inline-block;
+  color: $color_main;
+  font-size: 1.6rem;
+  margin: 3px 7px 0 0 ;
+  @include transition(all .3s);
+
+  &:hover, &:active {
+    color: $color_second;
+  }
+}
+.icon-youtube {
+  font-size: 1.8rem;
+}
+
+.link_work {
+  display: inline-block;
+  color: white;
+  font-size: 1.3rem;
+  @include transition(all .3s);
+
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+
+  &:before {
+    display: inline-block;
+    content: '\e90c';
+    font-family: icon;
+    margin-right: 5px;
+    margin-top: 2px;
+  }
+}
+
+.link_news {
+  display: inline-block;
+  color: $color_dG;
+  font-size: 1.1rem;
+  @include transition(all .3s);
+
+  &:hover, &:active {
+    color: $color_second;
+  }
+
+  &:before {
+    display: inline-block;
+    content: '\e90c';
+    font-family: icon;
+    margin-right: 3px;
+    margin-top: 2px;
+  }
+}
+
+.link_16_main {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+  color: $color_main;
+  @include transition(all .3s);
+
+  &:hover, &:active {
+    color: $color_second;
+  }
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.2rem;
+    color: $color_main;
+  }
+}
+
+.link_out_line {
+ display: inline-block;
+ padding: .7rem 2rem;
+ color: $color_main;
+ border: 2px solid $color_main;
+ font-size: 1.3rem;
+ @include transition(all .3s);
+ 
+ &:hover, &:active {
+  background-color: $color_second;
+  color: white;
+  border: 2px solid $color_second;
+ }
+}
+
+
+
+
+
+
+

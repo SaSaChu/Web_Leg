@@ -1,15 +1,47 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.order_left { float: left; }
+
+.order_right { float: right; }
+
 .p-30-50 { padding: 2.3rem 0 3.8rem 0; }
 
+.p-60 { padding: 4.5rem; }
+
+.p-R40 { padding-right: 3rem; }
+
 .p-D50 { padding-bottom: 3.8rem; }
+
+.p-D60 { padding-bottom: 4.5rem; }
+
+.p-D30 { padding-bottom: 2.3rem; }
+
+.p-D40 { padding-bottom: 3rem; }
 
 .p-T100 { padding-top: 7.6rem; }
 
 .p-T60 { padding-top: 4.5rem; }
 
+.p-T30 { padding-top: 2.3rem; }
+
+.p-T20 { padding-top: 1.5rem; }
+
+.p-T10 { padding-top: .8rem; }
+
 .p-TD20 { padding: 1.5rem 0; }
+
+.p-TD6 { padding: .5rem 0; }
 
 .p-TD30 { padding: 2.3rem 0; }
 
 .p-TD60 { padding: 4.5rem 0; }
+
+.m-T60 { margin-top: 4.5rem; }
+
+.m-T30 { margin-top: 2.3rem; }
+
+.m-D60 { margin-bottom: 4.5rem; }
+
+.m-TD60 { margin-bottom: 4.5rem; }
+
+.i-a-LD { padding: 0 9rem 9rem 0; }

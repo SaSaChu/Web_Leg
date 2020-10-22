@@ -1,0 +1,18 @@
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+.border_TD { border-top: 1px solid rgba(155, 155, 155, 0.5); border-bottom: 1px solid rgba(155, 155, 155, 0.5); }
+
+.border_D { border-bottom: 1px solid rgba(155, 155, 155, 0.5); }
+
+.border_T { border-top: 1px solid rgba(155, 155, 155, 0.5); }
+
+.border_T_w { border-top: 1px solid white; }
+
+.i_img_about { display: inline-block; width: 100%; max-width: 550px; }
+
+.i_mg_a_icon { display: inline-block; width: 100%; max-width: 180px; }
+
+.i_img_new { display: inline-block; width: 100%; max-width: 230px; position: relative; }
+.i_img_new:before { display: inline-block; content: attr(title); position: absolute; left: 0; bottom: -11px; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 10px; }
+
+.i_img_s { display: inline-block; width: 100%; max-width: 350px; }

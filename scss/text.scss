@@ -6,6 +6,14 @@ p {
   margin: 0;
 }
 
+.text_left {
+  text-align: left;
+}
+
+.text_right {
+  text-align: right;
+}
+
 // 中文 100;400;700;900
 .t_w_1 {font-weight: 100;}
 .t_w_4 {font-weight: 400;}
@@ -13,10 +21,19 @@ p {
 .t_w_9 {font-weight: 900;}
 
 
+// 行距
+.l_30 {line-height: 2.3rem;}
+
+
 // 12pt
 .text12_w {
   font-size: .8rem;
   color: white;
+}
+
+.text12_dG {
+  font-size: .8rem;
+  color: $color_dG;
 }
 
 
@@ -124,6 +141,57 @@ p {
   font-size: 5.3rem;
   color: $color_main;
 }
+
+
+.i_text20_main {
+  font-size: 1.5rem;
+  color: $color_main;
+  font-weight: 700;
+
+  &:after {
+    display: inline-block;
+    width: 100%;
+    content: attr(title);
+    font-size: 1.2rem;
+    color: $color_main;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+}
+
+.i_text70_main {
+  font-size: 5.3rem;
+  color: $color_main;
+  font-weight: 700;
+  position: relative;
+
+  &:after {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.8rem;
+    color: $color_main;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 12px;
+  }
+}
+
+.tag14 {
+  display: inline-block;
+  background-color: $color_main;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
