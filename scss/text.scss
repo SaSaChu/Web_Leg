@@ -32,6 +32,10 @@ p {
   width: 100%;
   font-size: 1.8rem;
   color: $color_main;
+
+  &.s-t-2 {
+    color: $color_second;
+  }
 }
 
 .slogan_text {
@@ -41,6 +45,10 @@ p {
   color: $color_dG;
   padding-top: 40px;
   line-height: 30px;
+
+  &.s-t-pD60 {
+    padding-bottom: 60px;
+  }
 }
 
 
@@ -53,6 +61,14 @@ p {
   line-height: 30px;
   padding: 0 130px 130px 0;
   text-align: left;
+
+  @include range-width(760px, 1100px) {
+    padding: 0 60px 60px 0;
+  }
+
+  @include range-width(0, 450px) {
+    padding: 60px 0;
+  }
 }
 .cent_text18_w {
   display: inline-block;
@@ -62,6 +78,13 @@ p {
   line-height: 30px;
 }
 
+
+.i_text16_dG {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: $color_dG;
+  line-height: 30px;
+}
 
 .i_text20_main {
   font-size: 1.5rem;
@@ -99,7 +122,13 @@ p {
     position: absolute;
     bottom: 12px;
   }
+
+  @include range-width(0, 450px) {
+    width: 50%;
+    float: left;
+  }
 }
+
 
 .tag14 {
   display: inline-block;
@@ -118,6 +147,20 @@ p {
   text-align: left;
 }
 
+
+.f_text16_w {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.f_text14_lG_full {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: $color_lG100;
+  line-height: 30px;
+}
 
 
 

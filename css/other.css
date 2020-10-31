@@ -3,10 +3,11 @@
 input { border: 0 none; outline: 0; background-color: transparent; }
 
 .i_mg_a_icon { display: inline-block; width: 100%; max-width: 180px; padding: 50px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_mg_a_icon { width: 50%; float: left; } }
 
 .i_img_work { display: inline-block; width: 100%; max-width: 553px; }
 
-.i_img_new { display: inline-block; width: 100%; max-width: 230px; min-height: 180px; position: relative; }
+.i_img_new { display: inline-block; width: 100%; min-height: 180px; position: relative; }
 .i_img_new:before { display: inline-block; content: attr(title); position: absolute; left: 0; bottom: -11px; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 10px; }
 
 .i_img_s { display: inline-block; width: 100%; max-width: 350px; min-height: 230px; }

@@ -1,15 +1,13 @@
 @import "Ginkgo";
 
 .mob-close {
-  @include range-width(0, 1100px) {
+  @include range-width(0, 450px) {
     display: none !important;
   }
 }
 
-.mob-close {
-  display: none;
-
-  @include range-width(0, 760px) {
+.mob-open {
+  @include range-width(0, 450px) {
     display: inline-block;
   }
 }
@@ -117,7 +115,7 @@
 }
 
 .p-T20-c {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 
   // @include range-width(760px, 1100px) {
   //   padding-top:0;

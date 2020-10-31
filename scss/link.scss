@@ -22,6 +22,10 @@ button {
   display: inline-block;
   width: 100%;
   max-width: 274px;
+
+  @include range-width(0, 450px) {
+    max-width: 220px;
+  }
 }
 
 .btn_search {
@@ -166,6 +170,7 @@ button {
 .link_out_line {
  display: inline-block;
  padding: .7rem 2rem;
+ margin-top: 40px;
  color: $color_main;
  border: 2px solid $color_main;
  font-size: 1.3rem;
@@ -221,6 +226,7 @@ button {
   font-size: 1.5rem;
   color: $color_dG;
   @include transition(all .3s);
+  padding-top: 10px;
 
   &:hover, &:active {
     color: $color_second;
@@ -238,6 +244,7 @@ button {
   text-decoration: none;
   cursor: pointer;
   @include transition(all .3s);
+  line-height: 1.9rem;
 
   &:hover, &:active {
     color: $color_second;
