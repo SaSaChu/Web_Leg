@@ -23,6 +23,102 @@ p {
 
 // 行距
 .l_30 {line-height: 2.3rem;}
+.l_20 {line-height: 1.5rem;}
+.l_24 {line-height: 1.9rem;}
+
+
+.slogan_title {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.8rem;
+  color: $color_main;
+}
+
+.slogan_text {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.3rem;
+  color: $color_dG;
+  padding-top: 40px;
+  line-height: 30px;
+}
+
+
+
+.cent_text18_rd {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.3rem;
+  color: $color_dG;
+  line-height: 30px;
+  padding: 0 130px 130px 0;
+  text-align: left;
+}
+.cent_text18_w {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  line-height: 30px;
+}
+
+
+.i_text20_main {
+  font-size: 1.5rem;
+  color: $color_main;
+  font-weight: 700;
+  margin-bottom: 60px;
+
+  &:after {
+    display: inline-block;
+    width: 100%;
+    content: attr(title);
+    font-size: 1.2rem;
+    color: $color_main;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+  &.h-s-T40 {
+    padding-top: 40px;
+  }
+}
+
+.i_text70_main {
+  font-size: 5.3rem;
+  color: $color_main;
+  font-weight: 700;
+  position: relative;
+
+  &:after {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.8rem;
+    color: $color_main;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 12px;
+  }
+}
+
+.tag14 {
+  display: inline-block;
+  background-color: $color_main;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 20px;
+}
+
+.tag12 {
+  display: inline-block;
+  width: 100%;
+  font-size: .8rem;
+  color: $color_dG;
+  padding-top: 20px;
+  text-align: left;
+}
+
+
 
 
 // 12pt
@@ -39,13 +135,23 @@ p {
 
 // 14pt
 .text14_dG {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: $color_dG;
 }
 
 .text14_second {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: $color_second;
+}
+
+.text14_w {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.text14_lG_full {
+  font-size: 1.1rem;
+  color: $color_lG100;
 }
 
 
@@ -63,6 +169,10 @@ p {
 .text16_w {
   font-size: 1.2rem;
   color: white;
+
+  // @include range-width(0, 450px) {
+  //   font-size: 1rem;
+  // }
 }
 
 .text16_main {
@@ -85,6 +195,10 @@ p {
 .text18_w {
   font-size: 1.3rem;
   color: white;
+
+  // @include range-width(760px, 1100px) {
+  //   font-size: 1.2rem;
+  // }
 }
 
 
@@ -92,6 +206,10 @@ p {
 .text20_dG {
   font-size: 1.5rem;
   color: $color_dG;
+
+  // @include range-width(760px, 1100px) {
+  //   font-size: 1.3rem;
+  // }
 }
 
 .text20_w {
@@ -121,10 +239,23 @@ p {
 .text26_dG {
   font-size: 2rem;
   color: $color_dG;
+
+  // @include range-width(760px, 1100px) {
+  //   font-size: 1.8rem;
+  // }
 }
 
 .text26_w {
   font-size: 2rem;
+  color: white;
+
+  // @include range-width(760px, 1100px) {
+  //   font-size: 1.6rem;
+  // }
+}
+
+.f_text28_w {
+  font-size: 2.1rem;
   color: white;
 }
 
@@ -140,49 +271,14 @@ p {
 .text70_main {
   font-size: 5.3rem;
   color: $color_main;
+
+  // @include range-width(760px, 1100px) {
+  //   font-size: 4rem;
+  // }
 }
 
 
-.i_text20_main {
-  font-size: 1.5rem;
-  color: $color_main;
-  font-weight: 700;
 
-  &:after {
-    display: inline-block;
-    width: 100%;
-    content: attr(title);
-    font-size: 1.2rem;
-    color: $color_main;
-    font-weight: 400;
-    margin-top: 5px;
-  }
-}
-
-.i_text70_main {
-  font-size: 5.3rem;
-  color: $color_main;
-  font-weight: 700;
-  position: relative;
-
-  &:after {
-    display: inline-block;
-    content: attr(title);
-    font-size: 1.8rem;
-    color: $color_main;
-    margin-left: 5px;
-    position: absolute;
-    bottom: 12px;
-  }
-}
-
-.tag14 {
-  display: inline-block;
-  background-color: $color_main;
-  color: white;
-  font-size: 1rem;
-  padding: 5px 20px;
-}
 
 
 

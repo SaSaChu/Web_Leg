@@ -14,12 +14,15 @@
 .p-30-50 { padding: 2.3rem 0 3.8rem 0; }
 
 .p-60 { padding: 4.5rem; }
+@media screen and (max-width: 1099px) and (min-width: 760px) { .p-60 { padding: 1.5rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .p-60 { padding: 1.5rem 0; } }
 
 .p-L20 { padding-left: 1.5rem; }
 
 .p-R20 { padding-right: 1.5rem; }
 
 .p-R40 { padding-right: 3rem; }
+@media screen and (max-width: 1099px) and (min-width: 760px) { .p-R40 { padding-right: 2rem; } }
 
 .p-D50 { padding-bottom: 3.8rem; }
 
@@ -34,10 +37,12 @@
 .p-D40 { padding-bottom: 3rem; }
 
 .p-T100 { padding-top: 7.6rem; }
+@media screen and (max-width: 1099px) and (min-width: 760px) { .p-T100 { padding-top: 4.6rem; } }
 
 .p-T40 { padding-top: 4.5rem; }
 
 .p-T60 { padding-top: 4.5rem; }
+@media screen and (max-width: 1099px) and (min-width: 760px) { .p-T60 { padding-top: 2.5rem; } }
 
 .p-T35 { padding-top: 2.6rem; }
 
@@ -46,6 +51,8 @@
 .p-T20 { padding-top: 1.5rem; }
 
 .p-T20-c { padding-top: 1.5rem; }
+@media screen and (max-width: 1099px) and (min-width: 760px) { .p-T20-c { padding-top: 0; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .p-T20-c { padding-top: 0; } }
 
 .p-T10 { padding-top: .8rem; }
 
@@ -54,12 +61,16 @@
 .p-TD6 { padding: .5rem 0; }
 
 .p-TD30 { padding: 2.3rem 0; }
+@media screen and (max-width: 1099px) and (min-width: 760px) { .p-TD30 { padding: 1.5rem 0; } }
 
 .p-TD60 { padding: 4.5rem 0; }
+@media screen and (max-width: 1099px) and (min-width: 760px) { .p-TD60 { padding: 2.5rem 0; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .p-TD60 { padding: 1.5rem 0; } }
 
 .m-T60 { margin-top: 4.5rem; }
 
 .m-T30 { margin-top: 2.3rem; }
+@media screen and (max-width: 1099px) and (min-width: 760px) { .m-T30 { margin-top: 1.8rem; } }
 
 .m-D10 { margin-bottom: .8rem; }
 
@@ -71,3 +82,6 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .m-TD30 { margin-top: 1.6rem; } }
 
 .i-a-LD { padding: 0 9rem 9rem 0; }
+@media screen and (max-width: 1099px) and (min-width: 760px) { .i-a-LD { padding: 0 3rem 4rem 0; } }
+
+@media screen and (max-width: 1099px) and (min-width: 760px) { .mob-p-T6 { padding-top: 6px !important; } }

@@ -1,5 +1,22 @@
 @import "Ginkgo";
 
+.mob-close {
+  @include range-width(0, 1100px) {
+    display: none !important;
+  }
+}
+
+.mob-close {
+  display: none;
+
+  @include range-width(0, 760px) {
+    display: inline-block;
+  }
+}
+
+.new_height {
+  min-height: 60px;
+}
 
 .order_left {
   float: left;
@@ -10,20 +27,45 @@
 }
 
 
+
 .p-30-50 {
   padding: 2.3rem 0 3.8rem 0;
 }
 
 .p-60 {
   padding: 4.5rem;
+
+  // @include range-width(760px, 1100px) {
+  //   padding: 1.5rem;
+  // }
+
+  // @include range-width(0, 450px) {
+  //   padding: 1.5rem 0;
+  // }
+}
+
+.p-L20 {
+  padding-left: 1.5rem;
+}
+
+.p-R20 {
+  padding-right: 1.5rem;
 }
 
 .p-R40 {
   padding-right: 3rem;
+
+  // @include range-width(760px, 1100px) {
+  //   padding-right: 2rem;
+  // }
 }
 
 .p-D50 {
   padding-bottom: 3.8rem;
+}
+
+.p-D10 {
+  padding-bottom: .8rem;
 }
 
 .p-D60 {
@@ -34,16 +76,36 @@
   padding-bottom: 2.3rem;
 }
 
+.p-D20 {
+  padding-bottom: 1.5rem;
+}
+
 .p-D40 {
   padding-bottom: 3rem;
 }
 
 .p-T100 {
   padding-top: 7.6rem;
+
+  // @include range-width(760px, 1100px) {
+  //   padding-top: 4.6rem;
+  // }
+}
+
+.p-T40 {
+  padding-top: 4.5rem;
 }
 
 .p-T60 {
   padding-top: 4.5rem;
+
+  // @include range-width(760px, 1100px) {
+  //   padding-top: 2.5rem;
+  // }
+}
+
+.p-T35 {
+  padding-top: 2.6rem;
 }
 
 .p-T30 {
@@ -52,6 +114,18 @@
 
 .p-T20 {
   padding-top: 1.5rem;
+}
+
+.p-T20-c {
+  padding-top: 1.5rem;
+
+  // @include range-width(760px, 1100px) {
+  //   padding-top:0;
+  // }
+
+  // @include range-width(0, 450px) {
+  //   padding-top: 0; 
+  // }
 }
 
 .p-T10 {
@@ -68,10 +142,22 @@
 
 .p-TD30 {
   padding: 2.3rem 0;
+
+  // @include range-width(760px, 1100px) {
+  //   padding: 1.5rem 0;
+  // }
 }
 
 .p-TD60 {
   padding: 4.5rem 0;
+
+  // @include range-width(760px, 1100px) {
+  //   padding: 2.5rem 0;
+  // }
+
+  // @include range-width(0, 450px) {
+  //   padding: 1.5rem 0;
+  // }
 }
 
 
@@ -81,6 +167,14 @@
 
 .m-T30 {
   margin-top: 2.3rem;
+
+  // @include range-width(760px, 1100px) {
+  //   margin-top: 1.8rem;
+  // }
+}
+
+.m-D10 {
+  margin-bottom: .8rem;
 }
 
 .m-D60 {
@@ -91,10 +185,29 @@
   margin: 4.5rem 0;
 }
 
-.i-a-LD {
-  padding: 0 9rem 9rem 0;
+.m-TD30 {
+  margin: 2.3rem 0;
+
+  @include range-width(0, 450px) {
+    margin-top: 1.6rem;
+  }
 }
 
+.i-a-LD {
+  padding: 0 9rem 9rem 0;
+
+  // @include range-width(760px, 1100px) {
+  //   padding: 0 3rem 4rem 0;
+  // }
+}
+
+
+
+// .mob-p-T6 {
+//   @include range-width(760px, 1100px) {
+//     padding-top: 6px !important;
+//   }
+// }
 
 
 
