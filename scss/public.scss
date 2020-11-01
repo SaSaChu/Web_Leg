@@ -30,6 +30,7 @@ nav {
   }
 }
 
+
 ul {
   /* 取消ul預設的內縮及樣式 */
   margin: 0;
@@ -40,6 +41,7 @@ ul {
   &.drop-down-menu {
     display: inline-block;
     font-size: 1.2rem;
+
 
     li {
       position: relative;
@@ -64,8 +66,27 @@ ul {
       line-height: 3rem;
       @include transition(all .3s);
 
+      span.one {
+        display: inline;
+        @include transition(all .3s);
+      }
+
       @include range-width(760px, 1100px) {
         padding-left: 2rem;
+      }
+
+      &:hover span {
+        &.two {
+          display: inline;
+        }
+
+        &.one {
+          display: none;
+        }
+      }
+
+      span.two {
+        display: none;
       }
 
       &:hover {
@@ -141,17 +162,17 @@ ul {
   @include range-width(0, 450px) {
     display: inline-block;
   }
-  
+
   display: none;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   float: right;
   
   &.icon-menu {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: $color_main;
-    line-height: 30px;
+    line-height: 40px;
   }
 }
 
@@ -179,30 +200,39 @@ ul {
     left: 0;  
   }
 
-  > span, > a, > div > a, > div > div > a, > div > span {
+  > span {
     display: inline-block;
     width: 100%;
     line-height: 30px;
-    padding:10px 20px;
+    padding:10px 15px 10px 70px;
     color: white;
     text-decoration: none;
     cursor: pointer;
     @include transition(all .3s);
-    border-bottom: 1px solid rgba(226, 226, 226, 1.00);
+    // border-top: 1px solid $color_light_p;
+    border-bottom: 1px solid $color_light_p;
 
     &:hover, &:active {
-      color: black;
-      border-left: 2px solid black;
+      color: white;
+      // border-top: 1px solid $color_light_p;
+      border-bottom: 0; 
+      background-color: $color_second;
     }
+  }
 
-    &.s_menublue {
-      color: black;
-      border-left: 2px solid black;
-    }
+  > a, > div > div > a, > div > span {
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    padding:10px 15px 10px 70px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(all .3s);
+    border-bottom: 1px solid $color_light_p;
 
-    &.s_menuorange {
-      color: red;
-      border-left: 2px solid red;
+    &:hover, &:active {
+      background-color: $color_second;
     }
 
     &.th {
@@ -210,16 +240,30 @@ ul {
     }
   }
 
+  > div > a {
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    padding:10px 15px 10px 80px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(all .3s);
+
+    &:hover, &:active {
+      background-color: $color_second;
+    }
+  }
+
   > span, > a {
     font-size: 1.2rem;
-    color: yellow;
+    color: white;
 
      &.db {
-      border-bottom: 1px solid rgba(226, 226, 226, 1.00);
+      border-bottom: 1px solid $color_light_p;
 
       &:hover, &:active {
-        color: black;
-        border-left: 2px solid black;
+        background-color: $color_second;
       }
     }
 
@@ -228,8 +272,7 @@ ul {
       float: left;
       width: 30px;
       height: 30px;
-      // background-color: rgba(81, 193, 238, 1.00);
-      border: 1px solid rgba(81, 193, 238, 1.00);
+      background-color: $color_second;
       @include border-radius(15px);
       overflow: hidden;
       margin-right: 5px;
@@ -252,23 +295,42 @@ ul {
   > div > a, > div > div > a, > div > span {
     font-size: 1rem;
     @include transition(all .3s);
-    border-bottom: 1px solid rgba(226, 226, 226, 1.00);
-    color: yellow;
+    // border-bottom: 1px solid rgba(226, 226, 226, 1.00);
+    color: white;
 
     &:hover, &:active {
-      color: black;
-      border-left: 2px solid black;
+      // color: white;
+      background-color: $color_second;
     }
   }
+
   > span, > div > span {
-    color: yellow;
+    color: white;
 
     &:after {
       display: inline-block;
-      content: '\e902';
-      font-family: 'icomoon';
-      font-size: 22px;
+      content: '\e90a';
+      font-family: 'icon';
+      color: $color_second;
+      font-size: 1.6rem;
       float: right;
+    }
+
+    &.nodb {
+
+      .add {
+        display: inline-block;
+        font-size: .9rem;
+        color: white;
+
+        &:hover, &:active {
+          color: $color_second;
+        }
+      }
+
+      &:after {
+        display: none;
+      }
     }
 
     &:first-child {
@@ -285,21 +347,23 @@ ul {
 
     &.ncu {
       cursor: auto;
-      border-bottom: 1px solid rgba(226, 226, 226, 1.00);
-      padding: 10px 20px;
+      // border-bottom: 1px solid rgba(226, 226, 226, 1.00);
+      padding: 20px 15px;
       @include clearfix();
+      background-color: white;
+      border-top: 0;
 
       .icon-close {
         display: inline-block;
         cursor: pointer;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         float: right;
-        font-size: 1.3rem;
-        line-height: 30px;
+        font-size: 2.2rem;
+        line-height: 40px;
         text-decoration: none;
         text-align: right;
-        color: yellow;
+        color: $color_main;
       }
     }
    
@@ -361,6 +425,23 @@ footer {
   }
 }
 
+.border_box_T {
+  display: inline-block;
+  width: 100%;
+  max-width: 1100px;
+  padding: 60px 0;
+  border-top: 1px solid $color_line;
+  margin-bottom: 60px;
+
+  @include range-width(0, 450px) {
+    border-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+    background-color: $color_lG;
+    padding: 60px 15px;
+  }
+}
+
 .border_box {
   display: inline-block;
   width: 100%;
@@ -371,12 +452,22 @@ footer {
   &.border_noTop {
     padding: 0 0 40px 0;
   }
+
+  @include range-width(0,450px) {
+    &.m_border_noTop {
+      padding-top: 0;
+    }
+  }
 }
 
 .i-top {
   display: inline-block;
   width: 100%;
   padding: 2.3rem 0;
+
+  &.i-top-bD {
+    border-bottom: 1px solid $color_line
+  }
 
   @include range-width(0, 450px) {
     padding: 20px 0;
@@ -390,6 +481,18 @@ footer {
   background-color: red;
   margin-bottom: 60px;
   // background-color: $color_main;
+}
+
+.p_banner_boxs460 {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 60px;
+  min-height: 460px;
+  position: relative;
+
+  @include range-width(0, 450px) {
+    min-height: 267px;
+  }
 }
 
 .i_work_box {
@@ -432,7 +535,34 @@ footer {
   }
 }
 
-
+.page-n-l-fb {
+  display: inline-block;
+  width: 100%;
+  min-height: 867px;
+  background-color: $color_lG;
+}
+.page-n-l-list-box {
+  display: inline-block;
+  width: 70%;
+  text-align: left;
+}
+.page-n-l-box {
+  display: inline-block;
+  width: 100%;
+  min-height: 416px;
+  position: relative;
+  margin-bottom: 35px;
+}
+.page-n-l-s-box {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid $color_line;
+  border-bottom: 1px solid $color_line;
+  padding: 30px 0;
+}
 
 .all_boxs {
   display: inline-block;
@@ -440,6 +570,15 @@ footer {
 
   &.all_m_d60 {
     margin-bottom: 60px;
+
+    @include range-width(0, 450px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &.p-banner-cent {
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
   &.all_p60 {
@@ -457,10 +596,73 @@ footer {
   &.a-bg-red {background-color: $color_red;}
 
   &.a-bg-yellow {background-color: $color_yellow;}
+
+  @include range-width(0, 450px) {
+    &.i-icon-box40 {
+      float: left;
+      width: 40%;
+    }
+    &.i-icon-box60 {
+      float: right;
+      width: 60%;
+      padding-left: 30px;
+    }
+  }
+  
 }
 
 .boxs {
   display: inline-block;
+}
+
+.boxs2 {
+  display: inline-block;
+  width: calc(100% / 2 - 35px * 1 / 2);
+  float: left;
+  padding: 10px;
+  border: 1px solid $color_lG100;
+  min-height: 416px;
+
+  &:nth-child(2n+1) {
+    margin-right: 35px;
+  }
+
+  &:nth-child(n+3) {
+    margin-top: 35px;
+  }
+
+  @include range-width(0, 450px) {
+    width: 100%;
+
+    &:nth-child(2n+1) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n+2) {
+      margin-top: 35px;
+    }
+  }
+}
+
+.boxs2_ns {
+  display: inline-block;
+  width: calc(100% / 2);
+  float: left;
+
+  &:first-child {
+    border-right: 1px solid $color_lG100;
+  }
+
+  @include range-width(0, 450px) {
+    width: 100%;
+
+     &:first-child {
+      border-right: 0;
+      border-bottom: 1px solid $color_lG;
+      margin-bottom: 35px;
+      padding-bottom: 35px;
+     }
+  }
 }
 
 .boxs3_ns {
@@ -470,6 +672,7 @@ footer {
 
   @include range-width(0, 450px) {
     width: 100%;
+    padding: 0 15px;
   }
 }
 
@@ -580,7 +783,13 @@ footer {
 
 .box20 {width: 20%;}
 .box80 {width: 80%;}
-.box30 {width: 30%;}
+.box30 {
+  width: 30%;
+
+  &.b30-pr35 {
+    padding-right: 35px;
+  }
+}
 .box70 {width: 70%;}
 .box65 {width: 65%;}
 .box35 {width: 35%;}

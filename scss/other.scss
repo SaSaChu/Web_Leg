@@ -15,8 +15,9 @@ input {
   padding: 50px 0;
 
   @include range-width(0, 450px) {
-    width: 50%;
     float: left;
+    padding: 0 0 50px 0;
+    max-width: 140px;
   }
 }
 
@@ -44,6 +45,10 @@ input {
     font-size: 1rem;
     padding: 5px 10px;
   }
+
+  &.p_img_new {
+    min-height: 250px;
+  }
 }
 
 .i_img_s {
@@ -52,13 +57,6 @@ input {
   max-width: 350px;
   min-height: 230px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -73,6 +71,10 @@ input {
 
 .border_D_p {
   border-bottom: 1px solid $color_light_p;
+}
+
+.border_A_g {
+  border: 1px solid $color_lG100 !important;
 }
 
 .border_T {
@@ -117,6 +119,73 @@ input {
     color: $color_light_p;
   }
 }
+
+.new_serch {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 10px;
+  cursor:pointer;
+  outline: 0;
+  color: $color_dG;
+  font-size: 1.2rem;
+  font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  text-align: left;
+
+  &::placeholder {
+    color: $color_lG100;
+  }
+}
+
+
+select { 
+  display: inline-block;
+  border: 1px solid $color_line;
+  /*適應safari瀏覽器內容不跑偏*/
+  line-height: 1;
+  width: 90%;
+  /*將預設的select選擇框樣式清除*/  
+  appearance:none;  
+  -moz-appearance:none;  
+  -webkit-appearance:none;  
+  /*在選擇框的最右側中間顯示小箭頭圖片*/  
+  background: url("../img/se_arrow.png") no-repeat scroll right center transparent;
+  background-size: 46px 40px;
+  /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/  
+  padding-right: 14px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: $color_dG;
+  /*去除選中時樣式*/
+  outline: none;
+  margin-bottom: 35px;
+}
+
+
+.page {
+  display: inline-block;
+  width: 100%;
+  padding-top: 60px;
+
+  .arrow_box {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: $color_dG;
+    width: 30px;
+    height: 30px;
+    @include transition(all .3s);
+
+    &:hover, &:active {
+      color: $color_second;
+    }
+  }
+}
+
+
+
+
+
+
+
 
 
 

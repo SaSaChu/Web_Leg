@@ -15,6 +15,31 @@
 
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
+
+    <style type="text/css">
+      .menu {
+          position: relative;
+          width: 150px;
+          border: 1px solid #8B4513;
+      }
+      .menu a {
+          display: block;
+          width: 100%;
+          height: 20px;
+          line-height: 20px;
+          background-color: #CD853F;
+          color: #603000;
+          font-size: 10pt;
+          text-decoration: none;
+          text-align: center;
+      }
+      .menu a span.one, .menu a:hover span.two {display: inline;}
+      .menu a:hover span.one, .menu a span.two {display: none;}
+      .menu a:hover {
+          background-color: #FFDDBB;
+          color: #000000;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -100,6 +125,19 @@
               <a href="#">聯絡我們</a>
             </li>
           </ul>
-      </nav>
+    </nav>
+
+    <div class="menu">
+      <a href="#"><span class="one">連結1</span>
+      <span class="two">Link 1</span></a>
+      <a href="#"><span class="one">連結2</span>
+      <span class="two">Link 2</span></a>
+      <a href="#"><span class="one">連結3</span>
+      <span class="two">Link 3</span></a>
+      <a href="#"><span class="one">連結4</span>
+      <span class="two">Link 4</span></a>
+      <a href="#"><span class="one">連結5</span>
+      <span class="two">Link 5</span></a>
+    </div>
   </body>
 </html>

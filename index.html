@@ -43,16 +43,19 @@
 
         <nav>
         <ul class="drop-down-menu">
-          <li><a href="#">最新消息</a></li>
           <li>
-            <a href="#">關於我們</a>
+            <a href="news.html" onMouseOver="this.innerHTML = 'NEWS'" onMouseOut="this.innerHTML = '最新消息'">最新消息</a>
+          </li>
+
+          <li>
+            <a href="#" onMouseOver="this.innerHTML = 'ABOUT'" onMouseOut="this.innerHTML = '關於我們'">關於我們</a>
             <ul>
               <li><a href="#" class='web_menu'>理念與願景</a></li>
               <li><a href="#" class='web_menu'>專業團隊</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">工作坊介紹</a>
+            <a href="#" onMouseOver="this.innerHTML = 'COURSES'" onMouseOut="this.innerHTML = '工作坊介紹'">工作坊介紹</a>
             <ul>
               <li><a href="#" class='web_menu'>自覺力</a></li>
               <li><a href="#" class='web_menu'>飛躍力</a></li>
@@ -66,22 +69,26 @@
             </ul>
           </li>
           <li>
-            <a href="#">里程人故事</a>
+            <a href="#" onMouseOver="this.innerHTML = 'STORIES'" onMouseOut="this.innerHTML = '里程人故事'">里程人故事</a>
             <ul>
-              <li><a href="#" class='web_menu'>微人物誌</a></li>
-              <li><a href="#" class='web_menu'>學員分享</a></li>
-              <li><a href="#" class='web_menu'>社會公益</a></li>
+              <li><a href="stories.html" class='web_menu'>微人物誌</a></li>
+              <li><a href="stories.html" class='web_menu'>學員分享</a></li>
+              <li><a href="stories.html" class='web_menu'>社會公益</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">LEGACY 觀點</a>
+            <a href="#" onMouseOver="this.innerHTML = 'PERSPECTIVE'" onMouseOut="this.innerHTML = 'LEGACY 觀點'">LEGACY 觀點</a>
             <ul>
               <li><a href="#" class='web_menu'>觀點分享</a></li>
               <li><a href="#" class='web_menu'>名人堂</a></li>
             </ul>
           </li>
-          <li><a href="#">常見問題</a></li>
-          <li><a href="#">聯繫我們</a></li>
+          <li>
+            <a href="#" onMouseOver="this.innerHTML = 'FAQ'" onMouseOut="this.innerHTML = '常見問題'">常見問題</a>
+          </li>
+          <li>
+            <a href="#" onMouseOver="this.innerHTML = 'CONTACT'" onMouseOut="this.innerHTML = '聯繫我們'">聯繫我們</a>
+          </li>
         </ul>
         </nav>
       </div>
@@ -89,9 +96,17 @@
 
     <!-- 手機選單 -->
     <div id='r_menu_boxs'>
-      <span class='ncu'><i class='icon-close'></i></span>
+      <span class='ncu'>
+        <a href="index.html" class='order_left'><img class='header_logo' src="img/h_logo_tc.png" alt='Legacy台北'></a>
+        <i class='icon-close'></i>
+      </span>
 
-      <a class='db' href=''>最新消息</a>
+      <!-- <div class='db nodb'>
+        <a href="" class='add'>台北</a>
+        <a href="" class='add'>香港</a>
+      </div> -->
+
+      <a class='db' href='news.html'>最新消息</a>
 
       <span>關於我們</span>
       <div>
@@ -114,9 +129,9 @@
 
       <span>里程人故事</span>
       <div>
-        <a href="">微人物誌</a>
-        <a href="">學員分享</a>
-        <a href="">社會公益</a>
+        <a href="stories.html">微人物誌</a>
+        <a href="stories.html">學員分享</a>
+        <a href="stories.html">社會公益</a>
       </div>
 
       <span>LEGACY 觀點</span>
@@ -126,8 +141,7 @@
       </div>
 
       <a class='db' href=''>常見問題</a>
-      <a class='db' href=''>常見問題</a>
-
+      <a class='db' href=''>聯繫我們</a>
     </div>
 
 
@@ -143,10 +157,11 @@
         <p class='slogan_text'>
           LEGACY支持每一位願意擴展生命，創造卓越成果的人們，透過深度的自我醒覺</br>您將誠實而自發地探索生命中的重要課題，從而發揮個人特質</br>穿越種種束縛以獲致最中的成功，活出完整的自己。
         </p>
+        <div class='box50 mob-open'><img class='i_img_about' src="img/pic_about01.png"></div>
       </div>
 
       <!-- 區塊二 -->
-      <div class="all_boxs all_m_d60">
+      <div class="all_boxs all_m_d60 mob-close">
         <div class='box50'>
           <p class='cent_text18_rd'>LEGACY致力於協助人們關於職業、人際關係、財務、健康、家庭、生活目標和人生方向。亦或為工作、生活之間的平衡等領域尋求更好的結果發生。</p>
           <a href="" class='link_main order_left'>Read More</a>
@@ -155,23 +170,33 @@
       </div>
 
       <!-- 區塊三 -->
-      <div class='border_box'>
+      <div class='border_box m_border_noTop'>
+        <p class='i_text20_main mob-open' title="About us">關於我們</p>
+
         <div class='boxs3_ns'>
-          <p class='text24_main'>LEGACY成立</p>
-          <img class='i_mg_a_icon' src="img/pic_icon01@2x.png">
-          <p class='i_text70_main' title="點">20</p>
+          <div class='all_boxs i-icon-box60'><p class='text24_main'>LEGACY成立</p></div>
+          <div class='all_boxs i-icon-box40'><img class='i_mg_a_icon' src="img/pic_icon01@2x.png"></div>
+          <div class='all_boxs i-icon-box60'><p class='i_text70_main' title="點">20</p></div>
         </div>
         <div class='boxs3_ns'>
-          <p class='text24_main'>服務人數</p>
-          <img class='i_mg_a_icon' src="img/pic_icon02@2x.png">
-          <p class='i_text70_main' title="人">44,427</p>
-          <p class='text14_dG'>統計至2020.02止</p>
+          <div class='all_boxs i-icon-box60'><p class='text24_main'>服務人數</p></div>
+          <div class='all_boxs i-icon-box40'><img class='i_mg_a_icon' src="img/pic_icon02@2x.png"></div>
+          <div class='all_boxs i-icon-box60'><p class='i_text70_main' title="人">44,427</p></div>
+          <div class='all_boxs i-icon-box60'><p class='text14_dG'>統計至2020.02止</p></div>
         </div>
         <div class='boxs3_ns'>
-          <p class='text24_main'>影響公益議題</p>
-          <img class='i_mg_a_icon' src="img/pic_icon03@2x.png">
-          <p class='i_text70_main' title="則">624</p>
-          <p class='text14_dG'>統計至2020.02止</p>
+          <div class='all_boxs i-icon-box60'><p class='text24_main'>影響公益議題</p></div>
+          <div class='all_boxs i-icon-box40'><img class='i_mg_a_icon' src="img/pic_icon03@2x.png"></div>
+          <div class='all_boxs i-icon-box60'><p class='i_text70_main' title="則">624</p></div>
+          <div class='all_boxs i-icon-box60'><p class='text14_dG'>統計至2020.02止</p></div>
+        </div>
+
+        <!-- 區塊四・手機 -->
+        <div class="all_boxs all_m_d60 mob-open">
+          <div class='box50'>
+            <p class='cent_text18_rd'>LEGACY致力於協助人們關於職業、人際關係、財務、健康、家庭、生活目標和人生方向。亦或為工作、生活之間的平衡等領域尋求更好的結果發生。</p>
+            <a href="" class='link_main'>Read More</a>
+          </div>
         </div>
       </div>
     </div>
@@ -234,30 +259,30 @@
           <div class='boxs4 b4-bg-w'>
             <div class='i_img_new' title="中心活動與公告"><img src="img/pic_new01.png"></div>
             <p class='tag12'>最新消息 / 中心活動與公告 / 2020-06-29</p>
-            <a href="" class='link_16_main new_height text_left p-TD6'>LEGACY台北中心–7月份活動資訊與時間表。</a>
-            <a href="" class='link_news order_right'>Read More</a>
+            <a href="news_d.html" class='link_16_main new_height'>LEGACY台北中心–7月份活動資訊與時間表。</a>
+            <a href="news_d.html" class='link_news order_right'>Read More</a>
           </div>
           <div class='boxs4 b4-bg-w'>
             <div class='i_img_new' title="課程資訊"><img src="img/pic_new02.png"></div>
             <p class='tag12'>最新消息 / 中心活動與公告 / 2020-06-29</p>
-            <a href="" class='link_16_main new_height text_left p-TD6'>少年才俊夏令營台北第二屆–即將在8月22日隆重登場！ </a>
-            <a href="" class='link_news order_right'>Read More</a>
+            <a href="news_d.html" class='link_16_main new_height'>少年才俊夏令營台北第二屆–即將在8月22日隆重登場！ </a>
+            <a href="news_d.html" class='link_news order_right'>Read More</a>
           </div>
           <div class='boxs4 b4-bg-w'>
             <div class='i_img_new' title="體驗說明"><img src="img/pic_new03.png"></div>
             <p class='tag12'>最新消息 / 中心活動與公告 / 2020-06-29</p>
-            <a href="" class='link_16_main new_height text_left p-TD6'>7月份自覺力工作坊體驗說明會時間表。</a>
-            <a href="" class='link_news order_right'>Read More</a>
+            <a href="news_d.html" class='link_16_main new_height'>7月份自覺力工作坊體驗說明會時間表。</a>
+            <a href="news_d.html" class='link_news order_right'>Read More</a>
           </div>
           <div class='boxs4 b4-bg-w'>
             <div class='i_img_new' title="中心活動與公告"><img src="img/pic_new04.png"></div>
             <p class='tag12'>最新消息 / 中心活動與公告 / 2020-06-29</p>
-            <a href="" class='link_16_main new_height text_left p-TD6'>LEGACY台北中心–0701探索工作坊畢業典</a>
-            <a href="" class='link_news order_right'>Read More</a>
+            <a href="news_d.html" class='link_16_main new_height'>LEGACY台北中心–0701探索工作坊畢業典</a>
+            <a href="news_d.html" class='link_news order_right'>Read More</a>
           </div>
         </div>
 
-        <a href="" class='link_main lm-mD60'>Read More</a>
+        <a href="news.html" class='link_main lm-mD60'>Read More</a>
       </div>
     </div>
 
@@ -271,59 +296,59 @@
             <div class='i_img_s'><img src="img/pic_s01.png"></div>
             <div class='stories_t_boxs'>
               <p class='tag14 order_left'>微人物誌</p>
-              <a href="" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
+              <a href="stories_d.html" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
               <p class='text14_dG border_T text_left p-TD6'>是靈魂伴侶，也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。</p>
-              <a href="" class='link_news order_right'>Read More</a>
+              <a href="stories_d.html" class='link_news order_right'>Read More</a>
             </div>
           </div>
           <div class="boxs3">
             <div class='i_img_s'><img src="img/pic_s02.png"></div>
             <div class='stories_t_boxs'>
               <p class='tag14 order_left'>微人物誌</p>
-              <a href="" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
+              <a href="stories_d.html" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
               <p class='text14_dG border_T text_left p-TD6'>是靈魂伴侶，也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。</p>
-              <a href="" class='link_news order_right'>Read More</a>
+              <a href="stories_d.html" class='link_news order_right'>Read More</a>
             </div>
           </div>
           <div class="boxs3">
             <div class='i_img_s'><img src="img/pic_s03.png"></div>
             <div class='stories_t_boxs'>
               <p class='tag14 order_left'>微人物誌</p>
-              <a href="" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
+              <a href="stories_d.html" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
               <p class='text14_dG border_T text_left p-TD6'>是靈魂伴侶，也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。</p>
-              <a href="" class='link_news order_right'>Read More</a>
+              <a href="stories_d.html" class='link_news order_right'>Read More</a>
             </div>
           </div>
           <div class="boxs3">
             <div class='i_img_s'><img src="img/pic_s04.png"></div>
             <div class='stories_t_boxs'>
               <p class='tag14 order_left'>微人物誌</p>
-              <a href="" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
+              <a href="stories_d.html" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
               <p class='text14_dG border_T text_left p-TD6'>是靈魂伴侶，也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。</p>
-              <a href="" class='link_news order_right'>Read More</a>
+              <a href="stories_d.html" class='link_news order_right'>Read More</a>
             </div>
           </div>
           <div class="boxs3">
             <div class='i_img_s'><img src="img/pic_s05.png"></div>
             <div class='stories_t_boxs'>
               <p class='tag14 order_left'>微人物誌</p>
-              <a href="" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
+              <a href="stories_d.html" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
               <p class='text14_dG border_T text_left p-TD6'>是靈魂伴侶，也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。</p>
-              <a href="" class='link_news order_right'>Read More</a>
+              <a href="stories_d.html" class='link_news order_right'>Read More</a>
             </div>
           </div>
           <div class="boxs3">
             <div class='i_img_s'><img src="img/pic_s06.png"></div>
             <div class='stories_t_boxs'>
               <p class='tag14 order_left'>微人物誌</p>
-              <a href="" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
+              <a href="stories_d.html" class='link_16_main text_left p-TD6' title="人物誌#08：">  L204 康珈寧 & L190 呂奕緯</a>
               <p class='text14_dG border_T text_left p-TD6'>是靈魂伴侶，也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。也是生活伙伴，攜手向前行。</p>
-              <a href="" class='link_news order_right'>Read More</a>
+              <a href="stories_d.html" class='link_news order_right'>Read More</a>
             </div>
           </div>
         </div>
 
-        <a href="" class='link_main lm-mD60'>Read More</a>
+        <a href="stories.html" class='link_main lm-mD60'>Read More</a>
       </div>
     </div>
 
@@ -331,7 +356,7 @@
     <div class="main_boxs">
       <p class='slogan_title s-t-2'>若您想瞭解更多，請來參加我們的體驗說明會</p>
       <a href="" class='link_out_line'>報名當期工作坊</a>
-      <p class='slogan_text s-t-pD60'>如有任何問題，歡迎來電與我們聯繫，</br>我們很高興能為您服務。</p>
+      <p class='slogan_text s-t-pD60 m-s-t-l'>如有任何問題，歡迎來電與我們聯繫，</br>我們很高興能為您服務。</p>
     </div>
 
     <!-- 聯絡我們 -->
@@ -358,14 +383,14 @@
     <!-- footer -->
     <footer>
       <div class="main_boxs">
-        <div class="all_boxs all_p60">
+        <div class="all_boxs all_p60 mob-close">
           <div class="box65 text_left">
             <div class='boxs5'>
               <div class="all_boxs">
                 <p class='f_text16_w t_w_7'>最新消息</p>
-                <a href="" class='a_text14_w m-D10'>中心活動與公告</a>
-                <a href="" class='a_text14_w m-D10'>課程資訊</a>
-                <a href="" class='a_text14_w m-D10'>體驗說明會</a>
+                <a href="news.html" class='a_text14_w m-D10'>中心活動與公告</a>
+                <a href="news.html" class='a_text14_w m-D10'>課程資訊</a>
+                <a href="news.html" class='a_text14_w m-D10'>體驗說明會</a>
               </div>
               <div class="all_boxs p-T30">
                 <p class='f_text16_w t_w_7'>活動時間表</p>
@@ -402,9 +427,9 @@
             <div class='boxs5'>
               <div class="all_boxs">
                 <p class='f_text16_w t_w_7'>里程人故事</p>
-                <a href="" class='a_text14_w m-D10'>微人物誌</a>
-                <a href="" class='a_text14_w m-D10'>學員分享</a>
-                <a href="" class='a_text14_w m-D10'>社會公益</a>
+                <a href="stories.html" class='a_text14_w m-D10'>微人物誌</a>
+                <a href="stories.html" class='a_text14_w m-D10'>學員分享</a>
+                <a href="stories.html" class='a_text14_w m-D10'>社會公益</a>
               </div>
               <div class="all_boxs p-T30">
                 <p class='f_text16_w t_w_7'>LEGACY 觀點</p>
@@ -436,6 +461,28 @@
                 <a href="" class='link_icon l_icon_w icon-facebook'></a>
                 <a href="" class='link_icon l_icon_w icon-instagram'></a>
                 <a href="" class='link_icon l_icon_w icon-youtube'></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 手機 -->
+        <div class="all_boxs p-TD60 mob-open">
+          <div class="all_boxs">
+            <div class="all_boxs text_left">
+              <p class="f_text28_w boxs">+886 2 8770-5027</p>
+              <a href="" class='link_icon l_icon_w icon-facebook'></a>
+              <a href="" class='link_icon l_icon_w icon-instagram'></a>
+              <a href="" class='link_icon l_icon_w icon-youtube'></a>
+              <p class="text16_w">聯絡我們｜Mon.- Fri. 11：00 - 12：00 / 13：00 - 18：00</p>
+            </div>
+            <div class='all_boxs border_T m-TD30'></div>
+            <div class='all_boxs text_left'>
+              <p class='text14_lG_full l_30'>英屬維京群島商傳誠動力國際股份有限公司台灣分公司 105臺北市南京東路三段287號B1 (捷運南京復興站) </p>
+              <p class='text14_lG_full l_30 boxs p-R20'>Fax  +886 2 8770-5067 </p>
+              <a href="mailto:service.tp@legacyasia.net" class='a_text14_lG_full l_24'>service.tp@legacyasia.net</a>
+              <div class='all_boxs'>
+                <a href='' class='a_text14_lG_full'>隱私政策</a>
               </div>
             </div>
           </div>

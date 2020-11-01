@@ -37,6 +37,20 @@ button {
   &:hover, &:active {
     color: white;
   }
+
+  &.btn_search2 {
+    color: $color_main;
+    font-size: 1.8rem;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+
+    &:hover, &:active {
+      color: $color_light_p;
+    }
+  }
 }
 
 .link_main {
@@ -146,14 +160,64 @@ button {
     margin-right: 3px;
     margin-top: 2px;
   }
+
+  &.page-l-n {
+    margin-right: 10px;
+  }
 }
 
+// new page
+.link_new_list {
+  display: block;
+  font-size: 1.2rem;
+  color: $color_main;
+  @include transition(all .3s);
+  line-height: 30px;
+  
+  &:hover, &:active {
+    color: $color_second;
+  }
+
+  &.n-list-all {
+    color: $color_second;
+  }
+
+  &:after {
+    display: inline-block;
+    content: attr(title);
+    margin-left: 5px;
+  }
+}
+
+// 首頁最新消息
 .link_16_main {
   display: inline-block;
   width: 100%;
   font-size: 1.2rem;
   color: $color_main;
   @include transition(all .3s);
+  padding: 6px 0;
+  text-align: left;
+
+  &:hover, &:active {
+    color: $color_second;
+  }
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.2rem;
+    color: $color_main;
+  }
+}
+.link_20_main {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5rem;
+  color: $color_main;
+  @include transition(all .3s);
+  padding: 6px 0;
+  text-align: left;
 
   &:hover, &:active {
     color: $color_second;
@@ -175,6 +239,7 @@ button {
  border: 2px solid $color_main;
  font-size: 1.3rem;
  @include transition(all .3s);
+ background-color: white;
  
  &:hover, &:active {
   background-color: $color_second;

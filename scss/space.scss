@@ -1,14 +1,18 @@
 @import "Ginkgo";
 
 .mob-close {
+  display: inline-block  !important;
+
   @include range-width(0, 450px) {
     display: none !important;
   }
 }
 
 .mob-open {
+  display: none  !important;
+
   @include range-width(0, 450px) {
-    display: inline-block;
+    display: inline-block  !important;
   }
 }
 
@@ -44,6 +48,10 @@
 
 .p-L20 {
   padding-left: 1.5rem;
+}
+
+.p-L65 {
+  padding-left: 5rem;
 }
 
 .p-R20 {
@@ -138,6 +146,7 @@
   padding: .5rem 0;
 }
 
+// 內頁news
 .p-TD30 {
   padding: 2.3rem 0;
 
@@ -175,6 +184,7 @@
   margin-bottom: .8rem;
 }
 
+// 內頁news
 .m-D60 {
   margin-bottom: 4.5rem;
 }

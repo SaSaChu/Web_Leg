@@ -1,14 +1,16 @@
+@charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 input { border: 0 none; outline: 0; background-color: transparent; }
 
 .i_mg_a_icon { display: inline-block; width: 100%; max-width: 180px; padding: 50px 0; }
-@media screen and (max-width: 449px) and (min-width: 0) { .i_mg_a_icon { width: 50%; float: left; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_mg_a_icon { float: left; padding: 0 0 50px 0; max-width: 140px; } }
 
 .i_img_work { display: inline-block; width: 100%; max-width: 553px; }
 
 .i_img_new { display: inline-block; width: 100%; min-height: 180px; position: relative; }
 .i_img_new:before { display: inline-block; content: attr(title); position: absolute; left: 0; bottom: -11px; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 10px; }
+.i_img_new.p_img_new { min-height: 250px; }
 
 .i_img_s { display: inline-block; width: 100%; max-width: 350px; min-height: 230px; }
 
@@ -17,6 +19,8 @@ input { border: 0 none; outline: 0; background-color: transparent; }
 .border_D { border-bottom: 1px solid rgba(155, 155, 155, 0.5); }
 
 .border_D_p { border-bottom: 1px solid #866e99; }
+
+.border_A_g { border: 1px solid #d8d8d8 !important; }
 
 .border_T { border-top: 1px solid rgba(155, 155, 155, 0.5); }
 
@@ -30,3 +34,12 @@ input { border: 0 none; outline: 0; background-color: transparent; }
 
 .in_serch { display: inline-block; width: 60%; padding: 0 15px 5px 10px; cursor: pointer; outline: 0; color: white; font-size: 1.2rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 .in_serch::placeholder { color: #866e99; }
+
+.new_serch { display: inline-block; width: 100%; padding: 5px 10px; cursor: pointer; outline: 0; color: #545454; font-size: 1.2rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; text-align: left; }
+.new_serch::placeholder { color: #d8d8d8; }
+
+select { display: inline-block; border: 1px solid rgba(155, 155, 155, 0.5); /*適應safari瀏覽器內容不跑偏*/ line-height: 1; width: 90%; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 46px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; padding: 10px 20px; font-size: 1.2rem; color: #545454; /*去除選中時樣式*/ outline: none; margin-bottom: 35px; }
+
+.page { display: inline-block; width: 100%; padding-top: 60px; }
+.page .arrow_box { display: inline-block; font-size: 1.6rem; color: #545454; width: 30px; height: 30px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.page .arrow_box:hover, .page .arrow_box:active { color: #954384; }

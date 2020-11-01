@@ -1,4 +1,4 @@
-@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1604139326') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1604139326') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1604139326') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1604139326') format('svg'); }
+@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1604220792') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1604220792') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1604220792') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1604220792') format('svg'); }
 *[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
 
 .icon-triangle-up:before { content: "\e901"; }
@@ -7,7 +7,19 @@
 
 .icon-close:before { content: "\e900"; }
 
+.icon-navigate_before:before { content: "\e904"; }
+
+.icon-chevron_left:before { content: "\e904"; }
+
+.icon-navigate_next:before { content: "\e905"; }
+
+.icon-chevron_right:before { content: "\e905"; }
+
 .icon-menu:before { content: "\e902"; }
+
+.icon-first_page:before { content: "\e906"; }
+
+.icon-last_page:before { content: "\e907"; }
 
 .icon-facebook:before { content: "\ea90"; }
 

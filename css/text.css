@@ -20,11 +20,17 @@ p { padding: 0; margin: 0; }
 
 .l_24 { line-height: 1.9rem; }
 
+.page_banner_title { display: inline-block; font-size: 3rem; color: white; font-weight: 700; text-align: left; padding-left: 65px; bottom: 85px; left: 385px; position: absolute; }
+@media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title { bottom: 20px; left: 0; } }
+.page_banner_title:after { display: block; content: attr(title); font-size: 2.6rem; font-family: 'Roboto'; margin-top: 12px; font-weight: 400; }
+
 .slogan_title { display: inline-block; width: 100%; font-size: 1.8rem; color: #5b3468; }
 .slogan_title.s-t-2 { color: #954384; }
 
 .slogan_text { display: inline-block; width: 100%; font-size: 1.3rem; color: #545454; padding-top: 40px; line-height: 30px; }
 .slogan_text.s-t-pD60 { padding-bottom: 60px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .slogan_text { padding-bottom: 60px; text-align: left; }
+  .slogan_text.m-s-t-l { text-align: center; } }
 
 .cent_text18_rd { display: inline-block; width: 100%; font-size: 1.3rem; color: #545454; line-height: 30px; padding: 0 130px 130px 0; text-align: left; }
 @media screen and (max-width: 1099px) and (min-width: 760px) { .cent_text18_rd { padding: 0 60px 60px 0; } }
@@ -40,7 +46,8 @@ p { padding: 0; margin: 0; }
 
 .i_text70_main { font-size: 5.3rem; color: #5b3468; font-weight: 700; position: relative; }
 .i_text70_main:after { display: inline-block; content: attr(title); font-size: 1.8rem; color: #5b3468; margin-left: 5px; position: absolute; bottom: 12px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .i_text70_main { width: 50%; float: left; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_text70_main { float: left; font-size: 3rem; text-align: left; }
+  .i_text70_main:after { font-size: 1.2rem; } }
 
 .tag14 { display: inline-block; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 20px; }
 
@@ -55,6 +62,7 @@ p { padding: 0; margin: 0; }
 .text12_dG { font-size: .8rem; color: #545454; }
 
 .text14_dG { font-size: 1.1rem; color: #545454; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text14_dG { text-align: left; } }
 
 .text14_second { font-size: 1.1rem; color: #954384; }
 
@@ -67,6 +75,7 @@ p { padding: 0; margin: 0; }
 .text16_dG { font-size: 1.2rem; color: #545454; }
 
 .text16_w { font-size: 1.2rem; color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text16_w { font-size: 1rem; } }
 
 .text16_main { font-size: 1.2rem; color: #5b3468; }
 
@@ -83,6 +92,7 @@ p { padding: 0; margin: 0; }
 .text20_main { font-size: 1.5rem; color: #5b3468; }
 
 .text24_main { font-size: 1.8rem; color: #5b3468; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text24_main { display: inline-block; float: left; font-size: 1.6rem; } }
 
 .text26_main { font-size: 2rem; color: #5b3468; }
 

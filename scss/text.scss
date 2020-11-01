@@ -27,6 +27,36 @@ p {
 .l_24 {line-height: 1.9rem;}
 
 
+
+.page_banner_title {
+  display: inline-block;
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  text-align: left;
+  // float: left;
+  padding-left: 65px;
+  bottom: 85px;
+  left: 385px;
+  position: absolute;
+
+  @include range-width(0, 450px) {
+    bottom: 20px;
+    left: 0;
+  }
+
+  &:after {
+    display: block;
+    content: attr(title);
+    font-size: 2.6rem;
+    font-family: 'Roboto';
+    margin-top: 12px;
+    font-weight: 400;
+  }
+}
+
+
+
 .slogan_title {
   display: inline-block;
   width: 100%;
@@ -48,6 +78,15 @@ p {
 
   &.s-t-pD60 {
     padding-bottom: 60px;
+  }
+
+  @include range-width(0, 450px) {
+    padding-bottom: 60px;
+    text-align: left;
+
+    &.m-s-t-l {
+      text-align: center;
+    }
   }
 }
 
@@ -124,8 +163,13 @@ p {
   }
 
   @include range-width(0, 450px) {
-    width: 50%;
     float: left;
+    font-size: 3rem;
+    text-align: left;
+
+    &:after {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -176,10 +220,14 @@ p {
 }
 
 
-// 14pt
+// 14pt 首頁icon字用
 .text14_dG {
   font-size: 1.1rem;
   color: $color_dG;
+
+  @include range-width(0, 450px) {
+    text-align: left;
+  }
 }
 
 .text14_second {
@@ -213,9 +261,9 @@ p {
   font-size: 1.2rem;
   color: white;
 
-  // @include range-width(0, 450px) {
-  //   font-size: 1rem;
-  // }
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
 }
 
 .text16_main {
@@ -230,6 +278,7 @@ p {
 
 
 // 18pt
+// news
 .text18_dG {
   font-size: 1.3rem;
   color: $color_dG;
@@ -266,10 +315,16 @@ p {
 }
 
 
-// 24pt
+// 24pt 首頁icon字
 .text24_main {
   font-size: 1.8rem;
   color: $color_main;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+    float: left;
+    font-size: 1.6rem;
+  }
 }
 
 

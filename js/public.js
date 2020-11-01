@@ -2,7 +2,7 @@
  
 $(function() {
 
-  $(".i_img_new, .i_img_s").imgLiquid ();
+  $(".i_img_new, .i_img_s, .p_img_new, .p_banner_boxs460").imgLiquid ();
 
   $('#r_menu_boxs').each (function () {
     var $that = $(this);
