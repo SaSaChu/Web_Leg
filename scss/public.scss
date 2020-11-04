@@ -458,6 +458,20 @@ footer {
   }
 }
 
+.border_box_TD {
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid $color_line;
+  border-bottom: 1px solid $color_line;
+  padding: 60px 0 20px 0;
+  margin: 60px 0;
+
+  @include range-width(0, 450px) {
+    margin: 35px 0;
+    padding: 35px 0;
+  }
+}
+
 .border_box {
   display: inline-block;
   width: 100%;
@@ -637,6 +651,26 @@ footer {
 
   &.p-b-100 {
     width: 100%;
+  }
+
+  &.bread_mark {
+    float: left;
+
+    &:after {
+      display: inline-block;
+      content: '/';
+      font-family: "Roboto";
+      font-size: .9rem;
+      color: $color_dG;
+      line-height: 20px;
+      margin: 0 5px;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
   }
 }
 

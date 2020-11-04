@@ -22,7 +22,13 @@ p {
 
 
 // 行距
-.l_40 {line-height: 3rem;}
+.l_40 {
+  line-height: 3rem;
+  
+  @include range-width(0, 450px) {
+    line-height: 2.3rem;
+  }
+}
 .l_30 {line-height: 2.3rem;}
 .l_20 {line-height: 1.5rem;}
 .l_24 {line-height: 1.9rem;}
@@ -157,6 +163,32 @@ p {
 
   @include range-width(0, 450px) {
     margin-bottom: 40px;
+  }
+}
+
+.n_text20_main {
+  font-size: 1.5rem;
+  color: $color_main;
+  margin-bottom: 20px;
+  text-align: left;
+
+  @include range-width(0, 450px) {
+    margin-bottom: 10px;
+  }
+}
+
+.n_text20_lT {
+  font-size: 1.2rem;
+  color: $color_line_text;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 400;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.2rem;
+    color: $color_line_text;
   }
 }
 
@@ -338,6 +370,12 @@ p {
   font-size: 1.5rem;
   color: $color_main;
 }
+
+.text20_lT {
+  font-size: 1.5rem;
+  color: $color_line_text;
+}
+
 
 
 // 24pt 首頁icon字

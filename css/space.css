@@ -24,6 +24,9 @@
 
 .p-R40 { padding-right: 3rem; }
 
+.p-LR100 { padding: 0 9rem 9rem 9rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .p-LR100 { padding: 0 0 2rem 0; } }
+
 .p-D50 { padding-bottom: 3.8rem; }
 
 .p-D10 { padding-bottom: .8rem; }
@@ -70,6 +73,8 @@
 .m-D20 { margin-bottom: 1.5rem; }
 
 .m-D60 { margin-bottom: 4.5rem; }
+
+.m-D35 { margin-bottom: 2.6rem; }
 
 .m-TD60 { margin: 4.5rem 0; }
 

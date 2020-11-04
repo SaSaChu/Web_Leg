@@ -270,6 +270,39 @@ button {
  }
 }
 
+.link_arrow {
+  display: inline-block;
+  color: $color_line_text;
+  font-size: 1.4rem;
+  text-transform: none;
+  @include transition(all .3s);
+  font-weight: 300;
+  
+  &:hover, &:active {
+    color: $color_main;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '\e905';
+    font-family: icon;
+    margin-top: 2px;
+  }
+
+  &.other_mark {
+    &:after {
+      display: none;
+    }
+
+    &:before {
+      display: inline-block;
+      content: '\e904';
+      font-family: icon;
+      margin-top: 2px;
+    }
+  }
+}
+
 .pop_cover {
   cursor: pointer;
   display: inline-block;
@@ -305,6 +338,36 @@ button {
   }
 }
 
+.a_bread {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  color: $color_dG;
+  font-weight: 300;
+  text-transform: none;
+  @include transition(all .3s);
+  text-align: left;
+  
+  &:hover, &:active {
+    color: $color_second;
+  }
+}
+
+.bread_share {
+  display: inline-block;
+  color: $color_main;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 26px;
+
+  &:before {
+    display: inline-block;
+    content: '\ea90';
+    font-family: 'icon';
+    margin-top: -1px;
+    margin-right: 3px;
+  }
+}
 
 .a_text20_dG {
   display: inline-block;

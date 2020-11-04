@@ -15,6 +15,7 @@ p { padding: 0; margin: 0; }
 .t_w_9 { font-weight: 900; }
 
 .l_40 { line-height: 3rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .l_40 { line-height: 2.3rem; } }
 
 .l_30 { line-height: 2.3rem; }
 
@@ -48,6 +49,12 @@ p { padding: 0; margin: 0; }
 .i_text20_main:after { display: inline-block; width: 100%; content: attr(title); font-size: 1.2rem; color: #5b3468; font-weight: 400; margin-top: 5px; }
 .i_text20_main.h-s-T40 { padding-top: 40px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .i_text20_main { margin-bottom: 40px; } }
+
+.n_text20_main { font-size: 1.5rem; color: #5b3468; margin-bottom: 20px; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .n_text20_main { margin-bottom: 10px; } }
+
+.n_text20_lT { font-size: 1.2rem; color: #9b9b9b; text-align: left; margin-bottom: 10px; font-weight: 400; }
+.n_text20_lT:before { display: inline-block; content: attr(title); font-size: 1.2rem; color: #9b9b9b; }
 
 .i_text70_main { font-size: 5.3rem; color: #5b3468; font-weight: 700; position: relative; }
 .i_text70_main:after { display: inline-block; content: attr(title); font-size: 1.8rem; color: #5b3468; margin-left: 5px; position: absolute; bottom: 12px; }
@@ -99,6 +106,8 @@ p { padding: 0; margin: 0; }
 .text20_w { font-size: 1.5rem; color: white; }
 
 .text20_main { font-size: 1.5rem; color: #5b3468; }
+
+.text20_lT { font-size: 1.5rem; color: #9b9b9b; }
 
 .text24_main { font-size: 1.8rem; color: #5b3468; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text24_main { display: inline-block; float: left; font-size: 1.6rem; } }
