@@ -210,6 +210,28 @@ button {
     color: $color_main;
   }
 }
+
+// 內頁・故事・列表
+.link_18_main {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.3rem;
+  color: $color_main;
+  @include transition(all .3s);
+  padding: 6px 0;
+
+  &:hover, &:active {
+    color: $color_second;
+  }
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.2rem;
+    color: $color_main;
+  }
+}
+
 .link_20_main {
   display: inline-block;
   width: 100%;
