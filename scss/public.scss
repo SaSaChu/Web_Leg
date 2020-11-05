@@ -19,6 +19,8 @@ body {
   padding: 0;
   color: rgba(90, 90, 90, 1.00);
 
+  // word-spacing: 1.2rem;
+
   font-weight: 400;
   text-align: center;
   font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
@@ -194,118 +196,18 @@ ul {
   @include transition(opacity .3s, right .3s);
   text-align: left;
   padding: 0; 
-  border-right: 1px solid rgba(226, 226, 226, 1.00);
-
-  &.s_menu {
-    left: 0;  
-  }
+  // border-right: 1px solid rgba(226, 226, 226, 1.00);
 
   > span {
     display: inline-block;
     width: 100%;
     line-height: 30px;
-    padding:10px 15px 10px 70px;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    @include transition(all .3s);
-    // border-top: 1px solid $color_light_p;
-    border-bottom: 1px solid $color_light_p;
-
-    &:hover, &:active {
-      color: white;
-      // border-top: 1px solid $color_light_p;
-      border-bottom: 0; 
-      background-color: $color_second;
-    }
-  }
-
-  > a, > div > div > a, > div > span {
-    display: inline-block;
-    width: 100%;
-    line-height: 30px;
-    padding:10px 15px 10px 70px;
+    padding:20px 15px 20px 70px;
     color: white;
     text-decoration: none;
     cursor: pointer;
     @include transition(all .3s);
     border-bottom: 1px solid $color_light_p;
-
-    &:hover, &:active {
-      background-color: $color_second;
-    }
-
-    &.th {
-      padding-left: 40px;
-    }
-  }
-
-  > div > a {
-    display: inline-block;
-    width: 100%;
-    line-height: 30px;
-    padding:10px 15px 10px 80px;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    @include transition(all .3s);
-
-    &:hover, &:active {
-      background-color: $color_second;
-    }
-  }
-
-  > span, > a {
-    font-size: 1.2rem;
-    color: white;
-
-     &.db {
-      border-bottom: 1px solid $color_light_p;
-
-      &:hover, &:active {
-        background-color: $color_second;
-      }
-    }
-
-    b {
-      display: inline-block;
-      float: left;
-      width: 30px;
-      height: 30px;
-      background-color: $color_second;
-      @include border-radius(15px);
-      overflow: hidden;
-      margin-right: 5px;
-      
-      .navicon {
-        display: inline-block;
-        width: 28px;
-        height: 28px;
-        background-color: rgba(65, 184, 238, 1.00);
-        // margin: 3px;
-
-        .img {
-          width: 100%;
-          max-width: 25px;
-        }
-      }
-    }
-  }
-
-  > div > a, > div > div > a, > div > span {
-    font-size: 1rem;
-    @include transition(all .3s);
-    // border-bottom: 1px solid rgba(226, 226, 226, 1.00);
-    color: white;
-
-    &:hover, &:active {
-      // color: white;
-      background-color: $color_second;
-    }
-  }
-
-  > span, > div > span {
-    color: white;
 
     &:after {
       display: inline-block;
@@ -316,68 +218,126 @@ ul {
       float: right;
     }
 
-    &.nodb {
-
-      .add {
-        display: inline-block;
-        font-size: .9rem;
-        color: white;
-
-        &:hover, &:active {
-          color: $color_second;
-        }
-      }
-
-      &:after {
-        display: none;
-      }
-    }
-
-    &:first-child {
-      &:after {
-        display: none;
-      }
+    &:hover, &:active {
+      color: white;
+      // border-top: 1px solid $color_light_p;
+      border-bottom: 0; 
+      background-color: $color_second;
     }
   }
-  > div, > div > div {
+
+  > a {
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    padding:10px 15px 10px 70px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(all .3s);
+    // border-bottom: 1px solid $color_light_p;
+
+    &:hover, &:active {
+      background-color: $color_second;
+    }
+
+    &.th {
+      padding-left: 40px;
+    }
+  }
+
+  > span, > a {
+    font-size: 1.2rem;
+
+     &.db {
+      line-height: 30px;
+      padding:20px 15px 20px 70px;
+      border-bottom: 1px solid $color_light_p;
+    }
+  }
+
+  .ncu {
+    cursor: auto;
+    padding: 20px 15px;
+    @include clearfix();
+    background-color: white;
+    border-top: 0;
+
+    .icon-close {
+      display: inline-block;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      float: right;
+      font-size: 2.2rem;
+      line-height: 40px;
+      text-decoration: none;
+      text-align: right;
+      color: $color_main;
+    }
+  }
+  
+  .s {
+    border-bottom: 0;
+    background-color: $color_second;
+
+    &:after {
+      -moz-transform:rotate(180deg);
+      -webkit-transform:rotate(180deg);
+      -o-transform:rotate(180deg);
+      -ms-transform:rotate(180deg);
+      transform:rotate(180deg);
+      color: $color_deep_p;
+    }
+
+    + div {
+      display: block;
+    }
+  }
+
+  .t-k-online {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 20px 15px 0 70px;
+
+    > a {
+      display: inline-block;
+      
+      line-height: 30px;
+      padding:10px 15px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      float: left;
+
+      @include transition(all .3s);
+      font-size: 1rem;
+      &:after {
+        clear: both;
+      }
+      // &:hover, &:active {
+      //   background-color: $color_second;
+      // }
+    }
+     
+  }
+
+  .m-smenu {
     display: none;
-  }
 
-  > span, > div > span {
-
-    &.ncu {
-      cursor: auto;
-      // border-bottom: 1px solid rgba(226, 226, 226, 1.00);
-      padding: 20px 15px;
-      @include clearfix();
-      background-color: white;
-      border-top: 0;
-
-      .icon-close {
-        display: inline-block;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        float: right;
-        font-size: 2.2rem;
-        line-height: 40px;
-        text-decoration: none;
-        text-align: right;
-        color: $color_main;
-      }
-    }
-   
-    &.s {
-      &:after {
-        -moz-transform:rotate(180deg);
-        -webkit-transform:rotate(180deg);
-        -o-transform:rotate(180deg);
-        -ms-transform:rotate(180deg);
-        transform:rotate(180deg);
-      }
-
-      + div {
-        display: block;
+    > a {
+      display: inline-block;
+      width: 100%;
+      line-height: 30px;
+      padding:10px 15px 10px 80px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      @include transition(all .3s);
+      font-size: 1rem;
+      &:hover, &:active {
+        background-color: $color_second;
       }
     }
   }
@@ -425,6 +385,70 @@ footer {
   }
 }
 
+.a_text {
+  display: inline-block;
+  float: left;
+
+  &.mob-be-border {
+
+    &:before {
+      display: no
+    }
+
+    @include range-width(0, 450px) {
+      &:before {
+        display: inline-block;
+        content: '';
+        width: 2px;
+        height: 60px;
+        background-color: $color_line_text;
+        float: left;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.a_border_box {
+  display: inline-block;
+  width: 100%;
+  max-width: 1100px;
+  padding: 60px 0;
+  border-top: 1px solid $color_line;
+
+  &.a_noT {
+    border-top: 0;
+    padding: 0 0 60px 0;
+  }
+
+  &.a_addD {
+    padding: 0 0 100px 0;
+  }
+}
+
+.c_border_box_T {
+  display: inline-block;
+  width: 100%;
+  max-width: 1100px;
+  padding: 60px 0;
+  border-top: 1px solid $color_line;
+  margin-bottom: 60px;
+
+  &.c_nom60 {
+    margin-bottom: 0;
+  }
+
+  &.c_addPT40 {
+    padding-top: 100px;
+  }
+
+  @include range-width(0, 450px) {
+    margin-bottom: 0;
+    padding-bottom: 60px;
+    padding: 60px 0;
+  }
+}
+
 .border_box_D {
   display: inline-block;
   width: 100%;
@@ -445,9 +469,13 @@ footer {
   display: inline-block;
   width: 100%;
   max-width: 1100px;
-  padding: 60px 0;
+  padding: 100px 0;
   border-top: 1px solid $color_line;
   margin-bottom: 60px;
+
+  &.In-n-m {
+    margin-bottom: 0;
+  }
 
   @include range-width(0, 450px) {
     border-top: 0;
@@ -478,6 +506,14 @@ footer {
   padding: 50px 0;
   border-bottom: 1px solid $color_line;
   margin-bottom: 60px;
+
+  &.i-m100 {
+    margin-bottom: 100px;
+
+    @include range-width(0, 450px) {
+      margin-bottom: 60px;
+    }
+  }
 
   &.border_noTop {
     padding: 0 0 40px 0;
@@ -511,6 +547,44 @@ footer {
   background-color: red;
   margin-bottom: 60px;
   // background-color: $color_main;
+}
+
+.p_banner_boxs2 {
+  display: inline-block;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin-bottom: 60px;
+
+  .pc-banner-cent {
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+
+    .pc-cent-detail {
+      display: inline-block;
+      width: 100%;
+      max-width: 1265px;
+      margin: 0 auto;
+      // height: 600px;
+    }
+  }
+
+  .pc-banner-bg {
+    display: inline-block;
+    width: 100%;
+    height: 460px;
+    margin: 70px 0;
+
+    &.p-bg-lg { background-color: $color_lG;}
+    &.p-bg-main {background-color: $color_main;}
+    &.p-bg-deep-p {background-color: $color_deep_p;}
+    &.p-bg-blue {background-color: $color_blue;}
+    &.p-bg-red {background-color: $color_red;}
+    &.p-bg-yellow {background-color: $color_yellow;}
+  }
+
 }
 
 .p_banner_boxs460 {
@@ -553,6 +627,72 @@ footer {
   display: inline-block;
 }
 
+.page_cent_boxs {
+  display: inline-block;
+  width: 100%;
+  height: 360px;
+
+  &.bg-img-blue {
+    background: url(../img/p_insight_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.bg-img-red {
+    background: url(../img/p_power_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.bg-img-yellow {
+    background: url(../img/p_legacy_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.p_table_box {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid white;
+  padding: 20px 0;
+  font-size: 22px;
+  color: white;
+  // font-weight: 700;
+  text-align: left;
+
+  &.p-t-thin {
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  @include range-width(0, 450px) {
+    text-align: center;
+  }
+}
+
+.p_note_boxs {
+  display: block;
+  width: 100%;
+  max-width: 865px;
+  background-color: rgba(149, 67, 132, .3);
+  padding: 60px 0;
+  font-size: 16px;
+  color: $color_dG;
+  margin: 0 auto;
+  margin-bottom: 115px;
+  font-weight: 300;
+
+  @include range-width(0, 450px) {
+    max-width: 100%;
+    padding: 40px 15px;
+  }
+}
+
+.run_pic_boxs {
+  display: inline-block;
+  width: 100%;
+  background: $color_lG;
+  padding-bottom: 120px;
+  margin-bottom: 115px; 
+}
 
 
 // 通用box
@@ -568,6 +708,19 @@ footer {
 
   @include range-width(0, 760px) {
     padding: 0 15px;
+  }
+
+  &.main_table_boxs {
+    max-width: 750px;
+    padding: 45px 0;
+
+    @include range-width(760px, 1100px) {
+      padding: 0 20px;
+    }
+
+    @include range-width(0, 760px) {
+      padding: 0 15px;
+    }
   }
 }
 
@@ -604,6 +757,21 @@ footer {
   display: inline-block;
   width: 100%;
 
+  &.a-bg-lg { background-color: $color_lG;}
+  &.a-bg-main {background-color: $color_main;}
+  &.a-bg-deep-p {background-color: $color_deep_p;}
+  &.a-bg-blue {background-color: $color_blue;}
+  &.a-bg-red {background-color: $color_red;}
+  &.a-bg-yellow {background-color: $color_yellow;}
+
+  &.a_people {
+    max-width: 950px;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
+
   &.all_m_d60 {
     margin-bottom: 60px;
 
@@ -615,18 +783,6 @@ footer {
   &.all_p60 {
     padding: 60px 0;
   }
-
-  &.a-bg-lg { background-color: $color_lG;}
-
-  &.a-bg-main {background-color: $color_main;}
-
-  &.a-bg-deep-p {background-color: $color_deep_p;}
-
-  &.a-bg-blue {background-color: $color_blue;}
-
-  &.a-bg-red {background-color: $color_red;}
-
-  &.a-bg-yellow {background-color: $color_yellow;}
 
   @include range-width(0, 450px) {
     &.i-icon-box40 {
@@ -681,6 +837,10 @@ footer {
   padding: 10px;
   border: 1px solid $color_lG100;
   min-height: 416px;
+
+  &.n-h-b {
+    border: 0;
+  }
 
   &:nth-child(2n+1) {
     margin-right: 35px;
@@ -836,7 +996,7 @@ footer {
   float: left;
 }
 
-.box20, .box80, .box30, .box70, .box50, .box65, .box35 {
+.box20, .box80, .box30, .box70, .box50, .box65, .box35, .box60, .box40 {
   display: inline-block;
   float: left;
 }
@@ -853,6 +1013,8 @@ footer {
 .box70 {width: 70%;}
 .box65 {width: 65%;}
 .box35 {width: 35%;}
+.box60 {width: 60%;}
+.box40 {width: 40%;}
 .box50 {
   width: 50%; 
   position: relative; 
@@ -870,7 +1032,7 @@ footer {
 
 
 @include range-width(0, 450px) {
-  .box20, .box80, .box30, .box70, .box50, .box65, .box35 {
+  .box20, .box80, .box30, .box70, .box50, .box65, .box35, .box60, .box40 {
     width: 100%;
   }
 }

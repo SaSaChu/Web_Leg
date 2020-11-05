@@ -7,6 +7,10 @@ input {
   background-color: transparent;
 }
 
+.img_common {
+  display: inline-block;
+  width: 100%;
+}
 
 .i_mg_a_icon {
   display: inline-block;
@@ -56,6 +60,32 @@ input {
   width: 100%;
   max-width: 350px;
   min-height: 230px;
+}
+
+.p_img_s {
+  display: inline-block;
+  width: 100%;
+  max-width: 513px;
+  height: 290px;
+
+  @include range-width(0, 450px) {
+    height: 183px;
+  }
+}
+
+.p_i_h360 {
+  display: inline-block;
+  width: 100%;
+  height: 360px;
+}
+
+.img_about_pic {
+  display: inline-block;
+  width: 100%;
+  max-width: 345px;
+  height: 370px;
+  float: left;
+  margin-bottom: 30px;
 }
 
 
@@ -113,6 +143,17 @@ input {
   }
 }
 
+.img_legacy {
+  display: inline-block;
+  width: 100%;
+  max-width: 915px;
+  margin: 100px 0 40px 0;
+
+  @include range-width(0, 450px) {
+    margin-top: 0;
+  }
+}
+
 .embed-container { 
   position: relative; 
   padding-bottom: 56.25%; 
@@ -120,6 +161,10 @@ input {
   overflow: hidden; 
   max-width: 100%;
   margin: 60px 0;
+
+  &.member_share {
+    margin: 0 0 20px 0;
+  }
 
   iframe, object, embed {
     position: absolute;

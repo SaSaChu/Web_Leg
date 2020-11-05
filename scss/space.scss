@@ -74,6 +74,14 @@
   }
 }
 
+.p-LR100-2 {
+  padding: 0 9rem;
+
+  @include range-width(0, 450px) {
+    padding: 0 0 2rem 0;
+  }
+}
+
 .p-D50 {
   padding-bottom: 3.8rem;
 }
@@ -96,6 +104,11 @@
 
 .p-D40 {
   padding-bottom: 3rem;
+}
+
+// 自制力
+.p-D100 {
+  padding-bottom: 7.6rem;
 }
 
 .p-T100 {
@@ -205,6 +218,15 @@
   margin-bottom: 2.6rem;
 }
 
+// 自制力
+.m-TD100 {
+  margin-top: 7.6rem;
+  margin-bottom: 7.6rem;
+
+  @include range-width(0, 450px) {
+    margin-top: 0;
+  }
+}
 
 .m-TD60 {
   margin: 4.5rem 0;

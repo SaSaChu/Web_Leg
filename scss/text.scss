@@ -39,13 +39,42 @@ p {
   display: inline-block;
   font-size: 3rem;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   padding-left: 65px;
   float: left;
   text-align: left;
   position: absolute;
   bottom: 50px;
   left: 0;
+
+  @include range-width(0, 450px) {
+    font-size: 3rem;
+    bottom: 30px;
+    padding-left: 30px;
+  }
+
+  &:after {
+    display: block;
+    content: attr(title);
+    font-size: 2.6rem;
+    font-family: 'Roboto';
+    margin-top: 5px;
+    font-weight: 400;
+
+    @include range-width(0, 450px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.page_banner_title2 {
+  display: inline-block;
+  font-size: 3rem;
+  color: white;
+  font-weight: 400;
+  float: left;
+  text-align: left;
+  padding-top: 250px;
 
   @include range-width(0, 450px) {
     font-size: 3rem;
@@ -82,6 +111,10 @@ p {
   @include range-width(0, 450px) {
     font-size: 1.6rem;
   }
+
+  &.c_s_blue {color: $color_blue;}
+  &.c_s_red {color: $color_red;}
+  &.c_s_yellow {color: $color_yellow;}
 }
 
 .slogan_text {
@@ -141,6 +174,7 @@ p {
   line-height: 30px;
 }
 
+
 .i_text20_main {
   font-size: 1.5rem;
   color: $color_main;
@@ -155,6 +189,14 @@ p {
     color: $color_main;
     font-weight: 400;
     margin-top: 5px;
+  }
+
+  &.h-m-T100 {
+    margin-top: 100px;
+
+    @include range-width(0, 450px) {
+      margin-top: 50px;
+    }
   }
 
   &.h-s-T40 {
@@ -177,12 +219,82 @@ p {
   }
 }
 
-.n_text20_lT {
+
+.a_text16_dG {
+  display: inline-block;
+  width: 100%;
   font-size: 1.2rem;
+  color: $color_dG;
+  float: left;
+
+   @include range-width(0, 450px) {
+    width: 90%
+  }
+}
+
+
+.a_text20_main {
+  width: 100%;
+  font-size: 1.5rem;
+  color: $color_main;
+  margin-bottom: 10px;
+  float: left;
+
+  &.a_p_intro {
+    padding: 100px 0;
+  }
+
+  @include range-width(0, 450px) {
+    margin-bottom: 5px;
+    width: 90%;
+
+    &.a_add_right {
+      width: 100% !important;
+      text-align: right !important;
+      padding: 50px 0 !important;
+    }
+  }
+}
+
+.a_text16_lT {
+  font-size: 1.2rem;
+  color: $color_dG;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 300;
+  line-height: 2.4rem;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.2rem;
+    color: $color_line_text;
+  }
+}
+
+.n_text14_lT {
+  font-size: 1.1rem;
+  color: $color_dG;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 300;
+  line-height: 2.4rem;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.2rem;
+    color: $color_line_text;
+  }
+}
+
+.n_text20_lT {
+  font-size: 1.3rem;
   color: $color_line_text;
   text-align: left;
   margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 2.4rem;
 
   &:before {
     display: inline-block;
@@ -369,6 +481,8 @@ p {
 .text20_main {
   font-size: 1.5rem;
   color: $color_main;
+
+  &.c_text20_blue {color: $color_blue;}
 }
 
 .text20_lT {
@@ -386,6 +500,17 @@ p {
   @include range-width(0, 450px) {
     display: inline-block;
     float: left;
+    font-size: 1.6rem;
+  }
+}
+
+// 自決力 表單
+.text24_white {
+  font-size: 1.8rem;
+  color: white;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
     font-size: 1.6rem;
   }
 }
