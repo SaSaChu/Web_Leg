@@ -248,3 +248,8 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .a_text14_w { display: inline-block; width: 100%; font-size: 1.1rem; color: white; text-decoration: none; cursor: pointer; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .a_text14_w:hover, .a_text14_w:active { color: #954384; }
+
+.btn-class { display: inline-block; width: calc(100% / 10 - 12px * 9 / 9); float: left; margin-right: 12px; height: 50px; line-height: 43px; color: white; font-size: 1.2rem; padding: 5px; background-color: #954384; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn-class:last-child { margin-right: 0; }
+.btn-class.class-no-l { line-height: normal; padding: 1px 5px; }
+.btn-class:hover, .btn-class:active, .btn-class.btn-c-a { background-color: white; color: #5b3468; }

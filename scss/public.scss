@@ -383,6 +383,14 @@ footer {
   @include range-width(0, 760px) {
     padding: 0 15px;
   }
+
+  &.t-b-b {
+    border-bottom: 1px solid $color_line;
+  }
+
+  &.pb120 {
+    padding-bottom: 120px;
+  }
 }
 
 .a_text {
@@ -782,6 +790,10 @@ footer {
 
   &.all_p60 {
     padding: 60px 0;
+  }
+
+  &.all_pt60 {
+    padding: 60px 0 0 0;
   }
 
   @include range-width(0, 450px) {

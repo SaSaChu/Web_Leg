@@ -488,7 +488,33 @@ button {
   }
 }
 
+.btn-class {
+  display: inline-block;
+  width: calc(100% / 10 - 12px * 9 / 9);
+  float: left;
+  margin-right: 12px;
+  height: 50px;
+  line-height: 43px;
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px;
+  background-color: $color_second;
+  @include transition(all .3s);
 
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.class-no-l {
+    line-height: normal;
+    padding: 1px 5px;
+  }
+  
+  &:hover, &:active, &.btn-c-a {
+    background-color: white;
+    color: $color_main;
+  }
+}
 
 
 

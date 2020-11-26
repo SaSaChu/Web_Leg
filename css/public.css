@@ -250,6 +250,11 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .a_text14_w { display: inline-block; width: 100%; font-size: 1.1rem; color: white; text-decoration: none; cursor: pointer; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .a_text14_w:hover, .a_text14_w:active { color: #954384; }
 
+.btn-class { display: inline-block; width: calc(100% / 10 - 12px * 9 / 9); float: left; margin-right: 12px; height: 50px; line-height: 43px; color: white; font-size: 1.2rem; padding: 5px; background-color: #954384; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn-class:last-child { margin-right: 0; }
+.btn-class.class-no-l { line-height: normal; padding: 1px 5px; }
+.btn-class:hover, .btn-class:active, .btn-class.btn-c-a { background-color: white; color: #5b3468; }
+
 .mob-close { display: inline-block  !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .mob-close { display: none !important; } }
 
@@ -481,6 +486,8 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .main_boxs { display: inline-block; width: 100%; max-width: 1100px; }
 @media screen and (max-width: 1099px) and (min-width: 760px) { .main_boxs { padding: 0 20px; } }
 @media screen and (max-width: 759px) and (min-width: 0) { .main_boxs { padding: 0 15px; } }
+.main_boxs.t-b-b { border-bottom: 1px solid rgba(155, 155, 155, 0.5); }
+.main_boxs.pb120 { padding-bottom: 120px; }
 
 .a_text { display: inline-block; float: left; }
 .a_text.mob-be-border:before { display: no; }
@@ -581,6 +588,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .all_boxs.all_m_d60 { margin-bottom: 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .all_boxs.all_m_d60 { margin-bottom: 30px; } }
 .all_boxs.all_p60 { padding: 60px 0; }
+.all_boxs.all_pt60 { padding: 60px 0 0 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .all_boxs.i-icon-box40 { float: left; width: 40%; }
   .all_boxs.i-icon-box60 { float: right; width: 60%; padding-left: 30px; } }
 
