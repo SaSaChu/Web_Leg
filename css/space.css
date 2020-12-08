@@ -12,6 +12,8 @@
 
 .order_right { float: right; }
 
+.ds { display: inline-block; }
+
 .p-30-50 { padding: 2.3rem 0 3.8rem 0; }
 
 .p-60 { padding: 4.5rem; }
@@ -45,6 +47,7 @@
 .p-D100 { padding-bottom: 7.6rem; }
 
 .p-T100 { padding-top: 7.6rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .p-T100 { padding-top: 4.6rem; } }
 
 .p-T40 { padding-top: 4.5rem; }
 

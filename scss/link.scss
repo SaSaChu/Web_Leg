@@ -338,6 +338,23 @@ button {
  }
 }
 
+.t_link_out_line {
+ display: inline-block;
+ padding: .7rem 2rem;
+ margin-top: 40px;
+ color: white;
+ border: 2px solid $color_second;
+ font-size: 1.3rem;
+ @include transition(all .3s);
+ background-color: transparent;
+ 
+ &:hover, &:active {
+  background-color: $color_second;
+  color: white;
+  border: 2px solid $color_second;
+ }
+}
+
 .link_arrow {
   display: inline-block;
   color: $color_line_text;
@@ -488,34 +505,18 @@ button {
   }
 }
 
-.btn-class {
+
+.link18_o {
   display: inline-block;
-  width: calc(100% / 10 - 12px * 9 / 9);
-  float: left;
-  margin-right: 12px;
-  height: 50px;
-  line-height: 43px;
-  color: white;
-  font-size: 1.2rem;
-  padding: 5px;
-  background-color: $color_second;
+  font-size: 1.3rem;
+  color: rgba(245, 166, 35, 1.00);
+  text-decoration: none;
   @include transition(all .3s);
 
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &.class-no-l {
-    line-height: normal;
-    padding: 1px 5px;
-  }
-  
-  &:hover, &:active, &.btn-c-a {
-    background-color: white;
-    color: $color_main;
+  &:hover {
+    text-decoration: underline;
   }
 }
-
 
 
 

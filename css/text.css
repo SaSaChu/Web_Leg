@@ -151,3 +151,23 @@ p { padding: 0; margin: 0; }
 .text30_w { font-size: 2.3rem; color: white; }
 
 .text70_main { font-size: 5.3rem; color: #5b3468; }
+
+.table_title { display: inline-block; width: 100%; max-width: 915px; font-size: 2rem; color: white; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_title { max-width: none; } }
+
+.table_text16 { display: inline-block; font-size: 1.2rem; color: white; line-height: 50px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_text16 { font-size: 1.15rem; line-height: 20px; padding-top: 3px; } }
+
+.table_text26 { display: inline-block; font-size: 2rem; color: white; padding-top: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_text26 { font-size: 1.8rem; } }
+.table_text26:before { display: inline-block; padding-top: 10px; line-height: normal; content: attr(title); font-size: 1.1rem; color: white; margin-top: -5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_text26:before { font-size: 1rem; } }
+
+.table_text14 { display: inline-block; width: 100%; font-size: 1.1rem; color: white; line-height: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_text14 { display: none; } }
+.table_text14:before { display: inline-block; width: 100%; padding-top: 10px; line-height: normal; content: attr(title); font-size: 1.1rem; color: white; }
+
+.table_text14_m { display: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_text14_m { display: inline-block; width: 100%; font-size: 1rem; color: white; line-height: 20px; } }
+
+.table_se { display: inline-block; width: 100%; padding-top: 35px; font-size: 1.5rem; color: #d8d8d8; }

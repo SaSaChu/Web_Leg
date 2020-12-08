@@ -2,6 +2,17 @@
  
 $(function() {
 
+  // table點選切換tab
+  $('.ba').click(function() {
+    $('.ba').removeClass ('h');
+    $(this).addClass ('h');
+
+    $('.partnersbox').removeClass('partnershow');
+    $('.partnersbox').eq($(this).index()).addClass('partnershow');
+   });
+
+   $('.ba').eq (0).click();
+
   // 圖片縮放
   $(".i_img_new, .i_img_s, .p_img_new, .p_banner_boxs460, .p_img_s, .p_i_h360, .img_about_pic").imgLiquid ();
 
@@ -54,3 +65,5 @@ $(function() {
   });
 
 });
+
+

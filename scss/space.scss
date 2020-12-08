@@ -28,6 +28,9 @@
   float: right;
 }
 
+.ds {
+  display: inline-block;
+}
 
 
 .p-30-50 {
@@ -111,12 +114,13 @@
   padding-bottom: 7.6rem;
 }
 
+// table
 .p-T100 {
   padding-top: 7.6rem;
 
-  // @include range-width(760px, 1100px) {
-  //   padding-top: 4.6rem;
-  // }
+  @include range-width(0, 450px) {
+    padding-top: 4.6rem;
+  }
 }
 
 .p-T40 {
