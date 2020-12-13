@@ -170,7 +170,11 @@ p { padding: 0; margin: 0; }
 .table_text14_m { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text14_m { display: inline-block; width: 100%; font-size: 1rem; color: white; line-height: 20px; } }
 
-.table_se { display: inline-block; width: 100%; padding-top: 35px; font-size: 1.5rem; color: #d8d8d8; }
+.table_se { display: inline-block; width: 100%; max-width: 915px; padding-top: 24px; font-size: 1.5rem; color: #d8d8d8; text-align: left; }
+
+.t_in_name { display: inline-block; font-size: 1.23rem; color: white; font-weight: 400; text-align: left; float: left; }
+
+.t_in_day { display: inline-block; width: 100%; color: white; font-size: 2rem; padding: 10px 0; text-align: left; }
 
 a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
 

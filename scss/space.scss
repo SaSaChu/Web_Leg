@@ -32,6 +32,9 @@
   display: inline-block;
 }
 
+.db {
+  display: block;
+}
 
 .p-30-50 {
   padding: 2.3rem 0 3.8rem 0;
@@ -192,7 +195,7 @@
 
 
 .m-T60 {
-  margin-top: 4.5rem;
+  margin-top: 4.5rem !important;
 }
 
 .m-T30 {
@@ -244,6 +247,7 @@
   }
 }
 
+
 // 故事列表頁，引言
 .m-TD80 {
   margin: 6rem 0;
@@ -260,6 +264,7 @@
   //   padding: 0 3rem 4rem 0;
   // }
 }
+
 
 
 

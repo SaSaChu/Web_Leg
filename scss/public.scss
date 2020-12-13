@@ -1195,6 +1195,54 @@ footer {
 }
 
 
+.t_text_boxs {
+  display: inline-block;
+  width: 100%;
+  max-width: 915px;
+  margin-top: 60px;
+  border-top: 1px solid $color_second;
+
+  .t_text_box50, .t_text_box {
+    display: inline-block;
+    float: left;
+    border-bottom: 1px solid $color_line;
+
+    &.t_text_nb {
+      border-bottom: 0;
+    }
+  }
+
+  .t_text_box {
+    width: 100%;
+  }
+
+  .t_text_box50 {
+    width: calc(50% - 35px / 2);
+    margin-right: 35px;
+    margin-top: 17px;
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+
+    &.db {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,7 +1,12 @@
 @charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-input { border: 0 none; outline: 0; background-color: transparent; }
+input, textarea { border: 0 none; outline: 0; background-color: transparent; }
+
+.table_input { display: inline-block; width: 100%; color: white; font-size: 1.5rem; padding: 10px 0; }
+.table_input::placeholder { color: #866e99; }
+
+.table_note { display: inline-block; width: 100%; background-color: #866e99; border: 1px solid rgba(155, 155, 155, 0.5); margin: 10px 0; padding: 10px; color: white; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
 .img_common { display: inline-block; width: 100%; }
 

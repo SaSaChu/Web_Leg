@@ -1,10 +1,34 @@
 @import "Ginkgo";
 @import "color";
 
-input {
+input, textarea {
   border:0 none;
   outline: 0;
   background-color: transparent;
+}
+
+.table_input {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 0;
+
+  &::placeholder {
+    color: $color_light_p;
+  }
+}
+
+.table_note {
+  display: inline-block;
+  width: 100%;
+  background-color: $color_light_p;
+  border: 1px solid $color_line; 
+  margin: 10px 0;
+  padding: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 }
 
 .img_common {
