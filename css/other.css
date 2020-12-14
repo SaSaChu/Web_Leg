@@ -88,3 +88,14 @@ label { padding: 0; cursor: pointer; }
 input[type=checkbox] { display: none; }
 input[type=checkbox] + span { display: inline-block; padding-left: 26px; line-height: 25px; background: url(../img/cbx-off.svg) no-repeat; user-select: none; text-indent: -9999px; }
 input[type=checkbox]:checked + span { background: url(../img/cbx-on.svg) no-repeat; }
+
+.radio-group { width: 60px; display: inline-block; margin-bottom: 30px; margin-right: 15px; float: left; }
+
+.radio-input { visibility: hidden; /* 把原本的input藏起來 */ }
+
+.radio-label { font-size: 1.6rem; cursor: pointer; position: relative; padding-left: 3rem; float: left; margin-top: 10px; }
+
+.radio-button { /* 自定義樣式的span */ height: 40px; width: 60px; border: 1px solid #954384; display: inline-block; position: absolute; left: 0; top: 0; font-size: 1.2rem; color: white; line-height: 40px; }
+.radio-button:after { /* 中間點點 */ content: attr(title); display: block; height: 40px; width: 60px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; opacity: 0; transition: opacity 0.2s; color: #954384; font-size: 1.2rem; line-height: 40px; }
+
+.radio-input:checked ~ .radio-label .radio-button::after { /* 選中radio時 才顯示中間點點 */ opacity: 1; }

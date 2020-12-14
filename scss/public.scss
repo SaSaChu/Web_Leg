@@ -1206,6 +1206,7 @@ footer {
     display: inline-block;
     float: left;
     border-bottom: 1px solid $color_line;
+    margin-top: 17px;
 
     &.t_text_nb {
       border-bottom: 0;
@@ -1219,7 +1220,11 @@ footer {
   .t_text_box50 {
     width: calc(50% - 35px / 2);
     margin-right: 35px;
-    margin-top: 17px;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+      margin-right: 0;
+    }
 
     &:nth-child(2n+2) {
       margin-right: 0;
@@ -1230,8 +1235,18 @@ footer {
       margin-right: 0;
     }
   }
-} 
+}
 
+
+.table_boxs7 {
+  display: inline-block;
+  width: calc(100% / 7);
+  float: left;
+
+  // d
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0.2);
+}
 
 
 

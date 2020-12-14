@@ -518,6 +518,24 @@ button {
   }
 }
 
+.table_step {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+  color: $color_line_text;
+  
+  @include border-radius(25px);
+
+  &:after {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 25px;
+    @include border-radius(25px);
+    background-color: $color_line_text;
+    margin: 0 atuo;
+  }
+}
 
 
 
