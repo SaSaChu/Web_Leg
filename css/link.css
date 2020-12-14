@@ -172,9 +172,13 @@ p { padding: 0; margin: 0; }
 
 .table_se { display: inline-block; width: 100%; max-width: 915px; padding-top: 24px; font-size: 1.5rem; color: #d8d8d8; text-align: left; }
 
-.t_in_name { display: inline-block; font-size: 1.23rem; color: white; font-weight: 400; text-align: left; float: left; }
+.t_in_name { display: inline-block; font-size: 1.23rem; color: white; font-weight: 400; text-align: left; float: left; line-height: 25px; }
 
 .t_in_day { display: inline-block; width: 100%; color: white; font-size: 2rem; padding: 10px 0; text-align: left; }
+
+.m-step-type { display: inline-block; font-size: 1.8rem; color: #5b3468; margin-top: 25px; }
+
+.t-parent { display: inline-block; width: 100%; color: #f7af27; font-size: 1.5rem; text-align: left; margin-top: 10px; }
 
 a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
 
@@ -278,6 +282,3 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .link18_o { display: inline-block; font-size: 1.3rem; color: #f5a623; text-decoration: none; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .link18_o:hover { text-decoration: underline; }
-
-.table_step { display: inline-block; width: 100%; font-size: 1.2rem; color: #9b9b9b; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; }
-.table_step:after { display: block; content: ''; width: 25px; height: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; background-color: #9b9b9b; margin: 0 atuo; }

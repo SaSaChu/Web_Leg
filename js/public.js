@@ -13,6 +13,17 @@ $(function() {
 
    $('.ba').eq (0).click();
 
+   // table點選切換tab(2)
+  // $('.table_step').click(function() {
+  //   $('.table_step').removeClass ('t-s');
+  //   $(this).addClass ('t-s');
+
+  //   $('.stepbox').removeClass('stepshow');
+  //   $('.stepbox').eq($(this).index()).addClass('stepshow');
+  //  });
+
+   $('.table_step').eq (0).click();
+
   // 圖片縮放
   $(".i_img_new, .i_img_s, .p_img_new, .p_banner_boxs460, .p_img_s, .p_i_h360, .img_about_pic").imgLiquid ();
 

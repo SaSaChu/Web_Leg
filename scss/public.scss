@@ -1051,7 +1051,7 @@ footer {
 
 
 
-// table 按鈕
+// table 按鈕(1)
 .buttombox {
     display: inline-block;
     width: 100%;
@@ -1107,7 +1107,6 @@ footer {
     }
   }
 
-// table cent
 .centbox {
   display: inline-block;
   width: 100%;
@@ -1193,6 +1192,91 @@ footer {
     }
   }
 }
+// table 按鈕(1) end
+
+// table_填表單 按鈕(2)
+.table_step {
+  display: inline-block;
+  width: calc(100% / 7);
+  float: left;
+  font-size: 1.2rem;
+  color: $color_line_text;
+  @include border-radius(25px);
+  @include transition(all .3s);
+  position: relative;
+  height: 49px;
+
+  @include range-width(0, 450px) {
+    text-indent:-9999px;
+
+    &:nth-child(4), &:nth-child(5) {
+      margin-top: 0 !important;
+      text-indent:-9999px !important;
+    }
+  }
+
+  &:nth-child(4), &:nth-child(5) {
+    margin-top: -22px;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 25px;
+    @include border-radius(25px);
+    background-color: $color_line_text;
+    position: absolute;
+    left: calc(50% - 13px);
+    margin-top: 10px;
+  }
+
+  &:hover {
+    color: $color_main;
+
+    &:after {
+      background-color: $color_main;
+    }
+  }
+
+  &.t-s {
+    color: $color_main;
+
+    &:after {
+      background-color: $color_main;
+    }
+  }
+}
+
+.m-t7 {
+  display: inline-block;
+  width: calc(100% / 7);
+  float: left;
+}
+.m-table_step {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  @include border-radius(15px);
+  background-color: $color_line_text;
+
+  &.m-t-s {
+    background-color: $color_main;
+  }
+}
+
+// .stepbox {
+//     display: inline-block;
+//     width: 100%;
+
+//     // 控制按鈕分頁，設定預設值是沒有顯示
+//     display: none;
+
+//     &.stepshow {
+//       display: inline-block;
+//     }
+// }
+// table_填表單 按鈕(2) end
 
 
 .t_text_boxs {
@@ -1237,16 +1321,6 @@ footer {
   }
 }
 
-
-.table_boxs7 {
-  display: inline-block;
-  width: calc(100% / 7);
-  float: left;
-
-  // d
-  height: 30px;
-  background-color: rgba(255, 0, 0, 0.2);
-}
 
 
 

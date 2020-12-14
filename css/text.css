@@ -172,6 +172,10 @@ p { padding: 0; margin: 0; }
 
 .table_se { display: inline-block; width: 100%; max-width: 915px; padding-top: 24px; font-size: 1.5rem; color: #d8d8d8; text-align: left; }
 
-.t_in_name { display: inline-block; font-size: 1.23rem; color: white; font-weight: 400; text-align: left; float: left; }
+.t_in_name { display: inline-block; font-size: 1.23rem; color: white; font-weight: 400; text-align: left; float: left; line-height: 25px; }
 
 .t_in_day { display: inline-block; width: 100%; color: white; font-size: 2rem; padding: 10px 0; text-align: left; }
+
+.m-step-type { display: inline-block; font-size: 1.8rem; color: #5b3468; margin-top: 25px; }
+
+.t-parent { display: inline-block; width: 100%; color: #f7af27; font-size: 1.5rem; text-align: left; margin-top: 10px; }

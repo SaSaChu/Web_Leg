@@ -671,6 +671,7 @@ p {
   font-weight: 400;
   text-align: left;
   float: left;
+  line-height: 25px;
 }
 
 .t_in_day {
@@ -682,7 +683,21 @@ p {
   text-align: left;
 }
 
+.m-step-type {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: $color_main;
+  margin-top: 25px;
+}
 
+.t-parent {
+  display: inline-block;
+  width: 100%;
+  color: rgba(247, 175, 39, 1);
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 10px;
+}
 
 
 
