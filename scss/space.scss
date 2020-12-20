@@ -17,7 +17,15 @@
 }
 
 .new_height {
-  min-height: 60px;
+  min-height: 65px;
+}
+
+.l-16-hid {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .order_left {
@@ -167,6 +175,10 @@
   padding-top: .8rem;
 }
 
+.p-T20 {
+  padding-top: 1.5rem;
+}
+
 // 最新消息・麵包
 .p-TD20 {
   padding: 1.5rem 0;
@@ -257,7 +269,7 @@
   margin: 6rem 0;
 
   @include range-width(0, 450px) {
-    margin: 2rem 0;
+    margin: 2rem .5rem;
   }
 } 
 

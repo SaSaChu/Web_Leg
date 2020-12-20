@@ -28,6 +28,20 @@ input, textarea {
   }
 }
 
+.table_input2 {
+  display: inline-block;
+  // width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0 0 10px 0;
+  margin-left: 15px;
+  border-bottom: 1px solid $color_light_p;
+
+  &::placeholder {
+    color: $color_light_p;
+  }
+}
+
 .table_note {
   display: inline-block;
   width: 100%;
@@ -130,12 +144,12 @@ input, textarea {
 
 
 .border_TD {
-  border-top: 1px solid $color_line;
-  border-bottom: 1px solid $color_line;
+  border-top: 1px solid $color_line2;
+  border-bottom: 1px solid $color_line2;
 }
 
 .border_D {
-  border-bottom: 1px solid $color_line;
+  border-bottom: 1px solid $color_line2;
 }
 
 .border_D_p {
@@ -147,7 +161,7 @@ input, textarea {
 }
 
 .border_T {
-  border-top: 1px solid $color_line;
+  border-top: 1px solid $color_line2;
 }
 
 .border_T_w {
@@ -354,10 +368,10 @@ select {
       display: inline-block;
       width: 100%;
       padding: 10px 100px;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: $color_dG;
-      line-height: 2rem;
-      font-weight: 300;
+      line-height: 2.1rem;
+      // font-weight: 300;
 
       @include range-width(0, 450px) {
         padding: 10px;
@@ -390,6 +404,29 @@ input[type=checkbox] {
 }
 
 
+
+.curator-group {
+  display: inline-block;
+  margin-right: 15px;
+  float: left;
+
+  input[type=checkbox] {
+    display: none;
+
+    + span {
+      display: inline-block;
+      padding-left: 30px;
+      line-height: 35px;
+      background: url(../img/coff.svg) no-repeat;
+      user-select: none;
+      text-indent:-9999px; 
+    }
+
+    &:checked + span {
+      background: url(../img/con.svg) no-repeat;
+    }
+  }
+}
 
 .radio-group {
   width: 60px;

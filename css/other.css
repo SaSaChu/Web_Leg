@@ -8,7 +8,10 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; }
 .table_input { display: inline-block; width: 100%; color: white; font-size: 1.5rem; padding: 10px 0; }
 .table_input::placeholder { color: #866e99; }
 
-.table_note { display: inline-block; width: 100%; background-color: #866e99; border: 1px solid rgba(155, 155, 155, 0.5); margin: 10px 0; padding: 10px; color: white; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+.table_input2 { display: inline-block; color: white; font-size: 1.5rem; padding: 0 0 10px 0; margin-left: 15px; border-bottom: 1px solid #866e99; }
+.table_input2::placeholder { color: #866e99; }
+
+.table_note { display: inline-block; width: 100%; background-color: #866e99; border: 1px solid rgba(84, 84, 84, 0.5); margin: 10px 0; padding: 10px; color: white; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
 .img_common { display: inline-block; width: 100%; }
 
@@ -67,7 +70,7 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; }
 .new_serch { display: inline-block; width: 100%; padding: 5px 10px; cursor: pointer; outline: 0; color: #545454; font-size: 1.2rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; text-align: left; }
 .new_serch::placeholder { color: #d8d8d8; }
 
-select { display: inline-block; border: 1px solid rgba(155, 155, 155, 0.5); /*適應safari瀏覽器內容不跑偏*/ line-height: 1; width: 90%; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 46px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; padding: 10px 20px; font-size: 1.2rem; color: #545454; /*去除選中時樣式*/ outline: none; margin-bottom: 35px; }
+select { display: inline-block; border: 1px solid rgba(84, 84, 84, 0.5); /*適應safari瀏覽器內容不跑偏*/ line-height: 1; width: 90%; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 46px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; padding: 10px 20px; font-size: 1.2rem; color: #545454; /*去除選中時樣式*/ outline: none; margin-bottom: 35px; }
 
 .page { display: inline-block; width: 100%; padding-top: 60px; }
 .page .arrow_box { display: inline-block; font-size: 1.6rem; color: #545454; width: 30px; height: 30px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
@@ -82,7 +85,7 @@ select { display: inline-block; border: 1px solid rgba(155, 155, 155, 0.5); /*�
 #accordion .p_page > span { display: inline-block; width: 100%; padding: 10px 100px; margin-bottom: 5px; cursor: pointer; font-size: 1.4rem; color: #5b3468; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 #accordion .p_page > span:hover, #accordion .p_page > span:active { background-color: rgba(149, 67, 132, 0.5); }
 @media screen and (max-width: 449px) and (min-width: 0) { #accordion .p_page > span { padding: 10px; } }
-#accordion .p_page > div { display: inline-block; width: 100%; padding: 10px 100px; font-size: 1.2rem; color: #545454; line-height: 2rem; font-weight: 300; }
+#accordion .p_page > div { display: inline-block; width: 100%; padding: 10px 100px; font-size: 1.4rem; color: #545454; line-height: 2.1rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { #accordion .p_page > div { padding: 10px; } }
 
 label { padding: 0; cursor: pointer; }
@@ -90,6 +93,11 @@ label { padding: 0; cursor: pointer; }
 input[type=checkbox] { display: none; }
 input[type=checkbox] + span { display: inline-block; padding-left: 26px; line-height: 25px; background: url(../img/cbx-off.svg) no-repeat; user-select: none; text-indent: -9999px; }
 input[type=checkbox]:checked + span { background: url(../img/cbx-on.svg) no-repeat; }
+
+.curator-group { display: inline-block; margin-right: 15px; float: left; }
+.curator-group input[type=checkbox] { display: none; }
+.curator-group input[type=checkbox] + span { display: inline-block; padding-left: 30px; line-height: 35px; background: url(../img/coff.svg) no-repeat; user-select: none; text-indent: -9999px; }
+.curator-group input[type=checkbox]:checked + span { background: url(../img/con.svg) no-repeat; }
 
 .radio-group { width: 60px; display: inline-block; margin-bottom: 30px; margin-right: 15px; float: left; }
 

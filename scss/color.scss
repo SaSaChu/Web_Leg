@@ -13,7 +13,10 @@ $color_yellow: rgba(237, 195, 0, 1.00);
 $color_lG: rgba(216, 216, 216, .3);
 $color_lG100: rgba(216, 216, 216, 1);
 $color_dG: rgba(84, 84, 84, 1.00);
-$color_line: rgba(155, 155, 155, .5);
-$color_line_text: rgba(155, 155, 155, 1);
+$color_line: rgba(84, 84, 84, .5); // 原：#9b9b9b 改：#545454
+$color_line_text: rgba(84, 84, 84, 1); // 原：#9b9b9b 改：#545454
+
+$color_line2: rgba(155, 155, 155, .5); // 原：#9b9b9b
+$color_line_text2: rgba(155, 155, 155, 1); // 原：#9b9b9b
 
 $color_gG: rgba(106, 157, 158, 1.00); // 藍綠色

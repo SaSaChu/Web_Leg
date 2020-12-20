@@ -37,9 +37,9 @@ p {
 
 .page_banner_title {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: white;
-  font-weight: 400;
+  // font-weight: 400;
   padding-left: 65px;
   float: left;
   text-align: left;
@@ -48,7 +48,7 @@ p {
   left: 0;
 
   @include range-width(0, 450px) {
-    font-size: 3rem;
+    font-size: 2.6rem;
     bottom: 30px;
     padding-left: 30px;
   }
@@ -56,28 +56,28 @@ p {
   &:after {
     display: block;
     content: attr(title);
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     font-family: 'Roboto';
-    margin-top: 5px;
-    font-weight: 400;
+    // margin-top: 5px;
+    // font-weight: 400;
 
     @include range-width(0, 450px) {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 }
 
 .page_banner_title2 {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: white;
-  font-weight: 400;
+  // font-weight: 400;
   float: left;
   text-align: left;
   padding-top: 250px;
 
   @include range-width(0, 450px) {
-    font-size: 3rem;
+    font-size: 2.6rem;
     bottom: 30px;
     padding-left: 30px;
   }
@@ -85,13 +85,13 @@ p {
   &:after {
     display: block;
     content: attr(title);
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     font-family: 'Roboto';
     margin-top: 5px;
-    font-weight: 400;
+    // font-weight: 400;
 
     @include range-width(0, 450px) {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 }
@@ -101,11 +101,15 @@ p {
 .slogan_title {
   display: inline-block;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: $color_main;
 
   &.s-t-2 {
     color: $color_second;
+  }
+
+  &.s-t-3 {
+    font-size: 1.6rem;
   }
 
   @include range-width(0, 450px) {
@@ -120,10 +124,10 @@ p {
 .slogan_text {
   display: inline-block;
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: $color_dG;
   padding-top: 40px;
-  line-height: 30px;
+  line-height: 34px;
 
   &.s-t-pD60 {
     padding-bottom: 60px;
@@ -144,9 +148,9 @@ p {
 .cent_text18_rd {
   display: inline-block;
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: $color_dG;
-  line-height: 30px;
+  line-height: 34px;
   padding: 0 130px 130px 0;
   text-align: left;
 
@@ -161,9 +165,9 @@ p {
 .cent_text18_w {
   display: inline-block;
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
-  line-height: 30px;
+  line-height: 34px;
 }
 
 
@@ -176,7 +180,7 @@ p {
 
 
 .i_text20_main {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: $color_main;
   font-weight: 700;
   margin-bottom: 60px;
@@ -185,10 +189,11 @@ p {
     display: inline-block;
     width: 100%;
     content: attr(title);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: $color_main;
     font-weight: 400;
     margin-top: 5px;
+    letter-spacing: 0 !important;
   }
 
   &.h-m-T100 {
@@ -250,7 +255,7 @@ p {
 
     &.a_add_right {
       width: 100% !important;
-      text-align: right !important;
+      // text-align: right !important;
       padding: 50px 0 !important;
     }
   }
@@ -261,7 +266,7 @@ p {
   color: $color_dG;
   text-align: left;
   margin-bottom: 10px;
-  font-weight: 300;
+  // font-weight: 300;
   line-height: 2.4rem;
 
   &:before {
@@ -277,7 +282,7 @@ p {
   color: $color_dG;
   text-align: left;
   margin-bottom: 10px;
-  font-weight: 300;
+  // font-weight: 300;
   line-height: 2.4rem;
 
   &:before {
@@ -289,12 +294,12 @@ p {
 }
 
 .n_text20_lT {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: $color_line_text;
   text-align: left;
   margin-bottom: 10px;
-  font-weight: 300;
-  line-height: 2.4rem;
+  // font-weight: 300;
+  line-height: 2.5rem;
 
   &:before {
     display: inline-block;
@@ -343,7 +348,7 @@ p {
 .tag12 {
   display: inline-block;
   width: 100%;
-  font-size: .8rem;
+  font-size: 1rem;
   color: $color_dG;
   padding-top: 20px;
   text-align: left;
@@ -359,7 +364,7 @@ p {
 
 .f_text14_lG_full {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: $color_lG100;
   line-height: 30px;
 }
@@ -380,7 +385,7 @@ p {
 
 // 14pt 首頁icon字用
 .text14_dG {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: $color_dG;
 
   @include range-width(0, 450px) {
@@ -443,18 +448,18 @@ p {
 // 18pt
 // news
 .text18_dG {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: $color_dG;
 }
 
 // fa
 .text18_main {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: $color_main;
 }
 
 .text18_w {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
 
   // @include range-width(760px, 1100px) {
@@ -543,6 +548,10 @@ p {
 .f_text28_w {
   font-size: 2.1rem;
   color: white;
+
+  // @include range-width(0, 450px) {
+  //   font-size: 1.8rem;
+  // }
 }
 
 
@@ -668,7 +677,7 @@ p {
   // width: 100%;
   font-size: 1.23rem;
   color: white;
-  font-weight: 400;
+  // font-weight: 400;
   text-align: left;
   float: left;
   line-height: 25px;
