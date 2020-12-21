@@ -1205,7 +1205,7 @@ footer {
   width: calc(100% / 7);
   float: left;
   font-size: 1.2rem;
-  color: $color_line_text;
+  color: $color_line_text2;
   @include border-radius(25px);
   @include transition(all .3s);
   position: relative;
@@ -1230,7 +1230,7 @@ footer {
     width: 25px;
     height: 25px;
     @include border-radius(25px);
-    background-color: $color_line_text;
+    background-color: $color_line_text2;
     position: absolute;
     left: calc(50% - 13px);
     margin-top: 10px;
@@ -1294,7 +1294,7 @@ footer {
   .t_text_box50, .t_text_box {
     display: inline-block;
     float: left;
-    border-bottom: 1px solid $color_line;
+    border-bottom: 1px solid $color_line2;
     margin-top: 17px;
 
     &.t_text_nb {
