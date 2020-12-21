@@ -553,12 +553,168 @@ footer {
 }
 
 .i_banner_boxs {
-  display: inline-block;
+  $height: 600px;
+  $pointHeight: 36px;
+
   width: 100%;
-  height: 600px;
-  background-color: red;
+  height: $height + $pointHeight;
+  // background-color: red;
   margin-bottom: 60px;
   // background-color: $color_main;
+
+  border: 1px solid rgba(255, 0, 0, .3);
+  position: relative;
+
+  // flex 左右排列
+  display: flex;
+  flex-direction: row-reverse;
+
+  // 左右箭頭
+  .left, .right {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(255, 0, 0, .3);
+    z-index: 5;
+
+    @include transform(translateY(-50%));
+  }
+  .left { left: 0; }
+  .right { right: 0; }
+
+  // 圖片與文字區塊共用設定
+  .texts, .images {
+    position: relative;
+    display: inline-block;
+    height: $height;
+    border: 1px solid rgba(255, 0, 0, .3);
+    overflow: hidden;
+
+  }
+
+  // 文字區塊
+  .texts {
+    z-index: 1;
+    width: 40%;
+  }
+
+  // 圖片區塊
+  .images {
+    z-index: 2;
+    width: 60%;
+  }
+
+  // 圖片與文字共用設定
+  .image, .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.2);
+    @include transition(transform .3s);
+  }
+
+  // 文字
+  .text {
+    padding: 64px;
+    b {
+      display: inline-block;
+      width: 100%;
+      height: 32px;
+      line-height: 32px;
+      border: 1px solid rgba(255, 0, 0, .3);
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      height: 32px;
+      line-height: 32px;
+      border: 1px solid rgba(255, 0, 0, .3);
+    }
+    a {
+      display: inline-block;
+      width: 120px;
+      height: 44px;
+      line-height: 44px;
+      border: 1px solid rgba(255, 0, 0, .3);
+    }
+  }
+  
+  $count: 10;
+  @for $i from 1 through $count {
+    &[data-index='#{$i}'] {
+      @for $j from 1 through $count {
+        .images .image {
+          &:nth-child(#{$j}) {
+            @include transform(translateX(100% * ($j - $i)));
+          }
+        }
+        .texts .text {
+          &:nth-child(#{$j}) {
+            @include transform(translateX(100% * ($j - $i)));
+          }
+        }
+        .points label {
+          &:nth-child(#{$j}) {
+            @if $i == $j {
+              background-color: rgba(91, 49, 104, 1.00);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  // 底下點點點
+  .points {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 50%;
+    @include transform(translateX(-50%));
+
+    height: $pointHeight;
+
+    // 水平排列
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    label {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-color: rgba(217, 217, 217, 1.00);
+      @include border-radius(50%);
+      @include transition(background-color .3s);
+
+      + label {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  // 手機版
+  @include range-width(0, 1000px) {
+    // 改由上下排列
+    flex-direction: column;
+    
+    // 關閉箭頭
+    .left, .right { display: none; }
+
+    // 圖文各一半高度
+    .texts, .images {
+      width: 100%;
+      height: $height / 2;
+    }
+  };
+
+
 }
 
 .p_banner_boxs2 {

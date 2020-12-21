@@ -75,6 +75,40 @@ $(function() {
     $(this).get (0).run ();
   });
 
+  $('.i_banner_boxs').each(function() {
+    let $banner = $(this);
+
+    let total = parseInt($banner.attr('data-total'), 10) // 取出全部有多少個
+    
+    // 產生與定義下方的點點點
+    let $points = $(Array.apply(null, Array(total)).map(_ => $('<label />').click(function() {
+      $banner.attr('data-index', $points.index($(this)) + 1)
+    }))).map($.fn.toArray).appendTo($banner.find('.points'))
+
+    // 左箭頭元素
+    $banner.find('.left').click(_ => {
+      let index = parseInt($banner.attr('data-index'), 10) // 取出目前值
+      if (index == 1) { // 最左邊了，跳到最後一張
+        $banner.attr('data-index', total)
+      } else {
+        $banner.attr('data-index', index - 1)
+      }
+    })
+
+    // 右箭頭元素
+    let $right = $banner.find('.right').click(_ => {
+      let index = parseInt($banner.attr('data-index'), 10) // 取出目前值
+      if (index == total) { // 最右邊了，跳到第一張
+        $banner.attr('data-index', 1)
+      } else {
+        $banner.attr('data-index', index + 1)
+      }
+    })
+
+    // 自動播放，每七秒鐘 往右一張
+    setTimeout(_ => $right.click(), 7 * 1000)
+  });
+
 });
 
 
