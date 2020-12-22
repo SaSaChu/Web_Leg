@@ -1,5 +1,3 @@
-
- 
 $(function() {
 
   // table點選切換tab
@@ -108,6 +106,10 @@ $(function() {
     // 自動播放，每七秒鐘 往右一張
     setTimeout(_ => $right.click(), 7 * 1000)
   });
+
+
+  // 計數器
+  $('.counter').countUp();
 
 });
 
