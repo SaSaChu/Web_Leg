@@ -151,9 +151,45 @@
     </div>
 
 
+    <!-- data-index 代表最一開始要先顯示哪一個 -->
+    <!-- data-total 代表全部有幾個 banner 需要顯示 -->
+    <!-- ※ data-total 數量需要與 images 內的 image 數量相同 -->
+    <!-- ※ data-total 數量需要與 texts 內的 text 數量相同 -->
+    <!-- ※ data-total 最大值為 10，如要改變最大值，請修改 public.scss 內的 .i_banner_boxs 下的 $count 變數值 -->
 
-    <div class='i_banner_boxs'>
-      <p class="text18_w">banner</p>
+    <div class='i_banner_boxs' data-index='1' data-total='3'>
+      <!-- 圖片區塊 -->
+      <div class='images'>
+        <div class='image'>圖片 1</div>
+        <div class='image'>圖片 2</div>
+        <div class='image'>圖片 3</div>
+      </div>
+      
+      <!-- 文字區塊 -->
+      <div class='texts'>
+        <div class='text'>
+          <b>大標題</b>
+          <span>小標題</span>
+          <a href="">按鈕</a>
+        </div>
+        <div class='text'>
+          <b>大標題</b>
+          <span>小標題</span>
+          <a href="">按鈕</a>
+        </div>
+        <div class='text'>
+          <b>大標題</b>
+          <span>小標題</span>
+          <a href="">按鈕</a>
+        </div>
+      </div>
+      
+      <!-- 底下點點點 -->
+      <div class='points'></div>
+
+      <!-- 左右箭頭 -->
+      <label class='left'></label>
+      <label class='right'></label>
     </div>
 
     <!-- 生命是不斷創造的過程 -->
