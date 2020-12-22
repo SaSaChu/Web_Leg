@@ -367,7 +367,7 @@ button {
   font-size: 1.4rem;
   text-transform: none;
   @include transition(all .3s);
-  font-weight: 300;
+  // font-weight: 300;
   
   &:hover, &:active {
     color: $color_main;
