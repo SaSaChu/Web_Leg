@@ -889,6 +889,121 @@ footer {
   background: $color_lG;
   padding-bottom: 120px;
   margin-bottom: 115px; 
+  
+  position: relative;
+  padding-top: 60px;
+
+  .arrow {
+    // 水平、正序、靠右
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    border: 1px solid rgba(255, 0, 0, .3);
+    padding-right: 32px;
+    margin-bottom: 20px;
+
+    label {
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      border: 1px solid rgba(255, 0, 0, .3);
+    }
+  }
+
+  $pcSpace: 32px; // 桌機版圖片空隙
+  $pcOther: 100px; // 桌機版左右圖片預留寬
+  $pcHeight: 384px; // 桌機版高度
+
+  $mobSpace: 32px; // 手機版圖片空隙
+  $padHeight: 300px; // 平板高度
+  $mobHeight: 240px; // 手機高度
+
+  .images {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: $pcHeight;
+    border: 1px solid rgba(255, 0, 0, .3);
+    overflow: hidden;
+
+    span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: 20px;
+      @include opacity(.75);
+      font-style: italic;
+      @include transform(translate(-50%, -50%));
+    }
+
+    .image {
+      display: inline-block;
+      height: 100%;
+      width: calc(100% / 2 - 3 * #{$pcSpace} / 2 - 2 * #{$pcOther} / 2);
+      border: 1px solid rgba(255, 0, 0, .3);
+      cursor: pointer;
+      @include transition(left .3s);
+    }
+  }
+
+  // 桌機版
+  @include range-width(1000px) {
+    .image {
+      position: absolute;
+      $maxCount: 6;
+      @for $i from 1 through $maxCount {
+        &:nth-child(#{$i}) {
+          left: calc((100% / 2 - 3 * #{$pcSpace} / 2 - 2 * #{$pcOther} / 2 + #{$pcSpace}) * #{($i - 2)} - (100% / 2 - 3 * #{$pcSpace} / 2 - 2 * #{$pcOther} / 2 - #{$pcOther}));
+        }
+      }
+      &:nth-child(n + #{$maxCount}) {
+        display: none;
+      }
+    }
+  }
+  // 手機版
+  @include range-width(0, 1000px) {
+    .arrow {
+      display: none;
+    }
+
+    .images {
+      flex-wrap: nowrap;
+      display: inline-flex;
+      flex-direction: row;
+
+      height: $padHeight;
+
+      overflow-x: scroll;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(175, 175, 175, 1.00);
+        @include border-radius(4px);  
+      }
+      &::-webkit-scrollbar {
+        background-color: transparent;
+        height: 8px;
+      }
+
+      .image {
+        flex-shrink: 0;
+        width: 70%;
+        + .image {
+          margin-left: $mobSpace;
+        }
+      }
+    }
+  }
+  // 手機版
+  @include range-width(0, 500px) {
+    .images {
+      height: $mobHeight;
+    }
+  }
 }
 
 
@@ -1511,7 +1626,108 @@ footer {
   }
 }
 
+#carousel-box {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  &.show {
+    display: inline-block;
+  }
+  
+  &, &:before {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 
+  &:before {
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    border: 1px solid rgba(255, 0, 0, .3);
+    @include transform(translate(-50%, -50%));
+    
+    .top, .middle {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid rgba(255, 0, 0, .3);
+    }
+    .top {
+      justify-content: flex-end;
+      
+      label {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border: 1px solid rgba(255, 0, 0, .3);
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: rgba(0, 0, 255, 0.2);
+      }
+    }
+    .middle {
+      align-items: center;
+      justify-content: center;
+      
+      .image {
+        background-color: rgba(0, 0, 255, 0.2);
+        overflow: hidden;
+        width: 900px;
+
+        img {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      label {
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        border: 1px solid rgba(255, 0, 0, .3);
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: rgba(0, 0, 255, 0.2);
+      }
+    }
+    @include range-width(0, 1010px) {
+      width: calc(100% - 20px);
+      left: 10px;
+      @include transform(translate(0, -50%));
+
+      .top {
+        width: 100%;
+        label {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+      .middle {
+        width: 100%;
+        .image {
+          width: 100%;
+        }
+        label {
+          display: none;
+        }
+      }
+    };
+  }
+}
 
 
 
