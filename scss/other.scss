@@ -7,6 +7,18 @@ input, textarea {
   background-color: transparent;
 }
 
+.a_team_pic {
+  display: inline-block;
+  width: 100%;
+  max-width: 1105px;
+  margin-bottom: 60px;
+
+  @include range-width(0, 450px) {
+    max-width: 200px;
+    margin-bottom: 30px;
+  }
+}
+
 .table_border {
   display: inline-block;
   width: 100%;
