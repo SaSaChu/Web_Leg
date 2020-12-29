@@ -109,7 +109,33 @@ $(function() {
 
 
   // 計數器
-  $('.counter').countUp();
+  $.fn.countUp && $('.counter').countUp();
+
+  // 圖片左右輪播
+  $('.carousel').each(function() {
+    let $carousel = $(this)
+
+    let $left = $carousel.find('.left')
+    let $right = $carousel.find('.right')
+    let $images = $carousel.find('.images')
+    if ($images.find('.image').length < 6) return $images.empty().append($('<span />').text('圖片需六張（包含）以上'))
+
+    // 點擊右箭頭
+    $right.click(_ => {
+      let $image = $carousel.find('.image').first()
+      let $clone = $image.clone(true, true)
+      $image.remove()
+      $images.append($clone)
+    })
+
+    // 點擊左箭頭
+    $left.click(_ => {
+      let $image = $carousel.find('.image').last()
+      let $clone = $image.clone(true, true)
+      $image.remove()
+      $images.prepend($clone)
+    })
+  });
 
 });
 
