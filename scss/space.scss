@@ -32,6 +32,12 @@
   float: left;
 }
 
+.m_order_left {
+  @include range-width(0, 450px) {
+    float: left;
+  }
+}
+
 .order_right {
   float: right;
 }

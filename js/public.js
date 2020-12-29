@@ -23,7 +23,7 @@ $(function() {
    $('.table_step').eq (0).click();
 
   // 圖片縮放
-  $(".i_img_new, .i_img_s, .p_img_new, .p_banner_boxs460, .p_img_s, .p_i_h360, .img_about_pic, .in_ban").imgLiquid ();
+  $(".i_img_new, .i_img_s, .p_img_new, .p_banner_boxs460, .p_img_s, .p_i_h360, .img_about_pic, .in_ban, .img_run").imgLiquid ();
 
   
   // 手機選單
@@ -167,6 +167,57 @@ $(function() {
       $images.prepend($clone)
     })
   });
+
+
+  $('.run_new_boxs').each(function() {
+    var $that = $(this);
+
+    // 取得 unit，沒有給預設 1
+    var unit = $that.data('unit');
+    unit = unit ? unit : 1;
+    $that.attr('data-unit', unit);
+
+    // 取得 page，沒有給預設 1
+    var page = $that.data('page');
+    page = page ? page : 1;
+    $that.attr('data-page', page);
+
+    // 取得 auto，沒有給預設 0
+    var auto = $that.data('auto');
+    auto = auto ? auto : 0;
+    $that.attr('data-auto', auto);
+
+    // 頁數
+    var pageCount = Math.ceil($that.find('.item').length / unit);
+
+    var setDataPage = function(n) {
+      var p = parseInt($that.attr('data-page'), 10) + (n && $(this).hasClass('left') ? -1 : 1);
+      p = p > pageCount ? 1 : p;
+      p = p < 1 ? pageCount : p;
+      $that.attr('data-page', p);
+    };
+
+    // 定義箭頭
+    var arrow = $that.data('arrow');
+    if (arrow && arrow.toLowerCase() == 'on') {
+
+      // 在這邊設定左右按鈕的內容
+      var $arrows = [
+        $('<b />').addClass('left'),
+        $('<b />').addClass('right')];
+
+      $arrows = $($arrows).map($.fn.toArray).click(setDataPage);
+
+      $that.append(
+        $arrows);
+    }
+
+
+    // 定義輪播
+    auto && setInterval(setDataPage, auto);
+
+  });
+
 
 });
 

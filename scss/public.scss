@@ -187,14 +187,15 @@ ul {
 
   display: none;
   position: fixed;
-  width: 100%;
+  // width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   z-index: 999999;
   background-color: $color_main;
   overflow: auto;
-  @include transition(opacity .3s, right .3s);
+  @include transition(left .3s, right .3s);
+
   text-align: left;
   padding: 0; 
   // border-right: 1px solid rgba(226, 226, 226, 1.00);
@@ -508,7 +509,18 @@ footer {
 
   @include range-width(0, 450px) {
     margin: 35px 0;
-    padding: 35px 0;
+    padding: 35px 0 20px 0;
+  }
+}
+
+.border_box_nD {
+  display: none;
+  @include range-width(0, 450px) {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid $color_line;
+    // margin: 35px 0;
+    padding-bottom: 25px;
   }
 }
 
@@ -893,13 +905,15 @@ footer {
   position: relative;
   padding-top: 60px;
 
+  @include range-width(0, 450px) {
+    padding-bottom: 60px;
+  }
+
   .arrow {
     // 水平、正序、靠右
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
-    border: 1px solid rgba(255, 0, 0, .3);
     padding-right: 32px;
     margin-bottom: 20px;
 
@@ -908,7 +922,13 @@ footer {
       width: 44px;
       height: 44px;
       line-height: 44px;
-      border: 1px solid rgba(255, 0, 0, .3);
+      font-size: 2.6rem;
+      color: $color_main;
+      @include transition(all .3s);
+      
+      &:hover {
+        color: $color_second;
+      }
     }
   }
 
@@ -918,14 +938,13 @@ footer {
 
   $mobSpace: 32px; // 手機版圖片空隙
   $padHeight: 300px; // 平板高度
-  $mobHeight: 240px; // 手機高度
+  $mobHeight: 178px; // 手機高度
 
   .images {
     position: relative;
     display: inline-block;
     width: 100%;
     height: $pcHeight;
-    border: 1px solid rgba(255, 0, 0, .3);
     overflow: hidden;
 
     span {
@@ -942,9 +961,9 @@ footer {
       display: inline-block;
       height: 100%;
       width: calc(100% / 2 - 3 * #{$pcSpace} / 2 - 2 * #{$pcOther} / 2);
-      border: 1px solid rgba(255, 0, 0, .3);
       cursor: pointer;
       @include transition(left .3s);
+      // border: 1px solid rgba(255, 0, 0, .3);
     }
   }
 
@@ -1003,6 +1022,261 @@ footer {
     .images {
       height: $mobHeight;
     }
+  }
+}
+
+.run_new_boxs {
+  $max-n: 10; //  項目最多幾個
+
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 350px;
+  margin: 40px 0;
+  // border: 1px solid rgba(255, 0, 0, .3);
+  
+  .items {
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    
+    .item {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      height: 100%;
+
+      background-color: white;
+      @include transition(left .3s);
+
+      .n_boxs3 {
+        display: inline-block;
+        width: calc(100% - 30px);
+        float: left;
+        margin: 0 15px;
+      }
+
+      .n_boxs4 {
+        display: inline-block;
+        width: calc(100% - 20px);
+        float: left;
+        margin: 0 10px;
+        border: 1px solid $color_line;
+
+        &.b4-bg-w {
+          background-color: white;
+          padding: 10px;
+        }
+
+        @include range-width(760px, 1100px) {
+          width: calc(100% / 2 - 20px * 1 / 2);
+          margin-right: 0;
+
+          &:nth-child(2n+1) {
+            margin-right: 20px;
+          }
+
+          &:nth-child(n+3) {
+            margin-top: 15px;
+          }
+        }
+
+        @include range-width(0, 450px) {
+          width: 100%;
+          margin-right: 0;
+
+          &:nth-child(n+2) {
+            margin-top: 20px;
+          }
+
+          &:nth-child(n+5) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  b {
+    position: absolute;
+    top: calc(50% - 32px / 2);
+    z-index: 2;
+    
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+    text-align: center;
+    @include border-radius(50%);
+    color: $color_line;
+    
+    // background-color: rgba(39, 40, 34, .300);
+    @include transition(background-color .3s);
+    
+    &.left {
+      left: -30px;
+      &:before {
+        display: inline-block;
+        content: '\e904';
+        font-family: "icon";
+        font-size: 2.6rem;
+        color: $color_line;
+      }
+    }
+    &.right {
+      right: -30px;
+      &:before {
+        display: inline-block;
+        content: '\e905';
+        font-family: "icon";
+        font-size: 2.6rem;
+        color: $color_line;
+      }
+    }
+  }
+  .pages {
+    $w: 12px; // 點的寬高
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    
+    display: inline-block;
+    width: 100%;
+    height: $w;
+    border: 1px solid rgba(255, 0, 0, .3);
+
+    text-align: center;
+
+    > div {
+      display: inline-block;
+      margin: 0 auto;
+      @include clearfix();
+      
+      > i {
+        display: inline-block;
+        width: $w;
+        height: $w;
+        border: 1px solid rgba(255, 0, 0, .3);
+        margin: 0 3px;
+        cursor: pointer;
+
+        @include border-radius(50%);
+        background-color: rgba(39, 40, 34, .300);
+
+        @include transition(background-color .3s);
+
+
+        &:hover { // 滑過
+          background-color: rgba(39, 40, 34, .500);
+        }
+      }
+    }
+  }
+
+  $max-unit: 10; //  data-unit 最大值
+  @for $i from 1 through $max-unit {
+    @include range-width(0, 450px) {
+      width: 100%;
+      &[data-unit='#{$i}'] {
+        .items {
+          .item {
+            width: 100%;
+
+            @for $j from 1 through $max-n {
+              &:nth-child(#{$j}) {
+                left: calc(#{($j - 1)} * 100%);
+              }
+            }
+          }
+        }
+        
+        $p: $max-n;
+
+        @for $j from 1 through $p {
+          &[data-page='#{$j}'] {
+            .items {
+              .item {
+                @for $k from 1 through $max-n {
+                  &:nth-child(#{$k}) {
+                    left: calc(#{($k - $j)} * 100%);
+                  }
+                }
+              }
+            }
+
+            .pages {
+              > div {
+                > i {
+                  @for $k from 1 through $p {
+                    &:nth-child(#{$k}) {
+                      @if $k == $j {
+                        // 當頁下的點顏色
+                        background-color: rgba(39, 40, 34, .700);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    };
+    @include range-width(450px) {
+      &[data-unit='#{$i}'] {
+        .items {
+          .item {
+            width: calc(100% / #{$i});
+
+            @for $j from 1 through $max-n {
+              &:nth-child(#{$j}) {
+                left: calc(#{($j - 1)} * (100% / #{$i}));
+              }
+            }
+          }
+        }
+        
+        $p: ceil($max-n / $i);
+
+        @for $j from 1 through $p {
+          &[data-page='#{$j}'] {
+            .items {
+              .item {
+                @for $k from 1 through $max-n {
+                  &:nth-child(#{$k}) {
+                    left: calc(#{($k - ($j - 1) * $i - 1)} * (100% / #{$i}));
+                  }
+                }
+              }
+            }
+
+            .pages {
+              > div {
+                > i {
+                  @for $k from 1 through $p {
+                    &:nth-child(#{$k}) {
+                      @if $k == $j {
+                        // 當頁下的點顏色
+                        background-color: rgba(39, 40, 34, .700);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    };
   }
 }
 
@@ -1644,7 +1918,7 @@ footer {
   &:before {
     position: absolute;
     content: '';
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .container {
@@ -1652,13 +1926,13 @@ footer {
     left: 50%;
     top: 50%;
     display: inline-block;
-    border: 1px solid rgba(255, 0, 0, .3);
+    // border: 1px solid rgba(255, 0, 0, .3);
     @include transform(translate(-50%, -50%));
     
     .top, .middle {
       display: flex;
       flex-direction: row;
-      border: 1px solid rgba(255, 0, 0, .3);
+      // border: 1px solid rgba(255, 0, 0, .3);
     }
     .top {
       justify-content: flex-end;
@@ -1669,11 +1943,11 @@ footer {
         height: 48px;
         line-height: 48px;
         text-align: center;
-        border: 1px solid rgba(255, 0, 0, .3);
+        // border: 1px solid rgba(255, 0, 0, .3);
         color: white;
         cursor: pointer;
-        font-size: 20px;
-        background-color: rgba(0, 0, 255, 0.2);
+        font-size: 2.6rem;
+        // background-color: rgba(0, 0, 255, 0.2);
       }
     }
     .middle {
@@ -1681,7 +1955,7 @@ footer {
       justify-content: center;
       
       .image {
-        background-color: rgba(0, 0, 255, 0.2);
+        // background-color: rgba(0, 0, 255, 0.2);
         overflow: hidden;
         width: 900px;
 
@@ -1696,11 +1970,11 @@ footer {
         height: 44px;
         line-height: 44px;
         text-align: center;
-        border: 1px solid rgba(255, 0, 0, .3);
+        font-size: 2.6rem;
+        // border: 1px solid rgba(255, 0, 0, .3);
         color: white;
         cursor: pointer;
-        font-size: 20px;
-        background-color: rgba(0, 0, 255, 0.2);
+        // background-color: rgba(0, 0, 255, 0.2);
       }
     }
     @include range-width(0, 1010px) {

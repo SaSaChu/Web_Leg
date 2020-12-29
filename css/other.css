@@ -17,6 +17,8 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; }
 
 .img_table { display: inline-block; width: 100%; max-width: 650px; }
 
+.img_run { display: inline-block; width: 100%; max-width: 655px; }
+
 .i_mg_a_icon { display: inline-block; width: 100%; max-width: 180px; padding: 50px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .i_mg_a_icon { float: left; padding: 0 0 50px 0; max-width: 140px; } }
 

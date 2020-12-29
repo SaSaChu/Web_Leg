@@ -12,6 +12,8 @@
 
 .order_left { float: left; }
 
+@media screen and (max-width: 449px) and (min-width: 0) { .m_order_left { float: left; } }
+
 .order_right { float: right; }
 
 .ds { display: inline-block; }
