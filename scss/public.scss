@@ -943,6 +943,7 @@ footer {
       height: 100%;
       width: calc(100% / 2 - 3 * #{$pcSpace} / 2 - 2 * #{$pcOther} / 2);
       border: 1px solid rgba(255, 0, 0, .3);
+      cursor: pointer;
       @include transition(left .3s);
     }
   }
@@ -1625,7 +1626,108 @@ footer {
   }
 }
 
+#carousel-box {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  &.show {
+    display: inline-block;
+  }
+  
+  &, &:before {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 
+  &:before {
+    position: absolute;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    border: 1px solid rgba(255, 0, 0, .3);
+    @include transform(translate(-50%, -50%));
+    
+    .top, .middle {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid rgba(255, 0, 0, .3);
+    }
+    .top {
+      justify-content: flex-end;
+      
+      label {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border: 1px solid rgba(255, 0, 0, .3);
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: rgba(0, 0, 255, 0.2);
+      }
+    }
+    .middle {
+      align-items: center;
+      justify-content: center;
+      
+      .image {
+        background-color: rgba(0, 0, 255, 0.2);
+        overflow: hidden;
+        width: 900px;
+
+        img {
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      label {
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        border: 1px solid rgba(255, 0, 0, .3);
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: rgba(0, 0, 255, 0.2);
+      }
+    }
+    @include range-width(0, 1010px) {
+      width: calc(100% - 20px);
+      left: 10px;
+      @include transform(translate(0, -50%));
+
+      .top {
+        width: 100%;
+        label {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+      .middle {
+        width: 100%;
+        .image {
+          width: 100%;
+        }
+        label {
+          display: none;
+        }
+      }
+    };
+  }
+}
 
 
 

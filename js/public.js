@@ -118,7 +118,38 @@ $(function() {
     let $left = $carousel.find('.left')
     let $right = $carousel.find('.right')
     let $images = $carousel.find('.images')
-    if ($images.find('.image').length < 6) return $images.empty().append($('<span />').text('圖片需六張（包含）以上'))
+
+    // 定義點擊圖片跳大圖
+    $images.find('.image[data-src]').click(function() {
+      // 取出所有圖片網址與點擊網址
+      let images = $images.find('.image[data-src]').map(function() { return $(this).attr('data-src') }).toArray()
+      let image = $(this).data('src')
+
+      // 取出元素
+      let $box = $('#carousel-box')
+      let $image = $box.find('.image img').attr('src', image)
+      
+      // 定義左箭頭
+      $box.find('.left').unbind().click(_ => {
+        let index = images.indexOf(image) - 1
+        index = index == 0 ? images.length - 1 : index
+        $image.attr('src', image = images[index])
+      })
+      // 定義右箭頭
+      $box.find('.right').unbind().click(_ => {
+        let index = images.indexOf(image) + 1
+        index = index == images.length ? 0 : index
+        $image.attr('src', image = images[index])
+      })
+
+      // 定義關閉
+      $box.find('.close').unbind().click(_ => {
+        $box.toggleClass('show')
+      }).click()
+    })
+
+    if ($images.find('.image').length < 6)
+      return $images.empty().append($('<span />').text('圖片需六張（包含）以上'))
 
     // 點擊右箭頭
     $right.click(_ => {
