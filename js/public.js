@@ -104,7 +104,7 @@ $(function() {
     })
 
     // 自動播放，每七秒鐘 往右一張
-    setTimeout(_ => $right.click(), 7 * 1000)
+    setTimeout(_ => $right.click(), 4 * 1000)
   });
 
 

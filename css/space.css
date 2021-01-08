@@ -88,6 +88,9 @@
 
 .m-T10 { margin-top: .8rem; }
 
+.m-R60 { margin-right: 4.6rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m-R60 { margin-right: 0; } }
+
 .m-D20 { margin-bottom: 1.5rem; }
 
 .m-D60 { margin-bottom: 4.5rem; }

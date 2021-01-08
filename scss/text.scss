@@ -113,7 +113,9 @@ p {
   }
 
   @include range-width(0, 450px) {
-    font-size: 1.6rem;
+    // font-size: 1.6rem;
+    // 因為首頁slogan修改
+    font-size: 2rem;
   }
 
   &.c_s_blue {color: $color_blue;}

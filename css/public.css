@@ -37,7 +37,7 @@ p { padding: 0; margin: 0; }
 .slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; }
 .slogan_title.s-t-2 { color: #954384; }
 .slogan_title.s-t-3 { font-size: 1.6rem; }
-@media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 1.6rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 2rem; } }
 .slogan_title.c_s_blue { color: #0075b5; }
 .slogan_title.c_s_red { color: #db092f; }
 .slogan_title.c_s_yellow { color: #edc300; }
@@ -376,6 +376,9 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .m-D10 { margin-bottom: .8rem; }
 
 .m-T10 { margin-top: .8rem; }
+
+.m-R60 { margin-right: 4.6rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m-R60 { margin-right: 0; } }
 
 .m-D20 { margin-bottom: 1.5rem; }
 
