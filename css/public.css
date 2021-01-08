@@ -183,7 +183,7 @@ p { padding: 0; margin: 0; }
 
 .t_in_day { display: inline-block; width: 100%; color: white; font-size: 2rem; padding: 10px 0; text-align: left; }
 
-.m-step-type { display: inline-block; font-size: 1.8rem; color: #5b3468; margin-top: 25px; }
+.m-step-type { display: inline-block; font-size: 1.6rem; color: #5b3468; margin-top: 25px; }
 
 .t-parent { display: inline-block; width: 100%; color: #f7af27; font-size: 1.5rem; text-align: left; margin-top: 10px; }
 
@@ -2757,7 +2757,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 @media screen and (max-width: 449px) and (min-width: 0) { .table_step { text-indent: -9999px; }
   .table_step:nth-child(4), .table_step:nth-child(5) { margin-top: 0 !important; text-indent: -9999px !important; } }
 .table_step:nth-child(4), .table_step:nth-child(5) { margin-top: -22px; }
-.table_step:after { display: block; content: ''; width: 25px; height: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; background-color: #9b9b9b; position: absolute; left: calc(50% - 13px); margin-top: 10px; }
+.table_step:after { display: block; content: ''; width: 20px; height: 20px; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; background-color: #9b9b9b; position: absolute; left: calc(50% - 13px); margin-top: 10px; }
 .table_step:hover { color: #5b3468; }
 .table_step:hover:after { background-color: #5b3468; }
 .table_step.t-s { color: #5b3468; }
@@ -2765,7 +2765,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 
 .m-t7 { display: inline-block; width: calc(100% / 7); float: left; }
 
-.m-table_step { display: inline-block; width: 15px; height: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: #545454; }
+.m-table_step { display: inline-block; width: 15px; height: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: #909090; }
 .m-table_step.m-t-s { background-color: #5b3468; }
 
 .t_text_boxs { display: inline-block; width: 100%; max-width: 915px; margin-top: 60px; border-top: 1px solid #954384; }

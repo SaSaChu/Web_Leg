@@ -1801,8 +1801,8 @@ footer {
   &:after {
     display: block;
     content: '';
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     @include border-radius(25px);
     background-color: $color_line_text2;
     position: absolute;
@@ -1837,7 +1837,7 @@ footer {
   width: 15px;
   height: 15px;
   @include border-radius(15px);
-  background-color: $color_line_text;
+  background-color: rgba(144, 144, 144, 1.00);
 
   &.m-t-s {
     background-color: $color_main;

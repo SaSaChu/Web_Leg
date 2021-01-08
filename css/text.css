@@ -182,6 +182,6 @@ p { padding: 0; margin: 0; }
 
 .t_in_day { display: inline-block; width: 100%; color: white; font-size: 2rem; padding: 10px 0; text-align: left; }
 
-.m-step-type { display: inline-block; font-size: 1.8rem; color: #5b3468; margin-top: 25px; }
+.m-step-type { display: inline-block; font-size: 1.6rem; color: #5b3468; margin-top: 25px; }
 
 .t-parent { display: inline-block; width: 100%; color: #f7af27; font-size: 1.5rem; text-align: left; margin-top: 10px; }
