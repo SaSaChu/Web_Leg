@@ -33,6 +33,9 @@ p { padding: 0; margin: 0; }
 .page_banner_title2:after { display: block; content: attr(title); font-size: 1.6rem; font-family: 'Roboto'; margin-top: 5px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title2:after { font-size: 1.6rem; } }
 
+.p_slogan_title { display: inline-block; width: 100%; font-size: 1.8rem; color: #5b3468; }
+@media screen and (max-width: 449px) and (min-width: 0) { .p_slogan_title { font-size: 1.4rem; } }
+
 .slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; }
 .slogan_title.s-t-2 { color: #954384; }
 .slogan_title.s-t-3 { font-size: 1.6rem; }
@@ -154,8 +157,8 @@ p { padding: 0; margin: 0; }
 
 .text70_main { font-size: 5.3rem; color: #5b3468; }
 
-.table_title { display: inline-block; width: 100%; max-width: 915px; font-size: 2rem; color: white; text-align: left; }
-@media screen and (max-width: 449px) and (min-width: 0) { .table_title { max-width: none; } }
+.table_title { display: inline-block; width: 100%; max-width: 915px; font-size: 1.8rem; color: white; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_title { max-width: none; font-size: 1.6rem; } }
 
 .table_text16 { display: inline-block; font-size: 1.2rem; color: white; line-height: 50px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text16 { font-size: 1.15rem; line-height: 20px; padding-top: 3px; } }
@@ -172,7 +175,8 @@ p { padding: 0; margin: 0; }
 .table_text14_m { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text14_m { display: inline-block; width: 100%; font-size: 1rem; color: white; line-height: 20px; } }
 
-.table_se { display: inline-block; width: 100%; max-width: 915px; padding-top: 24px; font-size: 1.5rem; color: #d8d8d8; text-align: left; }
+.table_se { display: inline-block; width: 100%; max-width: 915px; padding-top: 24px; font-size: 1.4rem; color: #d8d8d8; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_se { font-size: 1.2rem; } }
 
 .t_in_name { display: inline-block; font-size: 1.23rem; color: white; text-align: left; float: left; line-height: 25px; }
 
