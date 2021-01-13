@@ -638,7 +638,7 @@ footer {
 
     @include range-width(0, 450px) {
       max-width: 422px;
-      height: 300px;
+      height: auto;
     }
   }
 
@@ -691,11 +691,18 @@ footer {
         .images .image {
           &:nth-child(#{$j}) {
             @include transform(translateX(100% * ($j - $i)));
+
+            @if $i == $j {
+              position: relative;
+            }
           }
         }
         .texts .text {
           &:nth-child(#{$j}) {
             @include transform(translateX(100% * ($j - $i)));
+            @if $i == $j {
+              position: relative;
+            }
           }
         }
         .points label {
@@ -744,6 +751,9 @@ footer {
   @include range-width(0, 1000px) {
     // 改由上下排列
     flex-direction: column;
+    height: auto;
+    padding-bottom: 50px;
+    margin-bottom: 0;
     
     // 關閉箭頭
     .left, .right { display: none; }
@@ -751,7 +761,11 @@ footer {
     // 圖文各一半高度
     .texts, .images {
       width: 100%;
-      height: $height / 2;
+      height: auto;
+      flex-shrink: 0;
+    }
+    .text {
+      height: auto;
     }
   };
 
