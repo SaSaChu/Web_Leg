@@ -1081,6 +1081,9 @@ footer {
         width: calc(100% - 20px);
         float: left;
         margin: 0 10px;
+        @include range-width(0, 450px) {
+          margin: 0;
+        };
         border: 1px solid $color_line;
 
         &.b4-bg-w {
@@ -1154,44 +1157,43 @@ footer {
         color: $color_line;
       }
     }
+    @include range-width(0, 450px) {
+      display: none;
+    }
   }
   .pages {
-    $w: 12px; // 點的寬高
+    $w: 16px; // 點的寬高
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
     z-index: 2;
     
-    display: inline-block;
-    width: 100%;
-    height: $w;
-    border: 1px solid rgba(255, 0, 0, .3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 32px;
 
     text-align: center;
 
-    > div {
+    @include range-width(450px) {
+      display: none;
+    };
+    
+    i {
       display: inline-block;
-      margin: 0 auto;
-      @include clearfix();
-      
-      > i {
-        display: inline-block;
-        width: $w;
-        height: $w;
-        border: 1px solid rgba(255, 0, 0, .3);
-        margin: 0 3px;
-        cursor: pointer;
+      width: $w;
+      height: $w;
+      margin: 0 3px;
+      cursor: pointer;
 
-        @include border-radius(50%);
-        background-color: rgba(39, 40, 34, .300);
+      @include border-radius(50%);
+      background-color: rgba(217, 217, 217, 1.00);
 
-        @include transition(background-color .3s);
+      @include transition(background-color .3s);
 
 
-        &:hover { // 滑過
-          background-color: rgba(39, 40, 34, .500);
-        }
+      &:hover { // 滑過
+        background-color: rgba(39, 40, 34, .500);
       }
     }
   }
@@ -1228,14 +1230,12 @@ footer {
             }
 
             .pages {
-              > div {
-                > i {
-                  @for $k from 1 through $p {
-                    &:nth-child(#{$k}) {
-                      @if $k == $j {
-                        // 當頁下的點顏色
-                        background-color: rgba(39, 40, 34, .700);
-                      }
+              i {
+                @for $k from 1 through $p {
+                  &:nth-child(#{$k}) {
+                    @if $k == $j {
+                      // 當頁下的點顏色
+                      background-color: rgba(91, 49, 104, 1.00);
                     }
                   }
                 }
@@ -1274,14 +1274,12 @@ footer {
             }
 
             .pages {
-              > div {
-                > i {
-                  @for $k from 1 through $p {
-                    &:nth-child(#{$k}) {
-                      @if $k == $j {
-                        // 當頁下的點顏色
-                        background-color: rgba(39, 40, 34, .700);
-                      }
+              i {
+                @for $k from 1 through $p {
+                  &:nth-child(#{$k}) {
+                    @if $k == $j {
+                      // 當頁下的點顏色
+                      background-color: rgba(91, 49, 104, 1.00);
                     }
                   }
                 }

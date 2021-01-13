@@ -211,6 +211,12 @@ $(function() {
       $that.append(
         $arrows);
     }
+    
+    // $($arrows).map($.fn.toArray).click(setDataPage);
+    // 下方點點點
+    let $points = $(Array.apply(null, Array($that.find('.item').length)).map(_ => $('<i />').click(function() {
+      $that.attr('data-page', $points.index($(this)) + 1)
+    }))).map($.fn.toArray).appendTo($that.find('.pages'))
 
 
     // 定義輪播
