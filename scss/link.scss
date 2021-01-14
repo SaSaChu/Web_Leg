@@ -532,6 +532,22 @@ button {
   display: inline-block;
   width: 100%;
   height: 100%;
+  overflow:hidden;
+
+  img {
+    width: 100%;
+    max-width: 345px;
+    transform:scale(1,1);
+    transition: all 1s ease-out;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+
+    &:hover {
+      transform:scale(1.2,1.2);
+    }
+  }
 }
 
 

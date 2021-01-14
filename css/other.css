@@ -27,9 +27,13 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; }
 
 .i_img_work { display: inline-block; width: 100%; max-width: 553px; }
 
-.i_img_new { display: inline-block; width: 100%; min-height: 180px; position: relative; }
-.i_img_new:before { display: inline-block; content: attr(title); position: absolute; left: 0; bottom: -11px; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 10px; }
-.i_img_new.p_img_new { min-height: 250px; }
+.tag_boxs { display: inline-block; width: 100%; position: relative; }
+.tag_boxs .i_img_new { display: inline-block; width: 100%; max-width: 345px; }
+.tag_boxs .i_img_new.new_d { height: 248px; overflow: hidden; }
+.tag_boxs .i_img_new.new_d2 { height: 181px; overflow: hidden; }
+@media screen and (max-width: 449px) and (min-width: 0) { .tag_boxs .i_img_new { max-width: 375px; } }
+.tag_boxs .i_img_new.p_img_new { min-height: 250px; }
+.tag_boxs:before { display: inline-block; content: attr(title); position: absolute; left: 0; bottom: -11px; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 10px; z-index: 8888; }
 
 .i_img_s { display: inline-block; width: 100%; max-width: 350px; min-height: 230px; }
 

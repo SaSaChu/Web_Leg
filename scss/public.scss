@@ -572,6 +572,7 @@ footer {
   height: $height + $pointHeight;
   // background-color: red;
   margin-bottom: 60px;
+  margin-top: 197px;
   // background-color: $color_main;
 
   // border: 1px solid rgba(255, 0, 0, .3);
@@ -754,6 +755,7 @@ footer {
     height: auto;
     padding-bottom: 50px;
     margin-bottom: 0;
+    margin-top: 81px;
     
     // 關閉箭頭
     .left, .right { display: none; }
@@ -778,6 +780,7 @@ footer {
   height: 600px;
   position: relative;
   margin-bottom: 60px;
+  margin-top: 197px;
 
   .pc-banner-cent {
     display: inline-block;
@@ -814,6 +817,7 @@ footer {
   display: inline-block;
   width: 100%;
   height: 460px;
+  margin-top: 81px;
 
   @include range-width(0, 450px) {
     height: 267px;
@@ -1046,7 +1050,7 @@ footer {
   display: inline-block;
   width: 100%;
   height: 350px;
-  margin: 40px 0;
+  margin: 30px 0 40px 0;
   // border: 1px solid rgba(255, 0, 0, .3);
   
   .items {
@@ -1170,6 +1174,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 
     height: 32px;
 
@@ -1323,6 +1328,16 @@ footer {
   }
 }
 
+.fix_box {
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
 .page-n-l-fb {
   display: inline-block;
   width: 100%;
@@ -1455,6 +1470,7 @@ footer {
 
   @include range-width(0, 450px) {
     width: 100%;
+    min-height: 390px;
 
     &:nth-child(2n+1) {
       margin-right: 0;

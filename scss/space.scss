@@ -1,5 +1,12 @@
 @import "Ginkgo";
 
+.for_fix {
+  margin-top: 197px !important;
+  @include range-width(0, 450px) {
+    margin-top: 81px !important;
+  }
+}
+
 .mob-close {
   display: inline-block  !important;
 
@@ -297,6 +304,11 @@
   // }
 }
 
+.m_mT30 {
+  @include range-width(0, 450px) {
+    margin-top: 30px;
+  }  
+}
 
 
 
