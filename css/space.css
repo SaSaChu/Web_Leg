@@ -41,6 +41,8 @@
 .p-LR100-2 { padding: 0 9rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p-LR100-2 { padding: 0 0 2rem 0; } }
 
+.pp_TD { padding-top: 3rem; padding-bottom: 4.5rem; }
+
 .p-D50 { padding-bottom: 3.8rem; }
 
 .p-D10 { padding-bottom: .8rem; }

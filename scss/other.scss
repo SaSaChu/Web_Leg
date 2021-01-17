@@ -530,6 +530,25 @@ input[type=checkbox] {
 }
 
 
+.c_input_boxs {
+  display: inline-block;
+  width: 100%;
+}
 
+.c_input {
+  display: inline-block;
+  width: calc(100% - 20px);
+  background-color: rgba(234, 230, 238, 1.00);
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  border: 0 !important;
+  color: $color_light_p;
+  margin-top: 15px;
+
+  @include range-width(0, 450px) {
+    margin-bottom: 0;
+  }
+}
 
 

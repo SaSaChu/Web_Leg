@@ -118,3 +118,8 @@ input[type=checkbox]:checked + span { background: url(../img/cbx-on.svg) no-repe
 .radio-button:after { /* 中間點點 */ content: attr(title); display: block; height: 40px; width: 60px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; opacity: 0; transition: opacity 0.2s; color: #954384; font-size: 1.2rem; line-height: 40px; }
 
 .radio-input:checked ~ .radio-label .radio-button::after { /* 選中radio時 才顯示中間點點 */ opacity: 1; }
+
+.c_input_boxs { display: inline-block; width: 100%; }
+
+.c_input { display: inline-block; width: calc(100% - 20px); background-color: #eae6ee; padding: 10px; font-size: 1.5rem; margin-left: 20px; border: 0 !important; color: #866e99; margin-top: 15px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .c_input { margin-bottom: 0; } }

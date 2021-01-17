@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 p { padding: 0; margin: 0; }
@@ -22,6 +23,16 @@ p { padding: 0; margin: 0; }
 .l_20 { line-height: 1.5rem; }
 
 .l_24 { line-height: 1.9rem; }
+
+.p_title { display: inline-block; width: 100%; font-size: 1.5rem; color: #5b3468; }
+@media screen and (max-width: 449px) and (min-width: 0) { .p_title { font-size: 1.2rem; } }
+
+.p_main { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; padding-top: 2.5rem; padding-bottom: 4.5rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .p_main { font-size: 1.2rem; padding-top: 1.5rem; padding-bottom: 2rem; } }
+
+.p_list { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; padding: 2.5rem 0 2.5rem 42px; position: relative; }
+.p_list:before { display: inline-block; content: '●'; margin-right: 15px; color: #a5a5a5; position: absolute; left: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .p_list { font-size: 1.2rem; padding: 1.5rem 0 1.5rem 42px; } }
 
 .page_banner_title { display: inline-block; font-size: 2.6rem; color: white; padding-left: 65px; float: left; text-align: left; position: absolute; bottom: 50px; left: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title { font-size: 2.4rem; bottom: 30px; padding-left: 30px; } }
@@ -58,6 +69,7 @@ p { padding: 0; margin: 0; }
 .i_text16_dG { display: inline-block; font-size: 1.1rem; color: #545454; line-height: 30px; }
 
 .i_text20_main { font-size: 1.8rem; color: #5b3468; font-weight: 700; margin-bottom: 60px; }
+.i_text20_main.i_no_mb { margin-bottom: 0; }
 .i_text20_main:after { display: inline-block; width: 100%; content: attr(title); font-size: 1.4rem; color: #5b3468; font-weight: 400; margin-top: 5px; letter-spacing: 0 !important; }
 .i_text20_main.h-m-T100 { margin-top: 100px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .i_text20_main.h-m-T100 { margin-top: 50px; } }
@@ -125,6 +137,9 @@ p { padding: 0; margin: 0; }
 .text16_second { font-size: 1.2rem; color: #954384; }
 
 .text18_dG { font-size: 1.5rem; color: #545454; }
+
+.c_text18_dG { font-size: 1.5rem; color: #545454; }
+.c_text18_dG:before { display: inline-block; content: '*'; color: red; margin-right: 10px; line-height: 35px; }
 
 .text18_main { font-size: 1.5rem; color: #5b3468; }
 

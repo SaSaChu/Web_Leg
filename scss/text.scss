@@ -33,6 +33,55 @@ p {
 .l_20 {line-height: 1.5rem;}
 .l_24 {line-height: 1.9rem;}
 
+.p_title {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5rem;
+  color: $color_main;
+
+  @include range-width(0, 450px) {
+    font-size: 1.2rem;
+  }
+}
+
+.p_main {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5rem;
+  color: $color_dG;
+  padding-top: 2.5rem;
+  padding-bottom: 4.5rem;
+  // padding-left: 42px;
+
+  @include range-width(0, 450px) {
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.p_list {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5rem;
+  color: $color_dG;
+  padding: 2.5rem 0 2.5rem 42px;
+  position: relative;
+
+  &:before {
+    display: inline-block;
+    content: '●';
+    margin-right: 15px;
+    color: rgba(165, 165, 165, 1.00);
+    position: absolute;
+    left: 0;
+  }
+
+  @include range-width(0, 450px) {
+    font-size: 1.2rem;
+    padding: 1.5rem 0 1.5rem 42px;
+  }
+}
 
 
 .page_banner_title {
@@ -195,6 +244,10 @@ p {
   color: $color_main;
   font-weight: 700;
   margin-bottom: 60px;
+
+  &.i_no_mb {
+    margin-bottom: 0;
+  }
 
   &:after {
     display: inline-block;
@@ -466,6 +519,19 @@ p {
 .text18_dG {
   font-size: 1.5rem;
   color: $color_dG;
+}
+
+.c_text18_dG {
+  font-size: 1.5rem;
+  color: $color_dG;
+
+  &:before {
+    display: inline-block;
+    content: '*';
+    color: red;
+    margin-right: 10px;
+    line-height: 35px;
+  }
 }
 
 // fa

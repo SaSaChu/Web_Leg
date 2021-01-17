@@ -206,7 +206,7 @@ ul {
     display: inline-block;
     width: 100%;
     line-height: 30px;
-    padding:20px 15px 20px 70px;
+    padding:15px 15px 15px 70px;
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -255,7 +255,7 @@ ul {
 
      &.db {
       line-height: 30px;
-      padding:20px 15px 20px 70px;
+      padding:15px 15px 15px 70px;
       border-bottom: 1px solid $color_light_p;
     }
   }
@@ -1368,6 +1368,21 @@ footer {
   border-bottom: 1px solid $color_line;
   padding: 30px 0;
 }
+
+.box700 {
+  display: inline-block;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.box915 {
+  display: inline-block;
+  width: 100%;
+  max-width: 915px;
+  text-align: left;
+}
+
 
 .all_boxs {
   display: inline-block;
