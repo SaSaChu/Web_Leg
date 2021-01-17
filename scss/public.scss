@@ -1870,6 +1870,12 @@ footer {
       background-color: $color_main;
     }
   }
+
+  &.t-nomark {
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .m-t7 {

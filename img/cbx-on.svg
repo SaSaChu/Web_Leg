@@ -1,16 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>check_on</title>
-    <desc>Created with Sketch.</desc>
-    <g id="LEGACYWeb-2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="09.-線上報名＿Step-1" transform="translate(-518.000000, -1947.000000)">
-            <g id="check_on" transform="translate(518.000000, 1947.000000)">
-                <rect id="我同意上述工作坊時間以及-隱私權政策聲明" stroke="#954384" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="23" height="23"></rect>
-                <text id="check---material" font-family="material" font-size="20" font-weight="normal" fill="#954384">
-                    <tspan x="3" y="19"></tspan>
-                </text>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st1{fill:#954384;}
+	.st2{enable-background:new    ;}
+</style>
+<desc>Created with Sketch.</desc>
+<g id="LEGACYWeb-2.0">
+	<g id="_x30_9.-線上報名_xFF3F_Step-1" transform="translate(-518.000000, -1947.000000)">
+		<g id="check_on" transform="translate(518.000000, 1947.000000)">
+			<g>
+				<rect id="我同意上述工作坊時間以及-隱私權政策聲明_1_" x="1" y="1" class="st0" width="23" height="23"/>
+				<path class="st1" d="M25,25H0V0h25V25z M2,23h21V2H2V23z"/>
+			</g>
+			<g class="st2">
+				<path class="st1" d="M10.5,15.5l8.8-8.8l1.2,1.2l-10,10l-4.6-4.6L7,12L10.5,15.5z"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

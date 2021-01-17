@@ -145,6 +145,8 @@ p { padding: 0; margin: 0; }
 
 .text18_w { font-size: 1.5rem; color: white; }
 
+.table_a { font-size: 1.23rem; color: white; }
+
 .text20_dG { font-size: 1.5rem; color: #545454; }
 
 .text20_w { font-size: 1.5rem; color: white; }
@@ -2803,6 +2805,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .table_step:hover:after { background-color: #5b3468; }
 .table_step.t-s { color: #5b3468; }
 .table_step.t-s:after { background-color: #5b3468; }
+.table_step.t-nomark:after { display: none; }
 
 .m-t7 { display: inline-block; width: calc(100% / 7); float: left; }
 
