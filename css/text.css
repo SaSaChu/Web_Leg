@@ -60,6 +60,8 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_text { padding-bottom: 60px; text-align: left; }
   .slogan_text.m-s-t-l { text-align: center; } }
 
+.t_note { display: inline-block; width: 100%; font-size: 13px; color: white; float: left; }
+
 .cent_text18_rd { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; line-height: 34px; padding: 0 130px 130px 0; text-align: left; }
 @media screen and (max-width: 1099px) and (min-width: 760px) { .cent_text18_rd { padding: 0 60px 60px 0; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .cent_text18_rd { padding: 60px 0; } }
@@ -195,7 +197,17 @@ p { padding: 0; margin: 0; }
 .table_se { display: inline-block; width: 100%; max-width: 915px; padding-top: 24px; font-size: 1.4rem; color: #d8d8d8; text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_se { font-size: 1.2rem; } }
 
+.table_se2 { display: inline-block; width: 100%; max-width: 915px; padding-top: 10px; font-size: 1.4rem; color: #d8d8d8; text-align: left; }
+.table_se2:nth-child(2) { padding-top: 35px; }
+.table_se2:before { display: inline-block; content: attr(title); }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_se2 { font-size: 1.2rem; } }
+
 .t_in_name { display: inline-block; font-size: 1.23rem; color: white; text-align: left; float: left; line-height: 25px; }
+
+.t_in_name2 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; }
+
+.t_in_name3 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; text-align: left; padding-left: 29px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .t_in_name3 { padding-left: 0; } }
 
 .t_in_day { display: inline-block; width: 100%; color: white; font-size: 2rem; padding: 10px 0; text-align: left; }
 

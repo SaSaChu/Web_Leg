@@ -392,7 +392,7 @@ footer {
   }
 
   &.t-b-b {
-    border-bottom: 1px solid $color_line;
+    border-bottom: 1px solid $color_line2;
   }
 
   &.pb120 {
@@ -1387,7 +1387,8 @@ footer {
 .all_boxs {
   display: inline-block;
   width: 100%;
-
+  @include clearfix();
+  
   &.a-bg-lg { background-color: $color_lG;}
   &.a-bg-main {background-color: $color_main;}
   &.a-bg-deep-p {background-color: $color_deep_p;}
@@ -1419,6 +1420,12 @@ footer {
     padding: 60px 0 0 0;
   }
 
+  &.t-b-bottom {
+    padding-bottom: 20px;
+    margin: 20px 0;
+    border-bottom: 1px solid $color_second;
+  }
+
   @include range-width(0, 450px) {
     &.i-icon-box40 {
       float: left;
@@ -1430,7 +1437,30 @@ footer {
       padding-left: 30px;
     }
   }
-  
+}
+
+.t35_l, .t35_r {
+  display: inline-block;
+  float: left;
+}
+
+.t35_l {
+  width: 80%;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+}
+
+.t35_r {
+  width: 20%;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding-top: 15px;
+  }
 }
 
 .boxs {
@@ -1908,6 +1938,18 @@ footer {
 // }
 // table_填表單 按鈕(2) end
 
+.spcediv {
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+}
+
+.spcediv2 {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
 
 .t_text_boxs {
   display: inline-block;
