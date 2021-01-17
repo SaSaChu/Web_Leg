@@ -24,7 +24,7 @@ $(function() {
 
   // 圖片縮放
   // $(".i_img_new, .i_img_s, .p_img_new, .p_banner_boxs460, .p_img_s, .p_i_h360, .img_about_pic, .in_ban, .img_run").imgLiquid ();
-  $(".i_img_s, .p_img_new, .p_banner_boxs460, .p_img_s, .p_i_h360, .img_about_pic, .in_ban, .img_run").imgLiquid ();
+  $(".p_img_new, .p_banner_boxs460, .p_img_s, .p_i_h360, .img_about_pic, .in_ban, .img_run").imgLiquid ();
 
   
   // 手機選單

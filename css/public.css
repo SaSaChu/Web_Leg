@@ -411,7 +411,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 @media screen and (max-width: 449px) and (min-width: 0) { .m_mT30 { margin-top: 30px; } }
 
-input, textarea { border: 0 none; outline: 0; background-color: transparent; }
+input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
 .a_team_pic { display: inline-block; width: 100%; max-width: 1105px; margin-bottom: 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .a_team_pic { max-width: 200px; margin-bottom: 30px; } }
@@ -531,7 +531,7 @@ input[type=checkbox]:checked + span { background: url(../img/cbx-on.svg) no-repe
 
 html { font-size: 13px; }
 
-body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-weight: 400; text-align: center; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; letter-spacing: 0.1rem; }
+body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-weight: 400; text-align: center; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; letter-spacing: 0.1rem; text-size-adjust: none; -webkit-text-size-adjust: none; }
 
 @media screen and (max-width: 449px) and (min-width: 0) { nav { display: none; } }
 
