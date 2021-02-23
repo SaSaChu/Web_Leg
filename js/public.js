@@ -228,7 +228,7 @@ $(function() {
   $('.radio-subitems[name]').each(function() {
     let $that = $(this)
     $('.radio-input[name="' + $that.attr('name') + '"]').click(function() {
-      if ($(this).val() == 'yes') $that.addClass('show')
+      if ($(this).hasClass('yes')) $that.addClass('show')
       else $that.removeClass('show')
     })
   })
