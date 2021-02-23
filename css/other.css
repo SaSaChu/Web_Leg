@@ -108,14 +108,14 @@ input[type=checkbox]:checked + span { background: url(../img/cbx-on.svg) no-repe
 .curator-group input[type=checkbox] + span { display: inline-block; padding-left: 30px; line-height: 35px; background: url(../img/coff.svg) no-repeat; user-select: none; text-indent: -9999px; }
 .curator-group input[type=checkbox]:checked + span { background: url(../img/con.svg) no-repeat; }
 
-.radio-group { width: 60px; display: inline-block; margin-bottom: 30px; margin-right: 15px; float: left; }
+.radio-group { width: 120px; display: inline-block; margin-bottom: 30px; margin-right: 15px; float: left; }
 
 .radio-input { visibility: hidden; /* 把原本的input藏起來 */ }
 
 .radio-label { font-size: 1.6rem; cursor: pointer; position: relative; padding-left: 3rem; float: left; margin-top: 10px; }
 
-.radio-button { /* 自定義樣式的span */ height: 40px; width: 60px; border: 1px solid #954384; display: inline-block; position: absolute; left: 0; top: 0; font-size: 1.2rem; color: white; line-height: 40px; }
-.radio-button:after { /* 中間點點 */ content: attr(title); display: block; height: 40px; width: 60px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; opacity: 0; transition: opacity 0.2s; color: #954384; font-size: 1.2rem; line-height: 40px; }
+.radio-button { /* 自定義樣式的span */ height: 40px; width: 120px; border: 1px solid #954384; display: inline-block; position: absolute; left: 0; top: 0; font-size: 1.2rem; color: white; line-height: 40px; }
+.radio-button:after { /* 中間點點 */ content: attr(title); display: block; height: 40px; width: 120px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; opacity: 0; transition: opacity 0.2s; color: #954384; font-size: 1.2rem; line-height: 40px; }
 
 .radio-input:checked ~ .radio-label .radio-button::after { /* 選中radio時 才顯示中間點點 */ opacity: 1; }
 
@@ -125,3 +125,7 @@ input[type=checkbox]:checked + span { background: url(../img/cbx-on.svg) no-repe
 @media screen and (max-width: 449px) and (min-width: 0) { .c_input { margin-bottom: 0; } }
 
 .fileInput { opacity: 0; display: block; width: 100%; height: 200px; clear: both; display: block; margin: auto; background-color: red; }
+
+.sIconSize { display: inline-block; width: 100%; max-width: 915px; }
+.sIconSize .s_ok { display: inline-block; width: 100%; max-width: 193px; }
+.sIconSize .s_ok.sPLR { max-width: 135px !important; }

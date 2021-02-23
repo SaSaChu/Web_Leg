@@ -470,7 +470,7 @@ input[type=checkbox] {
 }
 
 .radio-group {
-  width: 60px;
+  width: 120px;
   display: inline-block;
   margin-bottom: 30px;
   margin-right: 15px;
@@ -494,7 +494,8 @@ input[type=checkbox] {
 .radio-button {
   /* 自定義樣式的span */
   height: 40px;
-  width: 60px;
+  width: 120px;
+  // padding: 0 20px;
   border: 1px solid $color_second;
   display: inline-block;
   position: absolute;
@@ -509,7 +510,8 @@ input[type=checkbox] {
     content: attr(title);
     display: block;
     height: 40px;
-    width: 60px;
+    width: 120px;
+    // padding: 0 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -560,3 +562,24 @@ input[type=checkbox] {
   margin: auto;
   background-color: red;
 }
+
+
+.sIconSize {
+  display: inline-block;
+  width: 100%;
+  max-width: 915px;
+
+  .s_ok {
+    display: inline-block;
+    width: 100%;
+    max-width: 193px;
+
+    &.sPLR {
+      max-width: 135px !important;
+    }
+  }
+}
+
+
+
+

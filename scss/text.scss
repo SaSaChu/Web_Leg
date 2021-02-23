@@ -677,6 +677,11 @@ p {
   color: white;
   text-align: left;
 
+  &.sTableCent {
+    padding-top: 30px; 
+    text-align: center;
+  }
+
   @include range-width(0, 450px) {
     max-width: none;
     font-size: 1.6rem;
@@ -763,6 +768,51 @@ p {
   font-size: 1.4rem;
   color: $color_lG100;
   text-align: left;
+
+  &.colorOrange {
+    color: rgba(245, 166, 35, 1.00);
+  }
+
+  &.tBeD {
+    display: inline-block;
+
+    &:before {
+      display: inline-block;
+      content: '';
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      margin-top: 9px;
+      background-color: rgba(216, 216, 216, 1.00);
+      @include border-radius(10px);
+    }
+  }
+
+  &.s_TableSe {
+    padding-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  &.s_TableSeno {
+    padding-top: 0;
+  }
+
+  &.s_T18 {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+    line-height: 25px;
+    margin-left: 10px;
+
+    @include range-width(0, 450px) {
+      margin-left: 0;
+      line-height: auto;
+    }
+  }
 
   @include range-width(0, 450px) {
     font-size: 1.2rem;

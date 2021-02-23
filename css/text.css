@@ -177,6 +177,7 @@ p { padding: 0; margin: 0; }
 .text70_main { font-size: 5.3rem; color: #5b3468; }
 
 .table_title { display: inline-block; width: 100%; max-width: 915px; font-size: 1.8rem; color: white; text-align: left; }
+.table_title.sTableCent { padding-top: 30px; text-align: center; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_title { max-width: none; font-size: 1.6rem; } }
 
 .table_text16 { display: inline-block; font-size: 1.2rem; color: white; line-height: 50px; }
@@ -195,6 +196,14 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text14_m { display: inline-block; width: 100%; font-size: 1rem; color: white; line-height: 20px; } }
 
 .table_se { display: inline-block; width: 100%; max-width: 915px; padding-top: 24px; font-size: 1.4rem; color: #d8d8d8; text-align: left; }
+.table_se.colorOrange { color: #f5a623; }
+.table_se.tBeD { display: inline-block; }
+.table_se.tBeD:before { display: inline-block; content: ''; width: 10px; height: 10px; margin-right: 10px; margin-top: 9px; background-color: #d8d8d8; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+.table_se.s_TableSe { padding-top: 10px; font-size: 1.2rem; }
+.table_se.s_TableSeno { padding-top: 0; }
+.table_se.s_T18 { font-size: 1.2rem; line-height: 30px; }
+.table_se a { color: white; text-decoration: underline; line-height: 25px; margin-left: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_se a { margin-left: 0; line-height: auto; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_se { font-size: 1.2rem; } }
 
 .table_se2 { display: inline-block; width: 100%; max-width: 915px; padding-top: 10px; font-size: 1.4rem; color: #d8d8d8; text-align: left; }

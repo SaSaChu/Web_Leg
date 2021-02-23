@@ -383,6 +383,14 @@ footer {
   width: 100%;
   max-width: 1100px;
 
+  &.main_boxs515 {
+    max-width: 515px;
+  }
+
+  &.main_boxs180 {
+    max-width: 180px;
+  }
+
   @include range-width(760px, 1100px) {
     padding: 0 20px;
   }
@@ -1713,7 +1721,7 @@ footer {
 
     .ba {
       display: inline-block;
-      width: calc(100% / 10 - 12px * 9 / 9);
+      width: calc(100% / 9 - 12px * 8 / 9);
       float: left;
       margin-right: 12px;
       height: 50px;
@@ -1852,6 +1860,11 @@ footer {
 .table_step {
   display: inline-block;
   width: calc(100% / 7);
+
+  &.table_step4 {
+    width: calc(100% / 4);
+  }
+
   float: left;
   font-size: 1.2rem;
   color: $color_line_text2;
@@ -1863,13 +1876,13 @@ footer {
   @include range-width(0, 450px) {
     text-indent:-9999px;
 
-    &:nth-child(4), &:nth-child(5) {
+    &.tableTwoSpace {
       margin-top: 0 !important;
       text-indent:-9999px !important;
     }
   }
 
-  &:nth-child(4), &:nth-child(5) {
+  &.tableTwoSpace {
     margin-top: -22px;
   }
 
@@ -1913,6 +1926,11 @@ footer {
   width: calc(100% / 7);
   float: left;
 }
+.m-t4 {
+  display: inline-block;
+  width: calc(100% / 4);
+  float: left;
+}
 .m-table_step {
   display: inline-block;
   width: 15px;
@@ -1951,6 +1969,43 @@ footer {
   background-color: white;
 }
 
+.s_TextBoxs {
+  display: inline-block;
+  width: 100%;
+  max-width: 915px;
+  margin-top: 60px;
+  padding: 60px;
+  border-top: 1px solid $color_second;
+  border-bottom: 1px solid $color_second;
+
+  @include range-width(0, 450px) {
+    padding: 40px 10px;
+  }
+}
+
+.s_TextBoxs2 {
+  display: inline-block;
+  width: 100%;
+  max-width: 915px;
+  padding: 60px;
+  border-bottom: 1px solid $color_second;
+
+  @include range-width(0, 450px) {
+    padding: 40px 10px;
+  }
+}
+
+.s_TextBoxs3 {
+  display: inline-block;
+  width: 100%;
+  max-width: 915px;
+  padding: 60px;
+
+  @include range-width(0, 450px) {
+    padding: 40px 10px;
+  }
+}
+
 .t_text_boxs {
   display: inline-block;
   width: 100%;
@@ -1958,7 +2013,11 @@ footer {
   margin-top: 60px;
   border-top: 1px solid $color_second;
 
-  .t_text_box50, .t_text_box {
+  &.s_TB4 {
+    padding: 60px 0;
+  }
+
+  .t_text_box50, .t_text_box30, .t_text_box {
     display: inline-block;
     float: left;
     border-bottom: 1px solid $color_line2;
@@ -1971,6 +2030,24 @@ footer {
 
   .t_text_box {
     width: 100%;
+  }
+
+  .t_text_box30 {
+    width: calc(100% / 3 - 35px * 2 / 3);
+
+    &:nth-child(2) {
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+
+    @include range-width(0, 450px) {
+      width: 100%;
+
+      &:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   }
 
   .t_text_box50 {
