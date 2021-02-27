@@ -550,6 +550,28 @@ button {
   }
 }
 
+.link_apply {
+  display: inline-block;
+  width: 200px;
+  margin-right: 35px;
+  background-color: $color_second;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  &:hover, &:active {
+    background-color: white;
+    color: $color_second;
+  }
+}
+
 
 
 

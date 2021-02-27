@@ -488,6 +488,14 @@ input[type=checkbox] {
   position: relative;
   // padding-left: 3rem;
   // margin-top: 10px;
+
+  &.w650 {
+    width: 650px !important;
+  }
+
+  &.w250 {
+    width: 256px !important;
+  }
 }
 
 .radio-button {

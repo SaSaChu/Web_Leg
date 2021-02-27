@@ -558,6 +558,10 @@ p {
 .table_a {
   font-size: 1.23rem;
   color: white;
+
+  &.tt_o {
+    color: $color_yellow;
+  }
 }
 
 // 20pt
@@ -898,6 +902,16 @@ p {
   margin-top: 10px;
 }
 
+
+.tNoteBox {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(160, 76, 143, 1.00);
+  color: #d8d8d8;
+  font-size: 1.1rem;
+  text-align: left;
+}
 
 
 

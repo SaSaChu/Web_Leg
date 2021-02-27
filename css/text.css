@@ -148,6 +148,7 @@ p { padding: 0; margin: 0; }
 .text18_w { font-size: 1.5rem; color: white; }
 
 .table_a { font-size: 1.23rem; color: white; }
+.table_a.tt_o { color: #edc300; }
 
 .text20_dG { font-size: 1.5rem; color: #545454; }
 
@@ -223,3 +224,5 @@ p { padding: 0; margin: 0; }
 .m-step-type { display: inline-block; font-size: 1.6rem; color: #5b3468; margin-top: 25px; }
 
 .t-parent { display: inline-block; width: 100%; color: #f7af27; font-size: 1.5rem; text-align: left; margin-top: 10px; }
+
+.tNoteBox { display: inline-block; width: 100%; padding: 15px; background-color: #a04c8f; color: #d8d8d8; font-size: 1.1rem; text-align: left; }
