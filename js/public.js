@@ -1,5 +1,17 @@
 $(function() {
 
+   // 光箱
+  $('.showModel').click(function() {
+    $('#myModel').addClass('showModel')
+
+    $('#myModel .model_boxs.box_' + $(this).data('id')).addClass('show').siblings().removeClass('show')
+  });
+
+  $('.btn_close, .t-close, .btn_delete').click(function() {
+    $('#myModel').removeClass('showModel')
+  })
+
+
   // table點選切換tab
   $('.ba').click(function() {
     $('.ba').removeClass ('h');

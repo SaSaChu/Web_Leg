@@ -147,6 +147,8 @@ p { padding: 0; margin: 0; }
 
 .text18_w { font-size: 1.5rem; color: white; }
 
+.text18_w2 { font-size: 1.23rem; color: white; }
+
 .table_a { font-size: 1.23rem; color: white; }
 .table_a.tt_o { color: #edc300; }
 
@@ -204,7 +206,7 @@ p { padding: 0; margin: 0; }
 .table_se.s_TableSeno { padding-top: 0; }
 .table_se.s_T18 { font-size: 1.2rem; line-height: 30px; }
 .table_se a { color: white; text-decoration: underline; line-height: 25px; margin-left: 10px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .table_se a { margin-left: 0; line-height: auto; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_se a { margin-left: 0; line-height: auto; margin-top: 0; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_se { font-size: 1.2rem; } }
 
 .table_se2 { display: inline-block; width: 100%; max-width: 915px; padding-top: 10px; font-size: 1.4rem; color: #d8d8d8; text-align: left; }
@@ -213,11 +215,19 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_se2 { font-size: 1.2rem; } }
 
 .t_in_name { display: inline-block; font-size: 1.23rem; color: white; text-align: left; float: left; line-height: 25px; }
+.t_in_name.ta-use { display: inline-block; padding-left: 25px; }
+.t_in_name.ta-use:before { display: inline-block; content: attr(title); margin-left: -27px; }
 
 .t_in_name2 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; }
 
 .t_in_name3 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; text-align: left; padding-left: 29px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .t_in_name3 { padding-left: 0; } }
+.t_in_name3.ta-use2 { display: inline-block; padding-left: 25px; }
+.t_in_name3.ta-use2:before { display: inline-block; content: attr(title); margin-left: -27px; }
+
+.t_in_name4 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; text-align: left; }
+.t_in_name4.ta-use2 { display: inline-block; padding-left: 25px; }
+.t_in_name4.ta-use2:before { display: inline-block; content: attr(title); margin-left: -15px; }
 
 .t_in_day { display: inline-block; width: 100%; color: white; font-size: 2rem; padding: 10px 0; text-align: left; }
 

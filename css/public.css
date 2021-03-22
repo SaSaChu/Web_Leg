@@ -147,6 +147,8 @@ p { padding: 0; margin: 0; }
 
 .text18_w { font-size: 1.5rem; color: white; }
 
+.text18_w2 { font-size: 1.23rem; color: white; }
+
 .table_a { font-size: 1.23rem; color: white; }
 .table_a.tt_o { color: #edc300; }
 
@@ -204,7 +206,7 @@ p { padding: 0; margin: 0; }
 .table_se.s_TableSeno { padding-top: 0; }
 .table_se.s_T18 { font-size: 1.2rem; line-height: 30px; }
 .table_se a { color: white; text-decoration: underline; line-height: 25px; margin-left: 10px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .table_se a { margin-left: 0; line-height: auto; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .table_se a { margin-left: 0; line-height: auto; margin-top: 0; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_se { font-size: 1.2rem; } }
 
 .table_se2 { display: inline-block; width: 100%; max-width: 915px; padding-top: 10px; font-size: 1.4rem; color: #d8d8d8; text-align: left; }
@@ -213,11 +215,19 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_se2 { font-size: 1.2rem; } }
 
 .t_in_name { display: inline-block; font-size: 1.23rem; color: white; text-align: left; float: left; line-height: 25px; }
+.t_in_name.ta-use { display: inline-block; padding-left: 25px; }
+.t_in_name.ta-use:before { display: inline-block; content: attr(title); margin-left: -27px; }
 
 .t_in_name2 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; }
 
 .t_in_name3 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; text-align: left; padding-left: 29px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .t_in_name3 { padding-left: 0; } }
+.t_in_name3.ta-use2 { display: inline-block; padding-left: 25px; }
+.t_in_name3.ta-use2:before { display: inline-block; content: attr(title); margin-left: -27px; }
+
+.t_in_name4 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; text-align: left; }
+.t_in_name4.ta-use2 { display: inline-block; padding-left: 25px; }
+.t_in_name4.ta-use2:before { display: inline-block; content: attr(title); margin-left: -15px; }
 
 .t_in_day { display: inline-block; width: 100%; color: white; font-size: 2rem; padding: 10px 0; text-align: left; }
 
@@ -366,12 +376,6 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .p-30-50 { padding: 2.3rem 0 3.8rem 0; }
 
 .p-60 { padding: 4.5rem; }
-
-.tes { padding: 0; }
-
-.tes2 { padding: 0; }
-
-.tes3 { padding: 0; }
 
 .p-L20 { padding-left: 1.5rem; }
 
@@ -596,11 +600,22 @@ input[type=checkbox]:checked + span { background: url(../img/cbx-on.svg) no-repe
 .sIconSize .s_ok { display: inline-block; width: 100%; max-width: 193px; }
 .sIconSize .s_ok.sPLR { max-width: 135px !important; }
 
+#myModel { display: none; justify-content: center; align-items: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
+#myModel.showModel { display: flex; }
+#myModel .ac_outer { width: 100%; }
+#myModel .ac_outer .model_boxs { display: none; width: 100%; max-width: 600px; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; *zoom: 1; margin: 50px 0; padding: 20px 15px; }
+#myModel .ac_outer .model_boxs.show { display: inline-block; }
+#myModel .ac_outer .model_boxs:after { display: table; content: ""; line-height: 0; clear: both; }
+@media screen and (max-width: 449px) and (min-width: 0) { #myModel .ac_outer .model_boxs { max-width: auto; margin: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; } }
+#myModel .ac_outer .model_boxs .t-close { display: inline-block; font-size: 1.38rem; font-weight: bold; cursor: pointer; color: #545454; float: right; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+
 html { font-size: 13px; }
 
 body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-weight: 400; text-align: center; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; letter-spacing: 0.1rem; text-size-adjust: none; -webkit-text-size-adjust: none; }
 
 @media screen and (max-width: 449px) and (min-width: 0) { nav { display: none; } }
+
+.ds100 { display: inline-block; width: 100%; }
 
 ul { /* 取消ul預設的內縮及樣式 */ margin: 0; padding: 0; list-style: none; float: right; }
 ul.drop-down-menu { display: inline-block; font-size: 1.2rem; }
@@ -655,7 +670,7 @@ header { display: inline-block; width: 100%; padding-bottom: 3.8rem; }
 footer { display: inline-block; width: 100%; background-color: #5b3468; }
 footer .copy_boxs { display: inline-block; background-color: #49204e; color: white; font-size: .9rem; padding: 10px 0; }
 
-.main_boxs { display: inline-block; width: 100%; max-width: 1100px; }
+.main_boxs { display: block; width: 100%; max-width: 1100px; }
 .main_boxs.main_boxs515 { max-width: 515px; }
 .main_boxs.main_boxs180 { max-width: 180px; }
 @media screen and (max-width: 1099px) and (min-width: 760px) { .main_boxs { padding: 0 20px; } }
@@ -2709,7 +2724,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
   .run_new_boxs[data-unit='10'][data-page='1'] .items .item:nth-child(10) { left: calc(9 * (100% / 10)); }
   .run_new_boxs[data-unit='10'][data-page='1'] .pages i:nth-child(1) { background-color: #5b3168; } }
 
-.main_boxs { display: inline-block; width: 100%; max-width: 1100px; margin: 0 auto; }
+.main_boxs { display: block; width: 100%; max-width: 1100px; margin: 0 auto; }
 @media screen and (max-width: 1099px) and (min-width: 760px) { .main_boxs { padding: 0 20px; } }
 @media screen and (max-width: 759px) and (min-width: 0) { .main_boxs { padding: 0 15px; } }
 .main_boxs.main_table_boxs { max-width: 750px; padding: 45px 0; }
@@ -2740,6 +2755,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .all_boxs.a-bg-yellow { background-color: #edc300; }
 .all_boxs.a_people { max-width: 950px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .all_boxs.a_people { width: 100%; } }
+.all_boxs.ta_use { padding-left: 16px; }
 .all_boxs.all_m_d60 { margin-bottom: 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .all_boxs.all_m_d60 { margin-bottom: 30px; } }
 .all_boxs.all_p60 { padding: 60px 0; }
