@@ -215,6 +215,45 @@ input, textarea {
   max-width: 550px;
 }
 
+.imgBig {
+  display: inline-block;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 60px;
+}
+
+.imgBig915 {
+  display: inline-block;
+  width: 100%;
+  max-width: 915px;
+  margin: 60px 0;
+}
+
+.i_img_class_l {
+  display: inline-block;
+  width: 100%;
+  max-width: 380px;
+  padding-left: 20px;
+  float: right;
+}
+
+.classListPic {
+  display: inline-block;
+  width: 100%;
+  max-width: 100px;
+  float: right;
+  @include border-radius(50px);
+  overflow: hidden;
+}
+
+.i_img_class_r {
+  display: inline-block;
+  width: 100%;
+  max-width: 380px;
+  padding-right: 20px;
+  float: left;
+}
+
 .i_img_work {
   display: inline-block;
   width: 100%;
