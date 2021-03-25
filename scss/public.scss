@@ -69,6 +69,14 @@ ul {
     text-align: left;
     color: $class_blue;
     line-height: 1.5;
+
+    li {
+      line-height: 2.5;
+
+      a {
+        color: $class_blue;
+      }
+    }
   }
 
   &.drop-down-menu {
@@ -1454,6 +1462,49 @@ footer {
   text-align: left;
 }
 
+.box800 {
+  display: inline-block;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  margin: 60px 0;
+}
+
+.talkBox2 {
+  display: inline-block;
+  width: calc(100% / 2 - 30px * 1 / 2);
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  position: relative;
+
+  &:nth-child(2n+2) {
+    margin-right: 0;
+    margin-top: 80px;
+  }
+
+  .talkImg {
+    display: inline-block;
+    width: 100%;
+    max-width: 275px;
+    position: absolute;
+    top: 0;
+    left: 13%;
+    }
+
+  .whiteBox {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid white;
+    @include border-radius(5px);
+    padding: 160px 20px 20px 20px;
+    font-size: 1.23rem;
+    text-align: left;
+    color: white;
+    margin-top: 150px; 
+  }
+}
 
 .all_boxs {
   display: inline-block;
