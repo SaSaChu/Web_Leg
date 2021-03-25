@@ -1,7 +1,14 @@
 @charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.classBg_o { background-color: #f6ae67 !important; }
+
+.classFont_o { color: #f6ae67 !important; }
+
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
+
+.sloganImg { display: inline-block; width: 100%; max-width: 380px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .sloganImg { max-width: 215px; } }
 
 .a_team_pic { display: inline-block; width: 100%; max-width: 1105px; margin-bottom: 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .a_team_pic { max-width: 200px; margin-bottom: 30px; } }
@@ -61,12 +68,15 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .imgBig { display: inline-block; width: 100%; max-width: 1100px; margin-bottom: 60px; }
 
 .imgBig915 { display: inline-block; width: 100%; max-width: 915px; margin: 60px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .imgBig915 { margin: 60px 0 30px 0; } }
 
 .i_img_class_l { display: inline-block; width: 100%; max-width: 380px; padding-left: 20px; float: right; }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_img_class_l { max-width: 350px; padding-left: 0; } }
 
 .classListPic { display: inline-block; width: 100%; max-width: 100px; float: right; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; overflow: hidden; }
 
 .i_img_class_r { display: inline-block; width: 100%; max-width: 380px; padding-right: 20px; float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_img_class_r { max-width: 350px; padding-right: 0; } }
 
 .i_img_work { display: inline-block; width: 100%; max-width: 553px; }
 

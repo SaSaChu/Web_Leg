@@ -44,6 +44,10 @@ nav {
   display: inline-block;
   width: calc(100% / 3);
   float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
 }
 
 .classNewBox2 {
@@ -51,6 +55,10 @@ nav {
   width: calc(100% / 2);
   text-align: center;
   max-width: 345px;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
 }
 
 
@@ -68,10 +76,18 @@ ul {
     font-size: 1.53rem;
     text-align: left;
     color: $class_blue;
-    line-height: 1.5;
+
+    @include range-width(0, 450px) {
+      font-size: 1.23rem;
+      padding: 0 15px;
+    }
 
     li {
       line-height: 2.5;
+
+      @include range-width(0, 450px) {
+        line-height: 2;
+      }
 
       a {
         color: $class_blue;
@@ -493,6 +509,14 @@ footer {
   &.a_addD {
     padding: 0 0 100px 0;
   }
+}
+
+.classBorderBoxs_T {
+  display: inline-block;
+  width: 100%;
+  max-width: 1100px;
+  border-top: 1px solid $color_line;
+  margin-bottom: 60px;
 }
 
 .c_border_box_T {
@@ -1256,6 +1280,10 @@ footer {
     justify-content: center;
     margin-top: 20px;
 
+    &.cB {
+      margin-top: -5px;
+    }
+
     height: 32px;
 
     text-align: center;
@@ -1468,6 +1496,10 @@ footer {
   max-width: 750px;
   margin: 0 auto;
   margin: 60px 0;
+
+  @include range-width(0, 450px) {
+    margin: 0;
+  }
 }
 
 .talkBox2 {
@@ -1479,9 +1511,21 @@ footer {
   margin-top: 50px;
   position: relative;
 
+  @include range-width(0, 450px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+
   &:nth-child(2n+2) {
     margin-right: 0;
     margin-top: 80px;
+
+    @include range-width(0, 450px) {
+      margin-top: 30px;
+    }
   }
 
   .talkImg {
@@ -1491,7 +1535,12 @@ footer {
     position: absolute;
     top: 0;
     left: 13%;
+
+    @include range-width(0, 450px) {
+      max-width: 230px;
+      left: 17%;
     }
+  }
 
   .whiteBox {
     display: inline-block;
@@ -1503,6 +1552,10 @@ footer {
     text-align: left;
     color: white;
     margin-top: 150px; 
+
+    @include range-width(0, 450px) {
+      padding: 130px 20px 20px 20px;
+    }
   }
 }
 

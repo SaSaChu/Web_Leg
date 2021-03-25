@@ -45,7 +45,7 @@
 }
 
 .order_right {
-  float: right;
+  float: right !important;
 }
 
 .ds {
@@ -176,6 +176,10 @@
 
 .p-T35 {
   padding-top: 2.6rem;
+}
+
+.p-T25 {
+  padding-top: 25px;
 }
 
 .p-TD35 {

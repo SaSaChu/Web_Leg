@@ -50,10 +50,11 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p_slogan_title { font-size: 1.4rem; } }
 
 .slogan_class { display: inline-block; font-size: 2.2rem; }
-.slogan_class.sc_blue2 { color: #549ae6; position: relative; }
-.slogan_class.sc_blue2:after { display: inline-block; content: ''; width: 105%; background-color: #f1e603; position: absolute; bottom: 55px; left: -15px; height: 25px; z-index: -20; }
+.slogan_class.sc_blue2 { color: #549ae6; background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(241, 230, 3, 0.5) 50%); }
+@media screen and (max-width: 449px) and (min-width: 0) { .slogan_class.sc_blue2 { font-size: 1.69rem; } }
+.slogan_class.sc_blue21 { color: #549ae6; background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(241, 230, 3, 0.5) 50%); }
 
-.slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; }
+.slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; font-weight: bolder; }
 .slogan_title.s-t-2 { color: #954384; }
 .slogan_title.s-t-3 { font-size: 1.6rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 2rem; } }
@@ -64,6 +65,7 @@ p { padding: 0; margin: 0; }
 
 .slogan_text { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; padding-top: 40px; line-height: 34px; }
 .slogan_text.c_blue2 { color: #549ae6; }
+@media screen and (max-width: 449px) and (min-width: 0) { .slogan_text.c_blue2 { text-align: center; } }
 .slogan_text.s-t-pD60 { padding-bottom: 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_text { padding-bottom: 60px; text-align: left; }
   .slogan_text.m-s-t-l { text-align: center; } }
@@ -71,6 +73,7 @@ p { padding: 0; margin: 0; }
 .t_note { display: inline-block; width: 100%; font-size: 13px; color: white; float: left; }
 
 .class_text16 { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; line-height: 1.5; text-align: left; padding-top: 35%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .class_text16 { padding-top: 10%; font-size: 1.3rem; } }
 .class_text16.cnpt { padding-top: 0; }
 
 .cShare { display: inline-block; width: 100%; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #d8d8d8; color: #549ae6; text-align: left; font-size: 1.69rem; }
@@ -78,6 +81,7 @@ p { padding: 0; margin: 0; }
 .cShareName { display: inline-block; color: #549ae6; text-align: left; font-size: 1.69rem; position: absolute; left: 0; bottom: 0; }
 
 .classList { display: inline-block; width: 100%; font-size: 3.07rem; color: #549ae6; text-align: left; margin-bottom: 30px; padding-left: 50px; position: relative; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classList { width: auto; text-align: center !important; margin-bottom: 15px; } }
 .classList:before { display: inline-block; content: attr(title); font-size: 2rem; margin-right: 10px; position: absolute; left: 0; bottom: 4px; }
 
 .cent_text18_rd { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; line-height: 34px; padding: 0 130px 130px 0; text-align: left; }
@@ -156,6 +160,8 @@ p { padding: 0; margin: 0; }
 .text16_w { font-size: 1.2rem; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text16_w { font-size: 1rem; } }
 
+.c_text16_w { font-size: 1.2rem; color: white; line-height: 1.5; }
+
 .text16_main { font-size: 1.2rem; color: #5b3468; }
 
 .text16_second { font-size: 1.2rem; color: #954384; }
@@ -200,6 +206,7 @@ p { padding: 0; margin: 0; }
 .text30_w { font-size: 2.3rem; color: white; }
 
 .text40_w { font-size: 3.07rem; color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text40_w { font-size: 1.69rem; } }
 
 .text70_main { font-size: 5.3rem; color: #5b3468; }
 
@@ -260,3 +267,26 @@ p { padding: 0; margin: 0; }
 .t-parent { display: inline-block; width: 100%; color: #f7af27; font-size: 1.5rem; text-align: left; margin-top: 10px; }
 
 .tNoteBox { display: inline-block; width: 100%; padding: 15px; background-color: #a04c8f; color: #d8d8d8; font-size: 1.1rem; text-align: left; }
+
+.classBlue_qa { display: inline-block; width: 100%; font-size: 1.5rem; color: #549ae6; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classBlue_qa { font-size: 1.23rem; } }
+
+.classGrey_qa { display: inline-block; width: 100%; font-size: 1.2rem; color: #545454; text-align: left; padding: 20px 0 30px 0; }
+
+.classTitle { display: inline-block; width: 100%; font-size: 2.2rem; color: #549ae6; padding: 60px 0; font-weight: bolder; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classTitle { padding: 30px 0; font-size: 1.69rem; } }
+
+.classTitle2 { display: inline-block; width: 100%; font-size: 3.07rem; color: #549ae6; padding: 60px 0; font-weight: bolder; }
+.classTitle2.cwT { color: white; }
+.classTitle2.ct_npt { padding: 0; }
+.classTitle2.ct_fwg { font-weight: 400; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classTitle2 { padding: 30px 0; font-size: 1.69rem; } }
+
+.classTitle3 { display: inline-block; width: 100%; font-size: 2.2rem; color: #549ae6; padding: 60px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classTitle3 { padding: 30px 0; font-size: 1.69rem; text-align: center !important; } }
+
+.classGrey_s { display: inline-block; width: 100%; font-size: 1.6rem; color: #545454; text-align: left; padding: 10px 0 30px 0; line-height: 1.5; }
+.classGrey_s.cwS { color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classGrey_s { font-size: 1.4rem; } }
+
+.text-c { text-align: center !important; }

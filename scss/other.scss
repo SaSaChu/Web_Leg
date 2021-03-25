@@ -1,12 +1,30 @@
 @import "Ginkgo";
 @import "color";
 
+.classBg_o {
+  background-color: $class_orange !important;
+}
+
+.classFont_o {
+  color: $class_orange !important;
+}
+
 input, textarea {
   border:0 none;
   outline: 0;
   background-color: transparent;
   -moz-appearance: none; /* Firefox */
   -webkit-appearance: none; /* Safari 和 Chrome */
+}
+
+.sloganImg {
+  display: inline-block;
+  width: 100%;
+  max-width: 380px;
+
+  @include range-width(0, 450px) {
+    max-width: 215px;
+  }
 }
 
 .a_team_pic {
@@ -228,6 +246,10 @@ input, textarea {
   width: 100%;
   max-width: 915px;
   margin: 60px 0;
+
+  @include range-width(0, 450px) {
+    margin: 60px 0 30px 0;
+  }
 }
 
 .i_img_class_l {
@@ -236,6 +258,11 @@ input, textarea {
   max-width: 380px;
   padding-left: 20px;
   float: right;
+
+  @include range-width(0, 450px) {
+    max-width: 350px;
+    padding-left: 0;
+  }
 }
 
 .classListPic {
@@ -253,6 +280,11 @@ input, textarea {
   max-width: 380px;
   padding-right: 20px;
   float: left;
+
+  @include range-width(0, 450px) {
+    max-width: 350px;
+    padding-right: 0;
+  }
 }
 
 .i_img_work {

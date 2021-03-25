@@ -50,10 +50,11 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p_slogan_title { font-size: 1.4rem; } }
 
 .slogan_class { display: inline-block; font-size: 2.2rem; }
-.slogan_class.sc_blue2 { color: #549ae6; position: relative; }
-.slogan_class.sc_blue2:after { display: inline-block; content: ''; width: 105%; background-color: #f1e603; position: absolute; bottom: 55px; left: -15px; height: 25px; z-index: -20; }
+.slogan_class.sc_blue2 { color: #549ae6; background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(241, 230, 3, 0.5) 50%); }
+@media screen and (max-width: 449px) and (min-width: 0) { .slogan_class.sc_blue2 { font-size: 1.69rem; } }
+.slogan_class.sc_blue21 { color: #549ae6; background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(241, 230, 3, 0.5) 50%); }
 
-.slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; }
+.slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; font-weight: bolder; }
 .slogan_title.s-t-2 { color: #954384; }
 .slogan_title.s-t-3 { font-size: 1.6rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 2rem; } }
@@ -64,6 +65,7 @@ p { padding: 0; margin: 0; }
 
 .slogan_text { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; padding-top: 40px; line-height: 34px; }
 .slogan_text.c_blue2 { color: #549ae6; }
+@media screen and (max-width: 449px) and (min-width: 0) { .slogan_text.c_blue2 { text-align: center; } }
 .slogan_text.s-t-pD60 { padding-bottom: 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_text { padding-bottom: 60px; text-align: left; }
   .slogan_text.m-s-t-l { text-align: center; } }
@@ -71,6 +73,7 @@ p { padding: 0; margin: 0; }
 .t_note { display: inline-block; width: 100%; font-size: 13px; color: white; float: left; }
 
 .class_text16 { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; line-height: 1.5; text-align: left; padding-top: 35%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .class_text16 { padding-top: 10%; font-size: 1.3rem; } }
 .class_text16.cnpt { padding-top: 0; }
 
 .cShare { display: inline-block; width: 100%; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #d8d8d8; color: #549ae6; text-align: left; font-size: 1.69rem; }
@@ -78,6 +81,7 @@ p { padding: 0; margin: 0; }
 .cShareName { display: inline-block; color: #549ae6; text-align: left; font-size: 1.69rem; position: absolute; left: 0; bottom: 0; }
 
 .classList { display: inline-block; width: 100%; font-size: 3.07rem; color: #549ae6; text-align: left; margin-bottom: 30px; padding-left: 50px; position: relative; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classList { width: auto; text-align: center !important; margin-bottom: 15px; } }
 .classList:before { display: inline-block; content: attr(title); font-size: 2rem; margin-right: 10px; position: absolute; left: 0; bottom: 4px; }
 
 .cent_text18_rd { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; line-height: 34px; padding: 0 130px 130px 0; text-align: left; }
@@ -156,6 +160,8 @@ p { padding: 0; margin: 0; }
 .text16_w { font-size: 1.2rem; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text16_w { font-size: 1rem; } }
 
+.c_text16_w { font-size: 1.2rem; color: white; line-height: 1.5; }
+
 .text16_main { font-size: 1.2rem; color: #5b3468; }
 
 .text16_second { font-size: 1.2rem; color: #954384; }
@@ -200,6 +206,7 @@ p { padding: 0; margin: 0; }
 .text30_w { font-size: 2.3rem; color: white; }
 
 .text40_w { font-size: 3.07rem; color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text40_w { font-size: 1.69rem; } }
 
 .text70_main { font-size: 5.3rem; color: #5b3468; }
 
@@ -260,6 +267,29 @@ p { padding: 0; margin: 0; }
 .t-parent { display: inline-block; width: 100%; color: #f7af27; font-size: 1.5rem; text-align: left; margin-top: 10px; }
 
 .tNoteBox { display: inline-block; width: 100%; padding: 15px; background-color: #a04c8f; color: #d8d8d8; font-size: 1.1rem; text-align: left; }
+
+.classBlue_qa { display: inline-block; width: 100%; font-size: 1.5rem; color: #549ae6; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classBlue_qa { font-size: 1.23rem; } }
+
+.classGrey_qa { display: inline-block; width: 100%; font-size: 1.2rem; color: #545454; text-align: left; padding: 20px 0 30px 0; }
+
+.classTitle { display: inline-block; width: 100%; font-size: 2.2rem; color: #549ae6; padding: 60px 0; font-weight: bolder; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classTitle { padding: 30px 0; font-size: 1.69rem; } }
+
+.classTitle2 { display: inline-block; width: 100%; font-size: 3.07rem; color: #549ae6; padding: 60px 0; font-weight: bolder; }
+.classTitle2.cwT { color: white; }
+.classTitle2.ct_npt { padding: 0; }
+.classTitle2.ct_fwg { font-weight: 400; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classTitle2 { padding: 30px 0; font-size: 1.69rem; } }
+
+.classTitle3 { display: inline-block; width: 100%; font-size: 2.2rem; color: #549ae6; padding: 60px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classTitle3 { padding: 30px 0; font-size: 1.69rem; text-align: center !important; } }
+
+.classGrey_s { display: inline-block; width: 100%; font-size: 1.6rem; color: #545454; text-align: left; padding: 10px 0 30px 0; line-height: 1.5; }
+.classGrey_s.cwS { color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classGrey_s { font-size: 1.4rem; } }
+
+.text-c { text-align: center !important; }
 
 a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
 
@@ -391,7 +421,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 @media screen and (max-width: 449px) and (min-width: 0) { .m_order_left { float: left; } }
 
-.order_right { float: right; }
+.order_right { float: right !important; }
 
 .ds { display: inline-block; }
 
@@ -443,6 +473,8 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .p-T60 { padding-top: 4.5rem; }
 
 .p-T35 { padding-top: 2.6rem; }
+
+.p-T25 { padding-top: 25px; }
 
 .p-TD35 { padding: 2.6rem 0; }
 
@@ -499,7 +531,14 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .m_r30 { margin-right: 30px; }
 
+.classBg_o { background-color: #f6ae67 !important; }
+
+.classFont_o { color: #f6ae67 !important; }
+
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
+
+.sloganImg { display: inline-block; width: 100%; max-width: 380px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .sloganImg { max-width: 215px; } }
 
 .a_team_pic { display: inline-block; width: 100%; max-width: 1105px; margin-bottom: 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .a_team_pic { max-width: 200px; margin-bottom: 30px; } }
@@ -559,12 +598,15 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .imgBig { display: inline-block; width: 100%; max-width: 1100px; margin-bottom: 60px; }
 
 .imgBig915 { display: inline-block; width: 100%; max-width: 915px; margin: 60px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .imgBig915 { margin: 60px 0 30px 0; } }
 
 .i_img_class_l { display: inline-block; width: 100%; max-width: 380px; padding-left: 20px; float: right; }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_img_class_l { max-width: 350px; padding-left: 0; } }
 
 .classListPic { display: inline-block; width: 100%; max-width: 100px; float: right; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; overflow: hidden; }
 
 .i_img_class_r { display: inline-block; width: 100%; max-width: 380px; padding-right: 20px; float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_img_class_r { max-width: 350px; padding-right: 0; } }
 
 .i_img_work { display: inline-block; width: 100%; max-width: 553px; }
 
@@ -657,12 +699,16 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 .ds100 { display: inline-block; width: 100%; }
 
 .classNewBox3 { display: inline-block; width: calc(100% / 3); float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classNewBox3 { width: 100%; } }
 
 .classNewBox2 { display: inline-block; width: calc(100% / 2); text-align: center; max-width: 345px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .classNewBox2 { width: 100%; } }
 
 ul { /* 取消ul預設的內縮及樣式 */ margin: 0; padding: 0; list-style: none; float: right; }
-ul.classUl { float: left; list-style: disc !important; list-style-type: disc !important; font-size: 1.53rem; text-align: left; color: #549ae6; line-height: 1.5; }
+ul.classUl { float: left; list-style: disc !important; list-style-type: disc !important; font-size: 1.53rem; text-align: left; color: #549ae6; }
+@media screen and (max-width: 449px) and (min-width: 0) { ul.classUl { font-size: 1.23rem; padding: 0 15px; } }
 ul.classUl li { line-height: 2.5; }
+@media screen and (max-width: 449px) and (min-width: 0) { ul.classUl li { line-height: 2; } }
 ul.classUl li a { color: #549ae6; }
 ul.drop-down-menu { display: inline-block; font-size: 1.2rem; }
 ul.drop-down-menu li { position: relative; white-space: nowrap; }
@@ -732,6 +778,8 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .a_border_box { display: inline-block; width: 100%; max-width: 1100px; padding: 60px 0; border-top: 1px solid rgba(84, 84, 84, 0.5); }
 .a_border_box.a_noT { border-top: 0; padding: 0 0 60px 0; }
 .a_border_box.a_addD { padding: 0 0 100px 0; }
+
+.classBorderBoxs_T { display: inline-block; width: 100%; max-width: 1100px; border-top: 1px solid rgba(84, 84, 84, 0.5); margin-bottom: 60px; }
 
 .c_border_box_T { display: inline-block; width: 100%; max-width: 1100px; padding: 60px 0; border-top: 1px solid rgba(84, 84, 84, 0.5); margin-bottom: 60px; }
 .c_border_box_T.c_nom60 { margin-bottom: 0; }
@@ -1079,6 +1127,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .run_new_boxs b.right:before.crb { color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .run_new_boxs b { display: none; } }
 .run_new_boxs .pages { z-index: 2; display: flex; flex-direction: row; align-items: center; justify-content: center; margin-top: 20px; height: 32px; text-align: center; }
+.run_new_boxs .pages.cB { margin-top: -5px; }
 @media screen and (min-width: 450px) { .run_new_boxs .pages { display: none; } }
 .run_new_boxs .pages i { display: inline-block; width: 16px; height: 16px; margin: 0 3px; cursor: pointer; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background-color: #d9d9d9; -moz-transition: background-color 0.3s; -o-transition: background-color 0.3s; -webkit-transition: background-color 0.3s; transition: background-color 0.3s; }
 .run_new_boxs .pages i:hover { background-color: rgba(39, 40, 34, 0.5); }
@@ -2798,11 +2847,16 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .box915 { display: inline-block; width: 100%; max-width: 915px; text-align: left; }
 
 .box800 { display: inline-block; width: 100%; max-width: 750px; margin: 0 auto; margin: 60px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box800 { margin: 0; } }
 
-.talkBox2 { display: inline-block; width: calc(100% / 2 - 30px * 1 / 2); float: left; margin-right: 30px; margin-bottom: 20px; margin: 50px; position: relative; }
+.talkBox2 { display: inline-block; width: calc(100% / 2 - 30px * 1 / 2); float: left; margin-right: 30px; margin-bottom: 20px; margin-top: 50px; position: relative; }
+@media screen and (max-width: 449px) and (min-width: 0) { .talkBox2 { width: 100%; margin-right: 0; margin-bottom: 0; margin-top: 30px; padding: 0 30px; } }
 .talkBox2:nth-child(2n+2) { margin-right: 0; margin-top: 80px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .talkBox2:nth-child(2n+2) { margin-top: 30px; } }
 .talkBox2 .talkImg { display: inline-block; width: 100%; max-width: 275px; position: absolute; top: 0; left: 13%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .talkBox2 .talkImg { max-width: 230px; left: 17%; } }
 .talkBox2 .whiteBox { display: inline-block; width: 100%; border: 1px solid white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding: 160px 20px 20px 20px; font-size: 1.23rem; text-align: left; color: white; margin-top: 150px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .talkBox2 .whiteBox { padding: 130px 20px 20px 20px; } }
 
 .all_boxs { display: inline-block; width: 100%; *zoom: 1; }
 .all_boxs:after { display: table; content: ""; line-height: 0; clear: both; }
