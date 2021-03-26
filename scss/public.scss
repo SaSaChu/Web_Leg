@@ -2038,6 +2038,10 @@ footer {
     width: calc(100% / 4);
   }
 
+  &.table_step3 {
+    width: calc(100% / 3);
+  }
+
   float: left;
   font-size: 1.2rem;
   color: $color_line_text2;
@@ -2102,6 +2106,12 @@ footer {
 .m-t4 {
   display: inline-block;
   width: calc(100% / 4);
+  float: left;
+}
+
+.m-t3 {
+  display: inline-block;
+  width: calc(100% / 3);
   float: left;
 }
 .m-table_step {
