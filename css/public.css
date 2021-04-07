@@ -50,21 +50,28 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p_slogan_title { font-size: 1.4rem; } }
 
 .slogan_class { display: inline-block; font-size: 2.2rem; }
-.slogan_class.sc_blue2 { color: #549ae6; background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(241, 230, 3, 0.5) 50%); }
+.slogan_class.sc_blue2 { color: #4A90E2; background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, #f1e603 50%); }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_class.sc_blue2 { font-size: 1.69rem; } }
-.slogan_class.sc_blue21 { color: #549ae6; background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(241, 230, 3, 0.5) 50%); }
+.slogan_class.sc_blue21 { color: #4A90E2; background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(241, 230, 3, 0.5) 50%); }
+
+.alltitle { display: inline-block; font-weight: bolder; font-size: 2.5rem; color: #4A90E2; padding: 0 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .alltitle { font-size: 1.69rem; } }
+
+.alltitle2 { display: inline-block; font-weight: bolder; font-size: 2.5rem; color: #ED6C00; padding: 0 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .alltitle2 { font-size: 1.69rem; } }
 
 .slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; font-weight: bolder; }
 .slogan_title.s-t-2 { color: #954384; }
 .slogan_title.s-t-3 { font-size: 1.6rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 2rem; } }
-.slogan_title.c_s_blue2 { color: #549ae6; }
+.slogan_title.c_s_blue2 { color: #4A90E2; }
 .slogan_title.c_s_blue { color: #0075b5; }
 .slogan_title.c_s_red { color: #db092f; }
 .slogan_title.c_s_yellow { color: #edc300; }
 
 .slogan_text { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; padding-top: 40px; line-height: 34px; }
-.slogan_text.c_blue2 { color: #549ae6; }
+.slogan_text.classUse { padding-top: 0; font-size: 2rem; }
+.slogan_text.c_blue2 { color: #4A90E2; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_text.c_blue2 { text-align: center; } }
 .slogan_text.s-t-pD60 { padding-bottom: 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_text { padding-bottom: 60px; text-align: left; }
@@ -76,11 +83,11 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .class_text16 { padding-top: 10%; font-size: 1.3rem; } }
 .class_text16.cnpt { padding-top: 0; }
 
-.cShare { display: inline-block; width: 100%; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #d8d8d8; color: #549ae6; text-align: left; font-size: 1.69rem; }
+.cShare { display: inline-block; width: 100%; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #d8d8d8; color: #4A90E2; text-align: left; font-size: 1.69rem; }
 
-.cShareName { display: inline-block; color: #549ae6; text-align: left; font-size: 1.69rem; position: absolute; left: 0; bottom: 0; }
+.cShareName { display: inline-block; color: #4A90E2; text-align: left; font-size: 1.69rem; position: absolute; left: 0; bottom: 0; }
 
-.classList { display: inline-block; width: 100%; font-size: 3.07rem; color: #549ae6; text-align: left; margin-bottom: 30px; padding-left: 50px; position: relative; }
+.classList { display: inline-block; width: 100%; font-size: 3.07rem; color: #4A90E2; text-align: left; margin-bottom: 30px; padding-left: 50px; position: relative; font-weight: bolder; }
 @media screen and (max-width: 449px) and (min-width: 0) { .classList { width: auto; text-align: center !important; margin-bottom: 15px; } }
 .classList:before { display: inline-block; content: attr(title); font-size: 2rem; margin-right: 10px; position: absolute; left: 0; bottom: 4px; }
 
@@ -268,21 +275,22 @@ p { padding: 0; margin: 0; }
 
 .tNoteBox { display: inline-block; width: 100%; padding: 15px; background-color: #a04c8f; color: #d8d8d8; font-size: 1.1rem; text-align: left; }
 
-.classBlue_qa { display: inline-block; width: 100%; font-size: 1.5rem; color: #549ae6; text-align: left; }
+.classBlue_qa { display: inline-block; width: 100%; font-size: 1.5rem; color: #4A90E2; text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .classBlue_qa { font-size: 1.23rem; } }
 
 .classGrey_qa { display: inline-block; width: 100%; font-size: 1.2rem; color: #545454; text-align: left; padding: 20px 0 30px 0; }
 
-.classTitle { display: inline-block; width: 100%; font-size: 2.2rem; color: #549ae6; padding: 60px 0; font-weight: bolder; }
+.classTitle { display: inline-block; width: 100%; font-size: 2.2rem; color: #4A90E2; padding: 60px 0; font-weight: bolder; }
 @media screen and (max-width: 449px) and (min-width: 0) { .classTitle { padding: 30px 0; font-size: 1.69rem; } }
 
-.classTitle2 { display: inline-block; width: 100%; font-size: 3.07rem; color: #549ae6; padding: 60px 0; font-weight: bolder; }
+.classTitle2 { display: inline-block; width: 100%; font-size: 3.07rem; color: #4A90E2; margin: 60px 0; font-weight: bolder; }
+.classTitle2.heL { background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, #f1e603 50%); }
 .classTitle2.cwT { color: white; }
 .classTitle2.ct_npt { padding: 0; }
 .classTitle2.ct_fwg { font-weight: 400; }
 @media screen and (max-width: 449px) and (min-width: 0) { .classTitle2 { padding: 30px 0; font-size: 1.69rem; } }
 
-.classTitle3 { display: inline-block; width: 100%; font-size: 2.2rem; color: #549ae6; padding: 60px 0; }
+.classTitle3 { display: inline-block; width: 100%; font-size: 2.2rem; color: #4A90E2; padding: 60px 0; font-weight: bolder; }
 @media screen and (max-width: 449px) and (min-width: 0) { .classTitle3 { padding: 30px 0; font-size: 1.69rem; text-align: center !important; } }
 
 .classGrey_s { display: inline-block; width: 100%; font-size: 1.6rem; color: #545454; text-align: left; padding: 10px 0 30px 0; line-height: 1.5; }
@@ -468,6 +476,9 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .p-T40 { padding-top: 4.5rem; }
 
+.m-p-T40 { padding-top: 4.5rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m-p-T40 { padding-top: 0; } }
+
 .p-TD40 { padding: 4.5rem 0; }
 
 .p-T60 { padding-top: 4.5rem; }
@@ -531,9 +542,13 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .m_r30 { margin-right: 30px; }
 
-.classBg_o { background-color: #f6ae67 !important; }
+.classBg_o { background-color: #F4A45C !important; }
 
-.classFont_o { color: #f6ae67 !important; }
+.textBg { background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, #d6de00 50%) !important; }
+
+.textBg_b { background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, #f1e603 50%); }
+
+.classFont_o { color: #ED6C00 !important; }
 
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
@@ -705,14 +720,14 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 @media screen and (max-width: 449px) and (min-width: 0) { .classNewBox2 { width: 100%; } }
 
 ul { /* 取消ul預設的內縮及樣式 */ margin: 0; padding: 0; list-style: none; float: right; }
-ul.classUl { float: left; list-style: disc !important; list-style-type: disc !important; font-size: 1.53rem; text-align: left; color: #549ae6; }
+ul.classUl { float: left; list-style: disc !important; list-style-type: disc !important; font-size: 1.53rem; text-align: left; color: #4A90E2; }
 @media screen and (max-width: 449px) and (min-width: 0) { ul.classUl { font-size: 1.23rem; padding: 0 15px; } }
 ul.classUl li { line-height: 2.5; }
 @media screen and (max-width: 449px) and (min-width: 0) { ul.classUl li { line-height: 2; } }
-ul.classUl li a { color: #549ae6; }
+ul.classUl li a { color: #4A90E2; }
 ul.drop-down-menu { display: inline-block; font-size: 1.2rem; }
 ul.drop-down-menu li { position: relative; white-space: nowrap; }
-ul.drop-down-menu li.classNote { display: inline-block; width: 100%; font-size: 1.53rem; text-align: left; color: #549ae6; list-style-type: disc; }
+ul.drop-down-menu li.classNote { display: inline-block; width: 100%; font-size: 1.53rem; text-align: left; color: #4A90E2; list-style-type: disc; }
 ul.drop-down-menu > li { float: left; /* 只有第一層是靠左對齊*/ }
 ul.drop-down-menu > li:last-child { border-right: none; }
 ul.drop-down-menu a { font-size: 1.2rem; color: #545454; display: block; padding-left: 3rem; line-height: 3rem; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
@@ -2851,7 +2866,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 
 .talkBox2 { display: inline-block; width: calc(100% / 2 - 30px * 1 / 2); float: left; margin-right: 30px; margin-bottom: 20px; margin-top: 50px; position: relative; }
 @media screen and (max-width: 449px) and (min-width: 0) { .talkBox2 { width: 100%; margin-right: 0; margin-bottom: 0; margin-top: 30px; padding: 0 30px; } }
-.talkBox2:nth-child(2n+2) { margin-right: 0; margin-top: 80px; }
+.talkBox2:nth-child(2n+2) { margin-right: 0; margin-top: 115px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .talkBox2:nth-child(2n+2) { margin-top: 30px; } }
 .talkBox2 .talkImg { display: inline-block; width: 100%; max-width: 275px; position: absolute; top: 0; left: 13%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .talkBox2 .talkImg { max-width: 230px; left: 17%; } }
@@ -2864,7 +2879,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .all_boxs.a-bg-main { background-color: #5b3468; }
 .all_boxs.a-bg-deep-p { background-color: #49204e; }
 .all_boxs.a-bg-blue { background-color: #0075b5; }
-.all_boxs.a-bg-blue2 { background-color: #549ae6; }
+.all_boxs.a-bg-blue2 { background-color: #4A90E2; }
 .all_boxs.a-bg-red { background-color: #db092f; }
 .all_boxs.a-bg-yellow { background-color: #edc300; }
 .all_boxs.a_people { max-width: 950px; }

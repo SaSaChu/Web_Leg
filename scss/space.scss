@@ -161,6 +161,13 @@
   padding-top: 4.5rem;
 }
 
+.m-p-T40 {
+  padding-top: 4.5rem;
+
+  @include range-width(0, 450px) {
+    padding-top: 0;
+  }
+}
 
 .p-TD40 {
   padding: 4.5rem 0;
