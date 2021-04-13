@@ -3,10 +3,6 @@
 
 .classBg_o { background-color: #F4A45C !important; }
 
-.textBg { background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, #d6de00 50%) !important; }
-
-.textBg_b { background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, #f1e603 50%); }
-
 .classFont_o { color: #ED6C00 !important; }
 
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }

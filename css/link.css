@@ -71,6 +71,7 @@ p { padding: 0; margin: 0; }
 
 .slogan_text { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; padding-top: 40px; line-height: 34px; }
 .slogan_text.classUse { padding-top: 0; font-size: 2rem; }
+@media screen and (max-width: 449px) and (min-width: 0) { .slogan_text.classUse { font-size: 1.69rem; } }
 .slogan_text.c_blue2 { color: #4A90E2; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_text.c_blue2 { text-align: center; } }
 .slogan_text.s-t-pD60 { padding-bottom: 60px; }
@@ -288,7 +289,7 @@ p { padding: 0; margin: 0; }
 .classTitle2.cwT { color: white; }
 .classTitle2.ct_npt { padding: 0; }
 .classTitle2.ct_fwg { font-weight: 400; }
-@media screen and (max-width: 449px) and (min-width: 0) { .classTitle2 { padding: 30px 0; font-size: 1.69rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .classTitle2 { padding: 30px 0; font-size: 1.69rem; margin: 0; } }
 
 .classTitle3 { display: inline-block; width: 100%; font-size: 2.2rem; color: #4A90E2; padding: 60px 0; font-weight: bolder; }
 @media screen and (max-width: 449px) and (min-width: 0) { .classTitle3 { padding: 30px 0; font-size: 1.69rem; text-align: center !important; } }

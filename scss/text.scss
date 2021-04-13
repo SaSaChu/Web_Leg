@@ -273,6 +273,10 @@ p {
   &.classUse {
     padding-top: 0;
     font-size: 2rem;
+
+    @include range-width(0, 450px) {
+      font-size: 1.69rem;
+    }
   }
 
   &.c_blue2 {
@@ -1224,6 +1228,7 @@ p {
   @include range-width(0, 450px) {
     padding: 30px 0;
     font-size: 1.69rem;
+    margin: 0;
   }
 }
 
