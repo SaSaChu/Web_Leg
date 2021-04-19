@@ -127,6 +127,14 @@
   padding-bottom: 4.5rem;
 }
 
+.c-p-D60 {
+  padding-bottom: 4.5rem;
+
+  @include range-width(0, 450px) {
+    padding-bottom: 0;
+  }
+}
+
 .p-D30 {
   padding-bottom: 2.3rem;
 }
@@ -306,6 +314,20 @@
 
 .m-TD60 {
   margin: 4.5rem 0;
+}
+
+.c-m-TD60 {
+  margin: 4.5rem 0;
+
+  @include range-width(0, 450px) {
+    margin: 0;
+  }
+}
+
+.c-p-TD30 {
+  @include range-width(0, 450px) {
+    padding: 30px 0 !important;
+  }
 }
 
 .m-TD30 {
