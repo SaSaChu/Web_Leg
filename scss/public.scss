@@ -691,6 +691,7 @@ footer {
   .texts {
     z-index: 1;
     width: 40%;
+    background-color: #5b3468;
   }
 
   // 圖片區塊
@@ -725,7 +726,7 @@ footer {
 
   // 文字
   .text {
-    padding: 64px 0 64px 64px;
+    padding: 64px;
 
     @include range-width(0, 450px) {
       padding: 40px 0;
@@ -1657,6 +1658,7 @@ footer {
 
   &.bread_mark {
     float: left;
+    line-height: 20px;
 
     &:after {
       display: inline-block;
@@ -1783,6 +1785,8 @@ footer {
 .stories_t_boxs {
   display: inline-block;
   width: 90%;
+  height: 230px;
+  overflow: hidden;
   position: relative;
   bottom: 30px;
   padding: 20px;
@@ -1808,6 +1812,7 @@ footer {
   &.b4-bg-w {
     background-color: white;
     padding: 10px;
+    height: 400px;
   }
 
   @include range-width(760px, 1100px) {

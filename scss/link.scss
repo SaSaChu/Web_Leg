@@ -153,6 +153,7 @@ button {
   font-size: 1.1rem;
   margin: 3px 7px 0 7px;
   @include transition(all .3s);
+  line-height: 27px;
  
   &:hover, &:active {
     color: $color_second;

@@ -117,7 +117,7 @@ $(function() {
     })
 
     // 自動播放，每七秒鐘 往右一張
-    setInterval(_ => $right.click(), 4 * 1000)
+    setInterval(_ => $right.click(), 5 * 1000)
   });
 
 
