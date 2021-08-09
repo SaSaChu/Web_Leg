@@ -611,6 +611,10 @@ footer {
   border-bottom: 1px solid $color_line;
   margin-bottom: 60px;
 
+  &.nnD {
+    border-bottom: 0;
+  }
+
   &.i-m100 {
     margin-bottom: 100px;
 
@@ -1999,15 +2003,20 @@ footer {
 
       .table_text {
         display: inline-block;
-        width: calc(100% / 5);
+        width: calc(100% / 6);
         float: left;
         color: white;
         font-size: 1.1rem;
         text-align: left;
 
+        &.tt_R {
+          float: right !important;
+        }
+
         .table_link {
           display: inline-block;
           float: right;
+          text-align: right;
           width: 60%;
           height: 50px;
           text-align: center;
