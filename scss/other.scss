@@ -535,7 +535,7 @@ label {
   margin-right: 15px;
   float: left;
 
-  input[type=checkbox] {
+  input[type='checkbox'], input[type='radio'] {
     display: none;
 
     + span {
