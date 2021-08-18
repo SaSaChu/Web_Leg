@@ -18,56 +18,6 @@
     <script src="js/imgLiquid-min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.countup.js"></script>
-
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-
-    <!-- Demo styles -->
-    <style>
-      .swiper-container {
-        width: 100%;
-        max-width: 1400px;
-        height: 100%;
-        margin-top: 198px;
-      }
-
-      @media screen and (max-width: 449px) and (min-width: 0) { 
-        .swiper-container {
-          margin-top: 80px;
-        }
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
-
   </head>
   <body>
     
@@ -210,53 +160,57 @@
     <!-- ※ data-total 數量需要與 texts 內的 text 數量相同 -->
     <!-- ※ data-total 最大值為 10，如要改變最大值，請修改 public.scss 內的 .i_banner_boxs 下的 $count 變數值 -->
 
-    <!-- <div class="picbanner">
-      <div class="single-item"><img src="img/banner/b01.jpg"></div>
-      <div class="single-item"><img src="img/banner/b01.jpg"></div>
-    </div> -->
-
-    <!-- Swiper -->
-    <div class="swiper-container mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="img/banner/b01_m.jpg" media="(max-width: 450px)">
-            <img src="img/banner/b01.jpg">
-          </picture>
+    <div class='i_banner_boxs' data-index='1' data-total='5'>
+      <!-- 圖片區塊 -->
+      <div class='images'>
+        <div class='image'><img class='in_ban' src="img/banner.png"></div>
+        <div class='image'><img class='in_ban' src="img/banner02.png"></div>
+        <div class='image'><img class='in_ban' src="img/banner03.png"></div>
+        <div class='image'><img class='in_ban' src="img/banner04.png"></div>
+        <div class='image'><img class='in_ban' src="img/banner05.png"></div>
+      </div>
+      
+      <!-- 文字區塊 -->
+      <div class='texts'>
+        <!-- banner01 -->
+        <div class='text'>
+          <b>LEGACY 致力於</br>提升每個人的生命價值</b>
+          <span>我們支持每個人實現您的生命願景， </br>在人生中尋找更好的結果。</span>
+          <a class='t_link_out_line' href="">Read More</a>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="img/banner/b02_m.jpg" media="(max-width: 450px)">
-            <img src="img/banner/b02.jpg">
-          </picture>
+        <!-- banner02 -->
+        <div class='text'>
+          <b>02.LEGACY 致力於</br>提升每個人的生命價值</b>
+          <span>02.我們支持每個人實現您的生命願景， </br>在人生中尋找更好的結果。</span>
+          <a class='t_link_out_line' href="">Read More</a>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="img/banner/b01_m.jpg" media="(max-width: 450px)">
-            <img src="img/banner/b01.jpg">
-          </picture>
+        <!-- banner03 -->
+        <div class='text'>
+          <b>03.LEGACY 致力於</br>提升每個人的生命價值</b>
+          <span>03.我們支持每個人實現您的生命願景， </br>在人生中尋找更好的結果。</span>
+          <a class='t_link_out_line' href="">Read More</a>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="img/banner/b02_m.jpg" media="(max-width: 450px)">
-            <img src="img/banner/b02.jpg">
-          </picture>
+        <!-- banner04 -->
+        <div class='text'>
+          <b>04.LEGACY 致力於</br>提升每個人的生命價值</b>
+          <span>04.我們支持每個人實現您的生命願景， </br>在人生中尋找更好的結果。</span>
+          <a class='t_link_out_line' href="">Read More</a>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="img/banner/b01_m.jpg" media="(max-width: 450px)">
-            <img src="img/banner/b01.jpg">
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="img/banner/b02_m.jpg" media="(max-width: 450px)">
-            <img src="img/banner/b02.jpg">
-          </picture>
+        <!-- banner05 -->
+        <div class='text'>
+          <b>05.LEGACY 致力於</br>提升每個人的生命價值</b>
+          <span>05.我們支持每個人實現您的生命願景， </br>在人生中尋找更好的結果。</span>
+          <a class='t_link_out_line' href="">Read More</a>
         </div>
       </div>
-    </div>
+      
+      <!-- 底下點點點 -->
+      <div class='points'></div>
 
+      <!-- 左右箭頭 -->
+      <label class='left icon-chevron_left'></label>
+      <label class='right icon-chevron_right'></label>
+    </div>
 
     <!-- 生命是不斷創造的過程 -->
     <div class="main_boxs">
@@ -617,29 +571,6 @@
       </div>
       <div class='all_boxs a-bg-deep-p p-TD20 text12_w t_w_1'>© 2021 LEGACY. All Right Reserved</div>
     </footer>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
     
   </body>
 </html>

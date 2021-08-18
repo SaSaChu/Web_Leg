@@ -243,6 +243,29 @@ button {
   }
 }
 
+.link_news_2 {
+  display: inline-block;
+  color: $color_dG;
+  font-size: 1.1rem;
+  @include transition(all .3s);
+  padding: 20px 20px 20px 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  &:hover, &:active {
+    color: $color_second;
+  }
+
+  &:before {
+    display: inline-block;
+    content: '\e90c';
+    font-family: icon;
+    margin-right: 3px;
+    margin-top: 2px;
+  }
+}
+
 // new page
 .link_new_list {
   display: block;

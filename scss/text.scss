@@ -129,7 +129,18 @@ p {
   text-align: left;
   padding-top: 250px;
 
-  @include range-width(0, 450px) {
+  @include range-width(1020px, 1300px) {
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  @include range-width(760px, 1020px) {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @include range-width(0, 760px) {
     font-size: 2.6rem;
     bottom: 30px;
     padding-left: 30px;
@@ -653,6 +664,21 @@ p {
   @include range-width(0, 450px) {
     text-align: left;
   }
+}
+
+// 首頁。觀點分享區塊
+.text_share {
+  display: -webkit-box;
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.2rem;
+  color: $color_dG;
+  border-top: 1px solid $color_line2;
+  text-align: left;
+  padding-top: .5rem;
+  line-height: 1.5;
 }
 
 .text14_second {

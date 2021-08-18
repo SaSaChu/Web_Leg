@@ -179,7 +179,8 @@ input, textarea {
   display: inline-block;
   width: 100%;
   max-width: 350px;
-  min-height: 230px;
+  max-height: 230px;
+  overflow: hidden;
 }
 
 .p_img_s {

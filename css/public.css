@@ -42,7 +42,9 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title:after { font-size: 1.6rem; } }
 
 .page_banner_title2 { display: inline-block; font-size: 2.6rem; color: white; float: left; text-align: left; padding-top: 250px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title2 { font-size: 2.6rem; bottom: 30px; padding-left: 30px; } }
+@media screen and (max-width: 1299px) and (min-width: 1020px) { .page_banner_title2 { padding-left: 30px; padding-bottom: 30px; } }
+@media screen and (max-width: 1019px) and (min-width: 760px) { .page_banner_title2 { padding-left: 30px; padding-top: 30px; padding-bottom: 30px; } }
+@media screen and (max-width: 759px) and (min-width: 0) { .page_banner_title2 { font-size: 2.6rem; bottom: 30px; padding-left: 30px; } }
 .page_banner_title2:after { display: block; content: attr(title); font-size: 1.6rem; font-family: 'Roboto'; margin-top: 5px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title2:after { font-size: 1.6rem; } }
 
@@ -152,6 +154,8 @@ p { padding: 0; margin: 0; }
 
 .text14_dG { font-size: 1.2rem; color: #545454; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text14_dG { text-align: left; } }
+
+.text_share { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; font-size: 1.2rem; color: #545454; border-top: 1px solid rgba(155, 155, 155, 0.5); text-align: left; padding-top: .5rem; line-height: 1.5; }
 
 .text14_second { font-size: 1.1rem; color: #954384; }
 
@@ -349,6 +353,10 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .link_news:hover, .link_news:active { color: #954384; }
 .link_news:before { display: inline-block; content: '\e90c'; font-family: icon; margin-right: 3px; margin-top: 2px; }
 .link_news.page-l-n { margin-right: 10px; }
+
+.link_news_2 { display: inline-block; color: #545454; font-size: 1.1rem; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; padding: 20px 20px 20px 0; position: absolute; right: 0; bottom: 0; }
+.link_news_2:hover, .link_news_2:active { color: #954384; }
+.link_news_2:before { display: inline-block; content: '\e90c'; font-family: icon; margin-right: 3px; margin-top: 2px; }
 
 .link_new_list { display: block; font-size: 1.2rem; color: #5b3468; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 30px; }
 .link_new_list:hover, .link_new_list:active { color: #954384; }
@@ -592,7 +600,7 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .tag_boxs .i_img_new.p_img_new { min-height: 250px; }
 .tag_boxs:before { display: inline-block; content: attr(title); position: absolute; left: 0; bottom: -11px; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 10px; z-index: 8888; }
 
-.i_img_s { display: inline-block; width: 100%; max-width: 350px; min-height: 230px; }
+.i_img_s { display: inline-block; width: 100%; max-width: 350px; max-height: 230px; overflow: hidden; }
 
 .p_img_s { display: inline-block; width: 100%; max-width: 513px; height: 290px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p_img_s { height: 183px; } }
@@ -715,6 +723,8 @@ html { font-size: 13px; }
 body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-weight: 400; text-align: center; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; letter-spacing: 0.1rem; text-size-adjust: none; -webkit-text-size-adjust: none; }
 
 @media screen and (max-width: 449px) and (min-width: 0) { nav { display: none; } }
+
+.picbanner { display: inline-block; width: 100%; max-width: 1400px; height: 530px; background-color: rgba(255, 0, 0, 0.2); margin-top: 197px; }
 
 .ds100 { display: inline-block; width: 100%; }
 
@@ -1066,9 +1076,11 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
   .i_banner_boxs .text { height: auto; } }
 
 .p_banner_boxs2 { display: inline-block; width: 100%; height: 600px; position: relative; margin-bottom: 60px; margin-top: 197px; }
+@media screen and (max-width: 1299px) and (min-width: 760px) { .p_banner_boxs2 { margin-bottom: 140px; } }
 .p_banner_boxs2 .pc-banner-cent { display: inline-block; width: 100%; height: 600px; position: absolute; }
 .p_banner_boxs2 .pc-banner-cent .pc-cent-detail { display: inline-block; width: 100%; max-width: 1265px; margin: 0 auto; }
 .p_banner_boxs2 .pc-banner-bg { display: inline-block; width: 100%; height: 460px; margin: 70px 0; }
+@media screen and (max-width: 769px) and (min-width: 450px) { .p_banner_boxs2 .pc-banner-bg { margin: 0 0 70px 0; } }
 .p_banner_boxs2 .pc-banner-bg.p-bg-lg { background-color: rgba(216, 216, 216, 0.3); }
 .p_banner_boxs2 .pc-banner-bg.p-bg-main { background-color: #5b3468; }
 .p_banner_boxs2 .pc-banner-bg.p-bg-deep-p { background-color: #49204e; }
@@ -2930,7 +2942,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .boxs3_ns { display: inline-block; width: calc(100% / 3); float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs3_ns { width: 100%; padding: 0 15px; } }
 
-.boxs3 { display: inline-block; width: calc(100% / 3 - 35px * 2 / 3); float: left; position: relative; }
+.boxs3 { display: inline-block; width: calc(100% / 3 - 35px * 2 / 3); float: left; position: relative; min-height: 460px; }
 .boxs3:nth-child(3n+2) { margin: 0 35px; }
 .boxs3:nth-child(n+4) { margin-top: 80px; }
 @media screen and (max-width: 1099px) and (min-width: 760px) { .boxs3:nth-child(n+4) { margin-top: 0; } }
@@ -2945,6 +2957,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .boxs4 { display: inline-block; width: calc(100% / 4 - 20px * 3 / 4); float: left; margin-right: 20px; }
 .boxs4:last-child { margin-right: 0; }
 .boxs4.b4-bg-w { background-color: white; padding: 10px; height: 400px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .boxs4.b4-bg-w { height: 425px; } }
 @media screen and (max-width: 1099px) and (min-width: 760px) { .boxs4 { width: calc(100% / 2 - 20px * 1 / 2); margin-right: 0; }
   .boxs4:nth-child(2n+1) { margin-right: 20px; }
   .boxs4:nth-child(n+3) { margin-top: 15px; } }

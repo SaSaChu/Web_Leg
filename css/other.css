@@ -42,7 +42,7 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .tag_boxs .i_img_new.p_img_new { min-height: 250px; }
 .tag_boxs:before { display: inline-block; content: attr(title); position: absolute; left: 0; bottom: -11px; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 10px; z-index: 8888; }
 
-.i_img_s { display: inline-block; width: 100%; max-width: 350px; min-height: 230px; }
+.i_img_s { display: inline-block; width: 100%; max-width: 350px; max-height: 230px; overflow: hidden; }
 
 .p_img_s { display: inline-block; width: 100%; max-width: 513px; height: 290px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p_img_s { height: 183px; } }

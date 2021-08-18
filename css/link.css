@@ -42,7 +42,9 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title:after { font-size: 1.6rem; } }
 
 .page_banner_title2 { display: inline-block; font-size: 2.6rem; color: white; float: left; text-align: left; padding-top: 250px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title2 { font-size: 2.6rem; bottom: 30px; padding-left: 30px; } }
+@media screen and (max-width: 1299px) and (min-width: 1020px) { .page_banner_title2 { padding-left: 30px; padding-bottom: 30px; } }
+@media screen and (max-width: 1019px) and (min-width: 760px) { .page_banner_title2 { padding-left: 30px; padding-top: 30px; padding-bottom: 30px; } }
+@media screen and (max-width: 759px) and (min-width: 0) { .page_banner_title2 { font-size: 2.6rem; bottom: 30px; padding-left: 30px; } }
 .page_banner_title2:after { display: block; content: attr(title); font-size: 1.6rem; font-family: 'Roboto'; margin-top: 5px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title2:after { font-size: 1.6rem; } }
 
@@ -152,6 +154,8 @@ p { padding: 0; margin: 0; }
 
 .text14_dG { font-size: 1.2rem; color: #545454; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text14_dG { text-align: left; } }
+
+.text_share { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; font-size: 1.2rem; color: #545454; border-top: 1px solid rgba(155, 155, 155, 0.5); text-align: left; padding-top: .5rem; line-height: 1.5; }
 
 .text14_second { font-size: 1.1rem; color: #954384; }
 
@@ -349,6 +353,10 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .link_news:hover, .link_news:active { color: #954384; }
 .link_news:before { display: inline-block; content: '\e90c'; font-family: icon; margin-right: 3px; margin-top: 2px; }
 .link_news.page-l-n { margin-right: 10px; }
+
+.link_news_2 { display: inline-block; color: #545454; font-size: 1.1rem; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; padding: 20px 20px 20px 0; position: absolute; right: 0; bottom: 0; }
+.link_news_2:hover, .link_news_2:active { color: #954384; }
+.link_news_2:before { display: inline-block; content: '\e90c'; font-family: icon; margin-right: 3px; margin-top: 2px; }
 
 .link_new_list { display: block; font-size: 1.2rem; color: #5b3468; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; line-height: 30px; }
 .link_new_list:hover, .link_new_list:active { color: #954384; }

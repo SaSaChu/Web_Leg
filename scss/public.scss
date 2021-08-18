@@ -35,6 +35,15 @@ nav {
   }
 }
 
+.picbanner {
+  display: inline-block;
+  width: 100%;
+  max-width: 1400px;
+  height: 530px;
+  background-color: rgba(255, 0, 0, 0.2);
+  margin-top: 197px;
+}
+
 .ds100 {
   display: inline-block;
   width: 100%;
@@ -867,6 +876,10 @@ footer {
   margin-bottom: 60px;
   margin-top: 197px;
 
+  @include range-width(760px, 1300px) {
+    margin-bottom: 140px;
+  }
+
   .pc-banner-cent {
     display: inline-block;
     width: 100%;
@@ -887,6 +900,10 @@ footer {
     width: 100%;
     height: 460px;
     margin: 70px 0;
+
+    @include range-width(450px, 770px) {
+      margin: 0 0 70px 0;
+    }
 
     &.p-bg-lg { background-color: $color_lG;}
     &.p-bg-main {background-color: $color_main;}
@@ -1753,6 +1770,7 @@ footer {
   width: calc(100% / 3 - 35px * 2 / 3);
   float: left;
   position: relative;
+  min-height: 460px;
 
   &:nth-child(3n+2) {
     margin: 0 35px;
@@ -1817,6 +1835,10 @@ footer {
     background-color: white;
     padding: 10px;
     height: 400px;
+
+    @include range-width(0, 450px) {
+      height: 425px;
+    }
   }
 
   @include range-width(760px, 1100px) {
