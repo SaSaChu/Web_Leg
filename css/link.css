@@ -259,7 +259,7 @@ p { padding: 0; margin: 0; }
 
 .t_in_name { display: inline-block; font-size: 1.23rem; color: white; text-align: left; float: left; line-height: 25px; }
 .t_in_name.ta-use { display: inline-block; padding-left: 25px; }
-.t_in_name.ta-use:before { display: inline-block; content: attr(title); margin-left: -27px; }
+.t_in_name.ta-use:before { display: inline-block; content: attr(title); margin-left: -21px; }
 
 .t_in_name2 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; }
 

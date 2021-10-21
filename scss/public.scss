@@ -2035,6 +2035,14 @@ footer {
           float: right !important;
         }
 
+        &.ttt_full {
+          width: 75%;
+          
+          @include range-width(0, 450px) {
+            width: 60%;
+          }
+        }
+
         .table_link {
           display: inline-block;
           float: right;
