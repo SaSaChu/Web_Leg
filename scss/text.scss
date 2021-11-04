@@ -552,6 +552,8 @@ p {
   margin-bottom: 10px;
   // font-weight: 300;
   line-height: 2.5rem;
+  text-align: justify;
+  text-justify:inter-ideograph;
 
   &:before {
     display: inline-block;
