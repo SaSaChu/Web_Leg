@@ -65,7 +65,7 @@ p { padding: 0; margin: 0; }
 .slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; font-weight: bolder; }
 .slogan_title.s-t-2 { color: #954384; }
 .slogan_title.s-t-3 { font-size: 1.6rem; }
-@media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 2rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 1.8rem; } }
 .slogan_title.c_s_blue2 { color: #4A90E2; }
 .slogan_title.c_s_blue { color: #0075b5; }
 .slogan_title.c_s_red { color: #db092f; }
@@ -186,6 +186,7 @@ p { padding: 0; margin: 0; }
 .text18_main { font-size: 1.5rem; color: #5b3468; }
 
 .text18_w { font-size: 1.5rem; color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text18_w { font-size: 1.3rem; } }
 
 .text18_w2 { font-size: 1.23rem; color: white; }
 
@@ -212,6 +213,7 @@ p { padding: 0; margin: 0; }
 .text26_dG { font-size: 2rem; color: #545454; }
 
 .text26_w { font-size: 2rem; color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text26_w { font-size: 1.6rem; } }
 
 .f_text28_w { font-size: 2.1rem; color: white; }
 
@@ -230,6 +232,7 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text16 { font-size: 1.15rem; line-height: 20px; padding-top: 3px; } }
 
 .cb26 { display: inline-block; font-size: 2rem; color: #4185de; padding-bottom: 35px; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .cb26 { font-size: 1.8rem; } }
 
 .table_text26 { display: inline-block; font-size: 2rem; color: white; padding-top: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text26 { font-size: 1.8rem; } }

@@ -65,7 +65,7 @@ p { padding: 0; margin: 0; }
 .slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; font-weight: bolder; }
 .slogan_title.s-t-2 { color: #954384; }
 .slogan_title.s-t-3 { font-size: 1.6rem; }
-@media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 2rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 1.8rem; } }
 .slogan_title.c_s_blue2 { color: #4A90E2; }
 .slogan_title.c_s_blue { color: #0075b5; }
 .slogan_title.c_s_red { color: #db092f; }
@@ -186,6 +186,7 @@ p { padding: 0; margin: 0; }
 .text18_main { font-size: 1.5rem; color: #5b3468; }
 
 .text18_w { font-size: 1.5rem; color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text18_w { font-size: 1.3rem; } }
 
 .text18_w2 { font-size: 1.23rem; color: white; }
 
@@ -212,6 +213,7 @@ p { padding: 0; margin: 0; }
 .text26_dG { font-size: 2rem; color: #545454; }
 
 .text26_w { font-size: 2rem; color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text26_w { font-size: 1.6rem; } }
 
 .f_text28_w { font-size: 2.1rem; color: white; }
 
@@ -230,6 +232,7 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text16 { font-size: 1.15rem; line-height: 20px; padding-top: 3px; } }
 
 .cb26 { display: inline-block; font-size: 2rem; color: #4185de; padding-bottom: 35px; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .cb26 { font-size: 1.8rem; } }
 
 .table_text26 { display: inline-block; font-size: 2rem; color: white; padding-top: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text26 { font-size: 1.8rem; } }
@@ -1097,7 +1100,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .p_banner_boxs460 .p-banner-cent { display: inline-block; width: 100%; max-width: 1100px; height: 100%; position: relative; }
 
 .i_work_box { display: inline-block; width: 50%; padding: 53px 50px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .i_work_box { width: 100%; padding: 35px 30px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .i_work_box { width: 100%; padding: 35px 16px; } }
 
 .i_work_text_box { display: inline-block; width: 100%; border-top: 1px solid white; margin-top: 30px; padding: 30px 0; }
 
@@ -2961,7 +2964,7 @@ footer .copy_boxs { display: inline-block; background-color: #49204e; color: whi
 .boxs4 { display: inline-block; width: calc(100% / 4 - 20px * 3 / 4); float: left; margin-right: 20px; }
 .boxs4:last-child { margin-right: 0; }
 .boxs4.b4-bg-w { background-color: white; padding: 10px; height: 400px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .boxs4.b4-bg-w { height: 425px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .boxs4.b4-bg-w { height: 485px; } }
 @media screen and (max-width: 1099px) and (min-width: 760px) { .boxs4 { width: calc(100% / 2 - 20px * 1 / 2); margin-right: 0; }
   .boxs4:nth-child(2n+1) { margin-right: 20px; }
   .boxs4:nth-child(n+3) { margin-top: 15px; } }
