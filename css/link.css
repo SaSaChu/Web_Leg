@@ -229,6 +229,8 @@ p { padding: 0; margin: 0; }
 .table_text16 { display: inline-block; font-size: 1.2rem; color: white; line-height: 50px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text16 { font-size: 1.15rem; line-height: 20px; padding-top: 3px; } }
 
+.cb26 { display: inline-block; font-size: 2rem; color: #4185de; padding-bottom: 35px; text-align: left; }
+
 .table_text26 { display: inline-block; font-size: 2rem; color: white; padding-top: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .table_text26 { font-size: 1.8rem; } }
 .table_text26:before { display: inline-block; padding-top: 10px; line-height: normal; content: attr(title); font-size: 1.1rem; color: white; margin-top: -5px; }
@@ -295,7 +297,7 @@ p { padding: 0; margin: 0; }
 .classTitle2.ct_fwg { font-weight: 400; }
 @media screen and (max-width: 449px) and (min-width: 0) { .classTitle2 { padding: 30px 0; font-size: 1.69rem; margin: 0; } }
 
-.classTitle3 { display: inline-block; width: 100%; font-size: 2.2rem; color: #4A90E2; padding: 60px 0; font-weight: bolder; }
+.classTitle3 { display: inline-block; width: 100%; font-size: 2rem; color: #4A90E2; padding: 60px 0; font-weight: bolder; }
 @media screen and (max-width: 449px) and (min-width: 0) { .classTitle3 { padding: 30px 0; font-size: 1.69rem; text-align: center !important; } }
 
 .classGrey_s { display: inline-block; width: 100%; font-size: 1.6rem; color: #545454; text-align: left; padding: 10px 0 30px 0; line-height: 1.5; }
