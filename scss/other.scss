@@ -63,7 +63,7 @@ input, textarea {
   padding: 10px 0;
 
   &::placeholder {
-    color: $color_light_p;
+    color: $color_line_text;
   }
 }
 
@@ -79,6 +79,18 @@ input, textarea {
   &::placeholder {
     color: $color_light_p;
   }
+}
+
+.table_note2 {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  border: 1px solid $color_line; 
+  margin: 10px 0;
+  padding: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 }
 
 .table_note {
@@ -588,6 +600,7 @@ label {
 
   // padding: 0 20px;
   border: 1px solid $color_second;
+  background-color: $color_main;
 
   position: absolute;
   left: 0;

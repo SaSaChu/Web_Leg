@@ -798,6 +798,11 @@ p {
   }
 }
 
+.table_a2 {
+  font-size: 1.23rem;
+  color: $color_main;
+}
+
 // 20pt
 .text20_dG {
   font-size: 1.5rem;
@@ -915,7 +920,24 @@ p {
 }
 
 
+.table_title2 {
+  display: inline-block;
+  width: 100%;
+  max-width: 915px;
+  font-size: 1.8rem;
+  color: $color_main;
+  text-align: left;
 
+  &.sTableCent {
+    padding-top: 30px; 
+    text-align: center;
+  }
+
+  @include range-width(0, 450px) {
+    max-width: none;
+    font-size: 1.6rem;
+  }
+}
 
 
 
@@ -1027,8 +1049,12 @@ p {
   max-width: 915px;
   padding-top: 24px;
   font-size: 1.4rem;
-  color: $color_lG100;
+  color: $color_main;
   text-align: left;
+
+  &.colorwhite {
+    color: white !important;
+  }
 
   &.colorOrange {
     color: rgba(245, 166, 35, 1.00);
@@ -1108,7 +1134,7 @@ p {
   display: inline-block;
   // width: 100%;
   font-size: 1.23rem;
-  color: white;
+  color: $color_main;
   // font-weight: 400;
   text-align: left;
   float: left;
@@ -1179,7 +1205,7 @@ p {
 .t_in_day {
   display: inline-block;
   width: 100%;
-  color: white;
+  color: $color_main;
   font-size: 2rem;
   padding: 10px 0;
   text-align: left;

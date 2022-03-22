@@ -1591,8 +1591,9 @@ footer {
   width: 100%;
   @include clearfix();
   
-  &.a-bg-lg { background-color: $color_lG;}
-  &.a-bg-main {background-color: $color_main;}
+  &.a-bg-lg { background-color: $color_main;}
+  &.a-bg-main {background-color: $color_lG;}
+  &.a-bg-main2 {background-color: $color_main;}
   &.a-bg-deep-p {background-color: $color_deep_p;}
   &.a-bg-blue {background-color: $color_blue;}
   &.a-bg-blue2 {background-color: $class_blue;}
@@ -2093,7 +2094,7 @@ footer {
 
   float: left;
   font-size: 1.2rem;
-  color: $color_line_text2;
+  color: white;
   @include border-radius(25px);
   @include transition(all .3s);
   position: relative;
@@ -2118,25 +2119,25 @@ footer {
     width: 20px;
     height: 20px;
     @include border-radius(25px);
-    background-color: $color_line_text2;
+    background-color: white;
     position: absolute;
     left: calc(50% - 13px);
     margin-top: 10px;
   }
 
   &:hover {
-    color: $color_main;
+    color: $color_second;
 
     &:after {
-      background-color: $color_main;
+      background-color: $color_second;
     }
   }
 
   &.t-s {
-    color: $color_main;
+    color: $color_second;
 
     &:after {
-      background-color: $color_main;
+      background-color: $color_second;
     }
   }
 
@@ -2243,7 +2244,7 @@ footer {
   width: 100%;
   max-width: 915px;
   margin-top: 60px;
-  border-top: 1px solid $color_second;
+  border-top: 1px solid $color_main;
 
   &.s_TB4 {
     padding: 60px 0;

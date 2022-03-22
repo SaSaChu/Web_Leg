@@ -16,10 +16,12 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .table_border { display: inline-block; width: 100%; height: 1px; background-color: #0091ff; margin: 60px 0 43px 0; }
 
 .table_input { display: inline-block; width: 100%; color: white; font-size: 1.23rem; padding: 10px 0; }
-.table_input::placeholder { color: #0091ff; }
+.table_input::placeholder { color: #545454; }
 
 .table_input2 { display: inline-block; color: white; font-size: 1.23rem; padding: 0 0 10px 0; margin-left: 15px; border-bottom: 1px solid #0091ff; }
 .table_input2::placeholder { color: #0091ff; }
+
+.table_note2 { display: inline-block; width: 100%; background-color: white; border: 1px solid rgba(84, 84, 84, 0.5); margin: 10px 0; padding: 10px; color: white; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
 .table_note { display: inline-block; width: 100%; background-color: #0091ff; border: 1px solid rgba(84, 84, 84, 0.5); margin: 10px 0; padding: 10px; color: white; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
@@ -133,7 +135,7 @@ label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-
 .radio-label.w650 { width: 650px !important; }
 .radio-label.w250 { width: 256px !important; }
 
-.radio-button { /* 自定義樣式的span */ display: inline-block; border: 1px solid #0091ff; position: absolute; left: 0; top: 0; bottom: 0; right: 0; font-size: 1.2rem; color: white; cursor: pointer; -moz-transition: color 0.3s, background-color 0.3s; -o-transition: color 0.3s, background-color 0.3s; -webkit-transition: color 0.3s, background-color 0.3s; transition: color 0.3s, background-color 0.3s; }
+.radio-button { /* 自定義樣式的span */ display: inline-block; border: 1px solid #0091ff; background-color: #004098; position: absolute; left: 0; top: 0; bottom: 0; right: 0; font-size: 1.2rem; color: white; cursor: pointer; -moz-transition: color 0.3s, background-color 0.3s; -o-transition: color 0.3s, background-color 0.3s; -webkit-transition: color 0.3s, background-color 0.3s; transition: color 0.3s, background-color 0.3s; }
 
 .radio-input:checked ~ .radio-button { /* 選中radio時 */ background-color: white; color: #0091ff; }
 
