@@ -13,15 +13,15 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .a_team_pic { display: inline-block; width: 100%; max-width: 1105px; margin-bottom: 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .a_team_pic { max-width: 200px; margin-bottom: 30px; } }
 
-.table_border { display: inline-block; width: 100%; height: 1px; background-color: #954384; margin: 60px 0 43px 0; }
+.table_border { display: inline-block; width: 100%; height: 1px; background-color: #0091ff; margin: 60px 0 43px 0; }
 
 .table_input { display: inline-block; width: 100%; color: white; font-size: 1.23rem; padding: 10px 0; }
-.table_input::placeholder { color: #866e99; }
+.table_input::placeholder { color: #0091ff; }
 
-.table_input2 { display: inline-block; color: white; font-size: 1.23rem; padding: 0 0 10px 0; margin-left: 15px; border-bottom: 1px solid #866e99; }
-.table_input2::placeholder { color: #866e99; }
+.table_input2 { display: inline-block; color: white; font-size: 1.23rem; padding: 0 0 10px 0; margin-left: 15px; border-bottom: 1px solid #0091ff; }
+.table_input2::placeholder { color: #0091ff; }
 
-.table_note { display: inline-block; width: 100%; background-color: #866e99; border: 1px solid rgba(84, 84, 84, 0.5); margin: 10px 0; padding: 10px; color: white; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+.table_note { display: inline-block; width: 100%; background-color: #0091ff; border: 1px solid rgba(84, 84, 84, 0.5); margin: 10px 0; padding: 10px; color: white; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
 .img_common { display: inline-block; width: 100%; }
 
@@ -40,7 +40,7 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .tag_boxs .i_img_new.new_d2 { height: 181px; overflow: hidden; }
 @media screen and (max-width: 449px) and (min-width: 0) { .tag_boxs .i_img_new { max-width: 375px; } }
 .tag_boxs .i_img_new.p_img_new { min-height: 250px; }
-.tag_boxs:before { display: inline-block; content: attr(title); position: absolute; left: 0; bottom: -11px; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 10px; z-index: 8888; }
+.tag_boxs:before { display: inline-block; content: attr(title); position: absolute; left: 0; bottom: -11px; background-color: #004098; color: white; font-size: 1rem; padding: 5px 10px; z-index: 8888; }
 
 .i_img_s { display: inline-block; width: 100%; max-width: 350px; max-height: 230px; overflow: hidden; }
 
@@ -55,7 +55,7 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 
 .border_D { border-bottom: 1px solid rgba(155, 155, 155, 0.5); }
 
-.border_D_p { border-bottom: 1px solid #866e99; }
+.border_D_p { border-bottom: 1px solid #0091ff; }
 
 .border_A_g { border: 1px solid #d8d8d8 !important; }
 
@@ -94,7 +94,7 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 @media screen and (max-width: 449px) and (min-width: 0) { .embed-container { margin: 35px 0; } }
 
 .in_serch { display: inline-block; width: 60%; padding: 0 15px 5px 10px; cursor: pointer; outline: 0; color: white; font-size: 1.2rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
-.in_serch::placeholder { color: #866e99; }
+.in_serch::placeholder { color: #0091ff; }
 
 .new_serch { display: inline-block; width: 100%; padding: 5px 10px; cursor: pointer; outline: 0; color: #545454; font-size: 1.2rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; text-align: left; }
 .new_serch::placeholder { color: #d8d8d8; }
@@ -103,16 +103,16 @@ select { display: inline-block; border: 1px solid rgba(84, 84, 84, 0.5); /*適�
 
 .page { display: inline-block; width: 100%; padding-top: 60px; }
 .page .arrow_box { display: inline-block; font-size: 1.6rem; color: #545454; width: 30px; height: 30px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
-.page .arrow_box:hover, .page .arrow_box:active { color: #954384; }
+.page .arrow_box:hover, .page .arrow_box:active { color: #0091ff; }
 
 #accordion { display: inline-block; width: 100%; text-align: left; margin-bottom: 80px; }
 @media screen and (max-width: 449px) and (min-width: 0) { #accordion { margin-bottom: 40px; } }
 #accordion .p_page { display: inline-block; width: 100%; overflow: hidden; -moz-transition: height 0.3s; -o-transition: height 0.3s; -webkit-transition: height 0.3s; transition: height 0.3s; }
 #accordion .p_page + .p_page { margin-top: 10px; }
-#accordion .p_page .fq_title { display: inline-block; width: 100%; padding: 0 100px; margin-bottom: 5px; cursor: pointer; font-size: 1.4rem; color: #5b3468; cursor: auto; font-weight: 900; }
+#accordion .p_page .fq_title { display: inline-block; width: 100%; padding: 0 100px; margin-bottom: 5px; cursor: pointer; font-size: 1.4rem; color: #004098; cursor: auto; font-weight: 900; }
 @media screen and (max-width: 449px) and (min-width: 0) { #accordion .p_page .fq_title { padding: 0; } }
-#accordion .p_page > span { display: inline-block; width: 100%; padding: 10px 100px; margin-bottom: 5px; cursor: pointer; font-size: 1.4rem; color: #5b3468; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
-#accordion .p_page > span:hover, #accordion .p_page > span:active { background-color: rgba(149, 67, 132, 0.5); }
+#accordion .p_page > span { display: inline-block; width: 100%; padding: 10px 100px; margin-bottom: 5px; cursor: pointer; font-size: 1.4rem; color: #004098; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+#accordion .p_page > span:hover, #accordion .p_page > span:active { background-color: rgba(0, 145, 255, 0.5); }
 @media screen and (max-width: 449px) and (min-width: 0) { #accordion .p_page > span { padding: 10px; } }
 #accordion .p_page > div { display: inline-block; width: 100%; padding: 10px 100px; font-size: 1.4rem; color: #545454; line-height: 2.1rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { #accordion .p_page > div { padding: 10px; } }
@@ -133,16 +133,16 @@ label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-
 .radio-label.w650 { width: 650px !important; }
 .radio-label.w250 { width: 256px !important; }
 
-.radio-button { /* 自定義樣式的span */ display: inline-block; border: 1px solid #954384; position: absolute; left: 0; top: 0; bottom: 0; right: 0; font-size: 1.2rem; color: white; cursor: pointer; -moz-transition: color 0.3s, background-color 0.3s; -o-transition: color 0.3s, background-color 0.3s; -webkit-transition: color 0.3s, background-color 0.3s; transition: color 0.3s, background-color 0.3s; }
+.radio-button { /* 自定義樣式的span */ display: inline-block; border: 1px solid #0091ff; position: absolute; left: 0; top: 0; bottom: 0; right: 0; font-size: 1.2rem; color: white; cursor: pointer; -moz-transition: color 0.3s, background-color 0.3s; -o-transition: color 0.3s, background-color 0.3s; -webkit-transition: color 0.3s, background-color 0.3s; transition: color 0.3s, background-color 0.3s; }
 
-.radio-input:checked ~ .radio-button { /* 選中radio時 */ background-color: white; color: #954384; }
+.radio-input:checked ~ .radio-button { /* 選中radio時 */ background-color: white; color: #0091ff; }
 
 .radio-subitems { display: none !important; }
 .radio-subitems.show { display: inline-block !important; }
 
 .c_input_boxs { display: inline-block; width: 100%; }
 
-.c_input { display: inline-block; width: calc(100% - 20px); background-color: #eae6ee; padding: 10px; font-size: 1.5rem; margin-left: 20px; border: 0 !important; color: #866e99; margin-top: 15px; }
+.c_input { display: inline-block; width: calc(100% - 20px); background-color: rgba(0, 64, 152, 0.3); padding: 10px; font-size: 1.5rem; margin-left: 20px; border: 0 !important; color: #004098; margin-top: 15px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .c_input { margin-bottom: 0; } }
 
 .fileInput { opacity: 0; display: block; width: 100%; height: 200px; clear: both; display: block; margin: auto; background-color: red; }

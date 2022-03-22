@@ -26,7 +26,7 @@ p { padding: 0; margin: 0; }
 
 .l_24 { line-height: 1.9rem; }
 
-.p_title { display: inline-block; width: 100%; font-size: 1.5rem; color: #5b3468; }
+.p_title { display: inline-block; width: 100%; font-size: 1.5rem; color: #004098; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p_title { font-size: 1.2rem; } }
 
 .p_main { display: inline-block; width: 100%; font-size: 1.5rem; color: #545454; padding-top: 2.5rem; padding-bottom: 4.5rem; }
@@ -48,7 +48,7 @@ p { padding: 0; margin: 0; }
 .page_banner_title2:after { display: block; content: attr(title); font-size: 1.6rem; font-family: 'Roboto'; margin-top: 5px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .page_banner_title2:after { font-size: 1.6rem; } }
 
-.p_slogan_title { display: inline-block; width: 100%; font-size: 1.8rem; color: #5b3468; }
+.p_slogan_title { display: inline-block; width: 100%; font-size: 1.8rem; color: #004098; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p_slogan_title { font-size: 1.4rem; } }
 
 .slogan_class { display: inline-block; font-size: 2.2rem; }
@@ -62,8 +62,8 @@ p { padding: 0; margin: 0; }
 .alltitle2 { display: inline-block; font-weight: bolder; font-size: 2.5rem; color: #ED6C00; padding: 0 20px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .alltitle2 { font-size: 1.69rem; } }
 
-.slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #5b3468; font-weight: bolder; }
-.slogan_title.s-t-2 { color: #954384; }
+.slogan_title { display: inline-block; width: 100%; font-size: 2.2rem; color: #004098; font-weight: bolder; }
+.slogan_title.s-t-2 { color: #0091ff; }
 .slogan_title.s-t-3 { font-size: 1.6rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .slogan_title { font-size: 1.8rem; } }
 .slogan_title.c_s_blue2 { color: #4A90E2; }
@@ -102,21 +102,21 @@ p { padding: 0; margin: 0; }
 
 .i_text16_dG { display: inline-block; font-size: 1.1rem; color: #545454; line-height: 30px; }
 
-.i_text20_main { font-size: 1.8rem; color: #5b3468; font-weight: 700; margin-bottom: 60px; }
+.i_text20_main { font-size: 1.8rem; color: #004098; font-weight: 700; margin-bottom: 60px; }
 .i_text20_main.i_no_mb { margin-bottom: 0; }
-.i_text20_main:after { display: inline-block; width: 100%; content: attr(title); font-size: 1.4rem; color: #5b3468; font-weight: 400; margin-top: 5px; letter-spacing: 0 !important; }
+.i_text20_main:after { display: inline-block; width: 100%; content: attr(title); font-size: 1.4rem; color: #004098; font-weight: 400; margin-top: 5px; letter-spacing: 0 !important; }
 .i_text20_main.h-m-T100 { margin-top: 100px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .i_text20_main.h-m-T100 { margin-top: 50px; } }
 .i_text20_main.h-s-T40 { padding-top: 40px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .i_text20_main { margin-bottom: 40px; } }
 
-.n_text20_main { font-size: 1.5rem; color: #5b3468; margin-bottom: 20px; text-align: left; }
+.n_text20_main { font-size: 1.5rem; color: #004098; margin-bottom: 20px; text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .n_text20_main { margin-bottom: 10px; } }
 
 .a_text16_dG { display: inline-block; width: 100%; font-size: 1.2rem; color: #545454; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .a_text16_dG { width: 90%; } }
 
-.a_text20_main { width: 100%; font-size: 1.5rem; color: #5b3468; margin-bottom: 10px; float: left; }
+.a_text20_main { width: 100%; font-size: 1.5rem; color: #004098; margin-bottom: 10px; float: left; }
 .a_text20_main.a_p_intro { padding: 100px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .a_text20_main.a_p_intro { width: 100% !important; padding: 50px 0; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .a_text20_main { margin-bottom: 5px; width: 90%; }
@@ -135,12 +135,12 @@ p { padding: 0; margin: 0; }
 
 .n_text20_cT { font-size: 1.5rem; color: #545454; text-align: center; margin-bottom: 10px; line-height: 2.5rem; }
 
-.i_text70_main { font-size: 5.3rem; color: #5b3468; font-weight: 700; position: relative; }
-.i_text70_main:after { display: inline-block; content: attr(title); font-size: 1.8rem; color: #5b3468; margin-left: 5px; position: absolute; bottom: 12px; }
+.i_text70_main { font-size: 5.3rem; color: #004098; font-weight: 700; position: relative; }
+.i_text70_main:after { display: inline-block; content: attr(title); font-size: 1.8rem; color: #004098; margin-left: 5px; position: absolute; bottom: 12px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .i_text70_main { float: left; font-size: 3rem; text-align: left; }
   .i_text70_main:after { font-size: 1.2rem; } }
 
-.tag14 { display: inline-block; background-color: #5b3468; color: white; font-size: 1rem; padding: 5px 20px; }
+.tag14 { display: inline-block; background-color: #004098; color: white; font-size: 1rem; padding: 5px 20px; }
 
 .tag12 { display: inline-block; width: 100%; font-size: 1rem; color: #545454; padding-top: 20px; text-align: left; }
 
@@ -157,13 +157,13 @@ p { padding: 0; margin: 0; }
 
 .text_share { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; font-size: 1.2rem; color: #545454; border-top: 1px solid rgba(155, 155, 155, 0.5); text-align: left; padding-top: .5rem; line-height: 1.5; }
 
-.text14_second { font-size: 1.1rem; color: #954384; }
+.text14_second { font-size: 1.1rem; color: #0091ff; }
 
 .text14_w { font-size: 1.1rem; color: white; }
 
 .text14_lG_full { font-size: 1.1rem; color: #d8d8d8; }
 
-.text16_l_p { font-size: 1.2rem; color: #866e99; }
+.text16_l_p { font-size: 1.2rem; color: #0091ff; }
 
 .text16_lT { font-size: 1.2rem; color: #545454; }
 
@@ -174,16 +174,16 @@ p { padding: 0; margin: 0; }
 
 .c_text16_w { font-size: 1.2rem; color: white; line-height: 1.5; }
 
-.text16_main { font-size: 1.2rem; color: #5b3468; }
+.text16_main { font-size: 1.2rem; color: #004098; }
 
-.text16_second { font-size: 1.2rem; color: #954384; }
+.text16_second { font-size: 1.2rem; color: #0091ff; }
 
 .text18_dG { font-size: 1.5rem; color: #545454; }
 
 .c_text18_dG { font-size: 1.5rem; color: #545454; }
 .c_text18_dG:before { display: inline-block; content: '*'; color: red; margin-right: 10px; line-height: 35px; }
 
-.text18_main { font-size: 1.5rem; color: #5b3468; }
+.text18_main { font-size: 1.5rem; color: #004098; }
 
 .text18_w { font-size: 1.5rem; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text18_w { font-size: 1.3rem; } }
@@ -197,18 +197,18 @@ p { padding: 0; margin: 0; }
 
 .text20_w { font-size: 1.5rem; color: white; }
 
-.text20_main { font-size: 1.5rem; color: #5b3468; }
+.text20_main { font-size: 1.5rem; color: #004098; }
 .text20_main.c_text20_blue { color: #0075b5; }
 
 .text20_lT { font-size: 1.5rem; color: #545454; }
 
-.text24_main { font-size: 1.8rem; color: #5b3468; }
+.text24_main { font-size: 1.8rem; color: #004098; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text24_main { display: inline-block; float: left; font-size: 1.6rem; } }
 
 .text24_white { font-size: 1.8rem; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text24_white { display: inline-block; font-size: 1.6rem; } }
 
-.text26_main { font-size: 2rem; color: #5b3468; }
+.text26_main { font-size: 2rem; color: #004098; }
 
 .text26_dG { font-size: 2rem; color: #545454; }
 
@@ -222,7 +222,7 @@ p { padding: 0; margin: 0; }
 .text40_w { font-size: 3.07rem; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text40_w { font-size: 1.69rem; } }
 
-.text70_main { font-size: 5.3rem; color: #5b3468; }
+.text70_main { font-size: 5.3rem; color: #004098; }
 
 .table_title { display: inline-block; width: 100%; max-width: 915px; font-size: 1.8rem; color: white; text-align: left; }
 .table_title.sTableCent { padding-top: 30px; text-align: center; }
@@ -279,7 +279,7 @@ p { padding: 0; margin: 0; }
 
 .t_in_day { display: inline-block; width: 100%; color: white; font-size: 2rem; padding: 10px 0; text-align: left; }
 
-.m-step-type { display: inline-block; font-size: 1.6rem; color: #5b3468; margin-top: 25px; }
+.m-step-type { display: inline-block; font-size: 1.6rem; color: #004098; margin-top: 25px; }
 
 .t-parent { display: inline-block; width: 100%; color: #f7af27; font-size: 1.5rem; text-align: left; margin-top: 10px; }
 
