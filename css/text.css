@@ -188,7 +188,7 @@ p { padding: 0; margin: 0; }
 .text18_w { font-size: 1.5rem; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text18_w { font-size: 1.3rem; } }
 
-.text18_w2 { font-size: 1.23rem; color: white; }
+.text18_w2 { font-size: 1.23rem; color: #545454; }
 
 .table_a { font-size: 1.23rem; color: white; }
 .table_a.tt_o { color: #edc300; }
@@ -273,14 +273,14 @@ p { padding: 0; margin: 0; }
 .t_in_name.ta-use { display: inline-block; padding-left: 25px; }
 .t_in_name.ta-use:before { display: inline-block; content: attr(title); margin-left: -21px; }
 
-.t_in_name2 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; }
+.t_in_name2 { display: inline-block; font-size: 1.23rem; color: #004098; line-height: 25px; }
 
 .t_in_name3 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; text-align: left; padding-left: 29px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .t_in_name3 { padding-left: 0; } }
 .t_in_name3.ta-use2 { display: inline-block; padding-left: 25px; }
 .t_in_name3.ta-use2:before { display: inline-block; content: attr(title); margin-left: -27px; }
 
-.t_in_name4 { display: inline-block; font-size: 1.23rem; color: white; line-height: 25px; text-align: left; }
+.t_in_name4 { display: inline-block; font-size: 1.23rem; color: #004098; line-height: 25px; text-align: left; }
 .t_in_name4.ta-use2 { display: inline-block; padding-left: 25px; }
 .t_in_name4.ta-use2:before { display: inline-block; content: attr(title); margin-left: -15px; }
 

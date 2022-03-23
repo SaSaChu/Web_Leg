@@ -58,7 +58,7 @@ input, textarea {
 .table_input {
   display: inline-block;
   width: 100%;
-  color: white;
+  color: $color_line_text;
   font-size: 1.23rem;
   padding: 10px 0;
 
@@ -70,7 +70,7 @@ input, textarea {
 .table_input2 {
   display: inline-block;
   // width: 100%;
-  color: white;
+  color: $color_line_text;
   font-size: 1.23rem;
   padding: 0 0 10px 0;
   margin-left: 15px;
@@ -88,7 +88,7 @@ input, textarea {
   border: 1px solid $color_line; 
   margin: 10px 0;
   padding: 10px;
-  color: white;
+  color: $color_line_text;
   font-size: 1.5rem;
   font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 }

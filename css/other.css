@@ -15,13 +15,13 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 
 .table_border { display: inline-block; width: 100%; height: 1px; background-color: #0091ff; margin: 60px 0 43px 0; }
 
-.table_input { display: inline-block; width: 100%; color: white; font-size: 1.23rem; padding: 10px 0; }
+.table_input { display: inline-block; width: 100%; color: #545454; font-size: 1.23rem; padding: 10px 0; }
 .table_input::placeholder { color: #545454; }
 
-.table_input2 { display: inline-block; color: white; font-size: 1.23rem; padding: 0 0 10px 0; margin-left: 15px; border-bottom: 1px solid #0091ff; }
+.table_input2 { display: inline-block; color: #545454; font-size: 1.23rem; padding: 0 0 10px 0; margin-left: 15px; border-bottom: 1px solid #0091ff; }
 .table_input2::placeholder { color: #0091ff; }
 
-.table_note2 { display: inline-block; width: 100%; background-color: white; border: 1px solid rgba(84, 84, 84, 0.5); margin: 10px 0; padding: 10px; color: white; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+.table_note2 { display: inline-block; width: 100%; background-color: white; border: 1px solid rgba(84, 84, 84, 0.5); margin: 10px 0; padding: 10px; color: #545454; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
 .table_note { display: inline-block; width: 100%; background-color: #0091ff; border: 1px solid rgba(84, 84, 84, 0.5); margin: 10px 0; padding: 10px; color: white; font-size: 1.5rem; font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 

@@ -782,7 +782,7 @@ p {
 
 .text18_w2 {
   font-size: 1.23rem;
-  color: white;
+  color: $color_line_text;
 
   // @include range-width(760px, 1100px) {
   //   font-size: 1.2rem;
@@ -1155,7 +1155,7 @@ p {
 .t_in_name2 {
   display: inline-block;
   font-size: 1.23rem;
-  color: white;
+  color: $color_main;
   line-height: 25px;
 }
 
@@ -1186,7 +1186,7 @@ p {
 .t_in_name4 {
   display: inline-block;
   font-size: 1.23rem;
-  color: white;
+  color: $color_main;
   line-height: 25px;
   text-align: left;
 
