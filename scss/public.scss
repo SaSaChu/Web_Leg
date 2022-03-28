@@ -35,6 +35,15 @@ nav {
   }
 }
 
+.flexbox {
+  display: flex;
+  align-items: center;
+
+  @include range-width(0, 450px) {
+    display: block;
+  }
+}
+
 .picbanner {
   display: inline-block;
   width: 100%;
@@ -1844,6 +1853,16 @@ footer {
 
     @include range-width(0, 450px) {
       height: 485px;
+    }
+  }
+
+  &.b4-bg-w2 {
+    background-color: white;
+    padding: 10px;
+    height: 400px;
+
+    @include range-width(0, 450px) {
+      height: 505px;
     }
   }
 

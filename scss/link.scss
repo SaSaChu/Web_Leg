@@ -133,7 +133,8 @@ button {
  color: white;
  
  &:hover, &:active {
-  background-color: $color_second;
+  background-color: $color_deep_p;
+  border: 2px solid rgba(232, 69, 114, .5);
  }
 
  &.lm-mD60 {
@@ -179,7 +180,7 @@ button {
   @include transition(all .3s);
 
   &:hover, &:active {
-    color: $color_second;
+    color: $color_deep_p;
   }
 
   &.l_icon_w {
@@ -301,7 +302,7 @@ button {
   text-align: left;
 
   &:hover, &:active {
-    color: $color_second;
+    color: $color_deep_p;
   }
 
   &:before {
@@ -343,7 +344,7 @@ button {
   text-align: left;
 
   &:hover, &:active {
-    color: $color_second;
+    color: $color_deep_p;
   }
 
   &:before {
@@ -364,6 +365,11 @@ button {
  font-size: 1.3rem;
  @include transition(all .3s);
  background-color: white;
+
+ &.use-183 {
+  width: 100%;
+  max-width: 183px;
+ }
  
  &:hover, &:active {
   background-color: $color_second;

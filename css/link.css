@@ -342,7 +342,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
   .link_white:first-child { float: right; margin-left: 0; } }
 
 .link_main { display: inline-block; padding: .7rem 2rem; background-color: #004098; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; border: 2px solid #0091ff; font-size: 1.3rem; color: white; }
-.link_main:hover, .link_main:active { background-color: #0091ff; }
+.link_main:hover, .link_main:active { background-color: #e84572; border: 2px solid rgba(232, 69, 114, 0.5); }
 .link_main.lm-mD60 { margin-bottom: 60px; }
 .link_main.mob-menu { font-size: 1.2rem !important; padding: 10px 40px !important; margin-left: 30px !important; }
 
@@ -351,7 +351,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .link_language:nth-child(2):after { display: inline-block; content: ''; width: 1px; height: 20px; background-color: #004098; margin: 2px 0 0 14px; }
 
 .link_icon { display: inline-block; color: #004098; font-size: 1.6rem; margin: 3px 7px 0 0; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
-.link_icon:hover, .link_icon:active { color: #0091ff; }
+.link_icon:hover, .link_icon:active { color: #e84572; }
 .link_icon.l_icon_w { color: white; margin: 3px 5px; }
 .link_icon.l_icon_w:hover, .link_icon.l_icon_w:active { color: #0091ff; }
 
@@ -376,7 +376,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .link_new_list:after { display: inline-block; content: attr(title); margin-left: 5px; }
 
 .link_16_main { display: inline-block; width: 100%; font-size: 1.6rem; color: #004098; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; padding: 6px 0; text-align: left; }
-.link_16_main:hover, .link_16_main:active { color: #0091ff; }
+.link_16_main:hover, .link_16_main:active { color: #e84572; }
 .link_16_main:before { display: inline-block; content: attr(title); font-size: 1.6rem; color: #004098; }
 
 .link_18_main { display: inline-block; width: 100%; font-size: 1.3rem; color: #004098; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; padding: 6px 0; }
@@ -384,10 +384,11 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .link_18_main:before { display: inline-block; content: attr(title); font-size: 1.2rem; color: #004098; }
 
 .link_20_main { display: inline-block; width: 100%; font-size: 1.6rem; color: #004098; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; padding: 6px 0; text-align: left; }
-.link_20_main:hover, .link_20_main:active { color: #0091ff; }
+.link_20_main:hover, .link_20_main:active { color: #e84572; }
 .link_20_main:before { display: inline-block; content: attr(title); font-size: 1.2rem; color: #004098; }
 
 .link_out_line { display: inline-block; padding: 1.2rem 2rem; margin-top: 40px; color: #004098; border: 2px solid #004098; font-size: 1.3rem; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; background-color: white; }
+.link_out_line.use-183 { width: 100%; max-width: 183px; }
 .link_out_line:hover, .link_out_line:active { background-color: #0091ff; color: white; border: 2px solid #0091ff; }
 
 .t_link_out_line { display: inline-block; padding: .7rem 2rem; margin-top: 40px; color: white; border: 2px solid #0091ff; font-size: 1.3rem; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; background-color: transparent; }
