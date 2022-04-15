@@ -286,7 +286,7 @@ p { padding: 0; margin: 0; }
 
 .t_in_day { display: inline-block; width: 100%; color: #004098; font-size: 2rem; padding: 10px 0; text-align: left; }
 
-.m-step-type { display: inline-block; font-size: 1.6rem; color: #004098; margin-top: 25px; }
+.m-step-type { display: inline-block; font-size: 1.6rem; color: #0091ff; margin-top: 25px; }
 
 .t-parent { display: inline-block; width: 100%; color: #f7af27; font-size: 1.5rem; text-align: left; margin-top: 10px; }
 
@@ -753,6 +753,8 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 
 .classNewBox2 { display: inline-block; width: calc(100% / 2); text-align: center; max-width: 345px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .classNewBox2 { width: 100%; } }
+
+@media screen and (max-width: 449px) and (min-width: 0) { .lineH20 { line-height: 20px !important; } }
 
 ul { /* 取消ul預設的內縮及樣式 */ margin: 0; padding: 0; list-style: none; float: right; }
 ul.classUl { float: left; list-style: disc !important; list-style-type: disc !important; font-size: 1.53rem; text-align: left; color: #4A90E2; }
@@ -3063,8 +3065,8 @@ footer .copy_boxs { display: inline-block; background-color: #e84572; color: whi
 
 .m-t3 { display: inline-block; width: calc(100% / 3); float: left; }
 
-.m-table_step { display: inline-block; width: 15px; height: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: #909090; }
-.m-table_step.m-t-s { background-color: #004098; }
+.m-table_step { display: inline-block; width: 15px; height: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: white; }
+.m-table_step.m-t-s { background-color: #0091ff; }
 
 .spcediv { display: inline-block; width: 100%; height: 45px; }
 
