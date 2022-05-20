@@ -35,6 +35,20 @@ nav {
   }
 }
 
+.podcastDiv {
+  display: inline-block;
+  width: 100%;
+  max-width: 660px;
+  border-bottom: 1px solid #C9CACA;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+
+  &.p-last {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
 .flexbox {
   display: flex;
   align-items: center;
@@ -1956,7 +1970,7 @@ footer {
 
     .ba {
       display: inline-block;
-      width: calc(100% / 8 - 12px * 7 / 8);
+      width: calc(100% / 9 - 12px * 8 / 9);
       float: left;
       margin-right: 12px;
       height: 50px;
