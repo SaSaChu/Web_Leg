@@ -959,6 +959,16 @@ footer {
     height: 267px;
   }
 
+  &.pod {
+    height: 365px !important;
+    margin-top: 200px !important;
+
+    @include range-width(0, 450px) {
+      height: 120px !important;
+      margin-top: 81px !important;
+    }
+  }
+
   .p-banner-cent {
     display: inline-block;
     width: 100%;

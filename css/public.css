@@ -1117,6 +1117,8 @@ footer .copy_boxs { display: inline-block; background-color: #e84572; color: whi
 
 .p_banner_boxs460 { display: inline-block; width: 100%; height: 460px; margin-top: 81px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .p_banner_boxs460 { height: 267px; } }
+.p_banner_boxs460.pod { height: 365px !important; margin-top: 200px !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .p_banner_boxs460.pod { height: 120px !important; margin-top: 81px !important; } }
 .p_banner_boxs460 .p-banner-cent { display: inline-block; width: 100%; max-width: 1100px; height: 100%; position: relative; }
 
 .i_work_box { display: inline-block; width: 50%; padding: 53px 50px; }
